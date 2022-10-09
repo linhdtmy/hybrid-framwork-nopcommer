@@ -16,9 +16,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
-	WebDriver driver;
+
 	JavascriptExecutor jsExecutor;
-	WebDriverWait explicitWait = new WebDriverWait(driver, 20);
+	public static BasePage getBasePageObject() {
+		return new BasePage();
+	}
 
 	public void openPageUrl(WebDriver driver, String url) {
 		driver.get(url);
@@ -166,7 +168,7 @@ public class BasePage {
 	}
 
 	public void selectedValueDropdown(WebDriver driver, String parentItem, String childItem, String expectedValue) {
-
+		WebDriverWait explicitWait = new WebDriverWait(driver, 20);
 		driver.findElement(By.cssSelector(parentItem)).click();
 		explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(childItem)));
 		List<WebElement> allItems = driver.findElements(By.cssSelector(childItem));
@@ -335,7 +337,8 @@ public class BasePage {
 	}
 
 	public boolean areJQueryAndJSLoadedSuccess(WebDriver driver) {
-		explicitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explicitWait = new WebDriverWait(driver, 20);
+
 		jsExecutor = (JavascriptExecutor) driver;
 
 		ExpectedCondition<Boolean> jQueryLoad = new ExpectedCondition<Boolean>() {

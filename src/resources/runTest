@@ -2,7 +2,7 @@
 <suite name="Nopcommerce">
   <test name="Run on FireFox">
     <classes>
-      <class name="com.nopcommerce.user.Test_01_Registrator_User"/>
+      <class name="com.nopcommerce.user.Test_03_Page_Object_Modal"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

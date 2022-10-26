@@ -3,8 +3,8 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import common.BasePage;
-import pageObject.HomePageObject;
-import pageObject.RegisterPageObject;
+import pageObject.user.nopcommerce.HomeUserPageObject;
+import pageObject.user.nopcommerce.RegisterPageUserObject;
 
 import org.testng.annotations.BeforeClass;
 
@@ -23,16 +23,16 @@ public class Test_03_Page_Object_Modal_Register {
 	private String projectPath = System.getProperty("user.dir");
 	private String email = "abc123" + generate_Random() + "@gmail.com";
 	private String firstName = "abc", lastName = "efgh ", password = "Test@12345";
-	private HomePageObject homePageObject;
-	private RegisterPageObject registerPageObject;
+	private HomeUserPageObject homePageObject;
+	private RegisterPageUserObject registerPageObject;
 
 	@BeforeClass
 	public void beforeClass() {
 
 		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
-		homePageObject = new HomePageObject(driver);
-		registerPageObject = new RegisterPageObject(driver);
+		homePageObject = new HomeUserPageObject(driver);
+		registerPageObject = new RegisterPageUserObject(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://demo.nopcommerce.com/");

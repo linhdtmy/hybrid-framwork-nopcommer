@@ -15,9 +15,21 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObject.user.nopcommerce.AddressUserObject;
+import pageObject.user.nopcommerce.BackUserObject;
+import pageObject.user.nopcommerce.ChangePasswordUserObject;
+import pageObject.user.nopcommerce.DownloadUserObject;
+import pageObject.user.nopcommerce.OrderUserObject;
+import pageObject.user.nopcommerce.ReviewUserObject;
+import pageObject.user.nopcommerce.RewardUserObject;
+import userPageUI.AddressPageUI;
+import userPageUI.BaseUI;
+import userPageUI.OrderUI;
+
 public class BasePage {
 
 	JavascriptExecutor jsExecutor;
+
 	public static BasePage getBasePageObject() {
 		return new BasePage();
 	}
@@ -273,23 +285,23 @@ public class BasePage {
 
 	}
 
-	public Object executeForBrowser(WebDriver driver, String javaScript) {
+	protected Object executeForBrowser(WebDriver driver, String javaScript) {
 		jsExecutor = (JavascriptExecutor) driver;
 		return jsExecutor.executeScript(javaScript);
 	}
 
-	public String getInnerText(WebDriver driver) {
+	protected String getInnerText(WebDriver driver) {
 		jsExecutor = (JavascriptExecutor) driver;
 		return (String) jsExecutor.executeScript("return document.documentElement.innerText;");
 	}
 
-	public boolean areExpectedTextInInnerText(WebDriver driver, String textExpected) {
+	protected boolean areExpectedTextInInnerText(WebDriver driver, String textExpected) {
 		jsExecutor = (JavascriptExecutor) driver;
 		String textActual = (String) jsExecutor.executeScript("return document.documentElement.innerText.match('" + textExpected + "')[0]");
 		return textActual.equals(textExpected);
 	}
 
-	public void scrollToBottomPage(WebDriver driver) {
+	protected void scrollToBottomPage(WebDriver driver) {
 		jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 	}
@@ -377,4 +389,49 @@ public class BasePage {
 		}
 	}
 
-}
+	public AddressUserObject getAddressObject(WebDriver driver) {
+		waitForElementClickable(driver, BaseUI.ADDRESS_LINK);
+		clickToElement(driver, BaseUI.ADDRESS_LINK);
+		return GenerateObject.getAddressPage(driver);
+	}
+
+	public OrderUserObject getOrderPage(WebDriver driver) {
+		waitForElementVisible(driver, BaseUI.ORDER_LINK);
+		clickToElement(driver, BaseUI.ORDER_LINK);
+		return GenerateObject.getOrderPage(driver);
+	}
+
+	public ReviewUserObject getReviewPage(WebDriver driver) {
+		waitForElementClickable(driver, BaseUI.CUSTOMER_REVIEW_LINK);
+		clickToElement(driver, BaseUI.CUSTOMER_REVIEW_LINK);
+		return GenerateObject.getReviewPage(driver);
+	}
+
+	public BackUserObject getBackPage(WebDriver driver) {
+		waitForElementClickable(driver, BaseUI.BACK_LINK);
+		clickToElement(driver, BaseUI.BACK_LINK);
+		return GenerateObject.getBackPage(driver);
+	}
+
+	public DownloadUserObject getDownloadPage(WebDriver driver) {
+		waitForElementClickable(driver, BaseUI.DOWNLOAD_LINK);
+		clickToElement(driver, BaseUI.DOWNLOAD_LINK);
+		return GenerateObject.getDownloadPage(driver);
+	}
+
+	public ChangePasswordUserObject getPasswordObject(WebDriver driver) {
+		waitForElementClickable(driver, BaseUI.CUSTOMER_REVIEW_LINK);
+		clickToElement(driver, BaseUI.CUSTOMER_REVIEW_LINK);
+		return GenerateObject.getChangePasswordPage(driver);
+	}
+
+	public RewardUserObject getRewardPage(WebDriver driver) {
+		waitForElementClickable(driver, BaseUI.REWARD_LINK);
+		clickToElement(driver, BaseUI.REWARD_LINK);
+		return GenerateObject.getRewardPage(driver);
+	}
+
+	
+	}
+
+

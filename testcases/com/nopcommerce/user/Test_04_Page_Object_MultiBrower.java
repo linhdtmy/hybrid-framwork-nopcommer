@@ -11,14 +11,14 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObject.HomePageObject;
-import pageObject.RegisterPageObject;
+import pageObject.user.nopcommerce.HomeUserPageObject;
+import pageObject.user.nopcommerce.RegisterPageUserObject;
 
 public class Test_04_Page_Object_MultiBrower extends BaseTest {
 
 	private WebDriver driver;
-	private HomePageObject homePageObject;
-	private RegisterPageObject registerPageObject;
+	private HomeUserPageObject homePageObject;
+	private RegisterPageUserObject registerPageObject;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -26,8 +26,8 @@ public class Test_04_Page_Object_MultiBrower extends BaseTest {
 
 		driver = getBrowser(browserName);
 
-		homePageObject = new HomePageObject(driver);
-		registerPageObject = new RegisterPageObject(driver);
+		homePageObject = new HomeUserPageObject(driver);
+		registerPageObject = new RegisterPageUserObject(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://demo.nopcommerce.com/");

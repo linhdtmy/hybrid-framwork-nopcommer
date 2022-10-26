@@ -3,9 +3,9 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import common.BasePage;
-import pageObject.HomePageObject;
-import pageObject.LoginPageObject;
-import pageObject.RegisterPageObject;
+import pageObject.user.nopcommerce.HomeUserPageObject;
+import pageObject.user.nopcommerce.LoginUserPageObject;
+import pageObject.user.nopcommerce.RegisterPageUserObject;
 
 import org.testng.annotations.BeforeClass;
 
@@ -27,17 +27,17 @@ public class Test_03_Page_Object_Modal_Login {
 	private String invalidEmail = "dddd";
 	private String firstName = "abc", lastName = "efgh ", password = "Test@12345";
 	private String incorrectPassword ="123";
-	private HomePageObject homePageObject;
-	private LoginPageObject loginPageObject;
+	private HomeUserPageObject homePageObject;
+	private LoginUserPageObject loginPageObject;
 
 	@BeforeClass
 	public void beforeClass() {
 
 		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
-		homePageObject = new HomePageObject(driver);
+		homePageObject = new HomeUserPageObject(driver);
 
-		RegisterPageObject registerPageObject = new RegisterPageObject(driver);
+		RegisterPageUserObject registerPageObject = new RegisterPageUserObject(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://demo.nopcommerce.com/");
@@ -54,7 +54,7 @@ public class Test_03_Page_Object_Modal_Login {
 
 	@Test
 	public void TC_01_Login_Empty_Data() {
-		loginPageObject = new LoginPageObject(driver);
+		loginPageObject = new LoginUserPageObject(driver);
 		homePageObject.clickToLoginLink();
 		loginPageObject.clickToLoginButton();
 		Assert.assertEquals(loginPageObject.getErrorMessageAtEmailTextbox(), "Please enter your email");
@@ -62,7 +62,7 @@ public class Test_03_Page_Object_Modal_Login {
 
 	@Test
 	public void TC_02_Invalid_Email() {
-		loginPageObject = new LoginPageObject(driver);
+		loginPageObject = new LoginUserPageObject(driver);
 		homePageObject.clickToLoginLink();
 		loginPageObject.inputToEmailTextbox(invalidEmail);
 		loginPageObject.clickToLoginButton();
@@ -72,7 +72,7 @@ public class Test_03_Page_Object_Modal_Login {
 	@Test
 	public void TC_03_NotFound_Email() {
 
-		loginPageObject = new LoginPageObject(driver);
+		loginPageObject = new LoginUserPageObject(driver);
 		homePageObject.clickToLoginLink();
 		loginPageObject.inputToEmailTextbox(emailNotFound);
 		loginPageObject.clickToLoginButton();
@@ -82,7 +82,7 @@ public class Test_03_Page_Object_Modal_Login {
 
 	@Test
 	public void TC_04_Existing_Email_Empty_Password() {
-		loginPageObject = new LoginPageObject(driver);
+		loginPageObject = new LoginUserPageObject(driver);
 		homePageObject.clickToLoginLink();
 		loginPageObject.inputToEmailTextbox(validEmail);
 		loginPageObject.clickToLoginButton();
@@ -92,7 +92,7 @@ public class Test_03_Page_Object_Modal_Login {
 
 	@Test
 	public void TC_05_Existed_Email_IncorrectPassword() {
-		loginPageObject = new LoginPageObject(driver);
+		loginPageObject = new LoginUserPageObject(driver);
 		homePageObject.clickToLoginLink();
 		loginPageObject.inputToEmailTextbox(validEmail);
 		loginPageObject.inputToPasswordTextbox(incorrectPassword);
@@ -104,7 +104,7 @@ public class Test_03_Page_Object_Modal_Login {
 
 	@Test
 	public void TC_06_Login_Success() {
-		loginPageObject = new LoginPageObject(driver);
+		loginPageObject = new LoginUserPageObject(driver);
 		homePageObject.clickToLoginLink();
 		loginPageObject.inputToEmailTextbox(validEmail);
 		loginPageObject.inputToPasswordTextbox(password);

@@ -1,5 +1,7 @@
 package common;
 
+import java.util.Random;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -61,5 +63,9 @@ public class BaseTest {
 		driver.get(GlobalConstants.PORTAL_PAGE);
 
 		return driver;
+	}
+	public int generate_Random() {
+		Random random = new Random();
+		return random.nextInt();
 	}
 }

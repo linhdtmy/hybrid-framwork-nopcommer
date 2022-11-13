@@ -8,4 +8,8 @@ public class BaseUI {
 	public static final String BACK_LINK="//li[@class='back-in-stock-subscriptions inactive']//a";
 	public static final String REWARD_LINK="//li[@class='reward-points inactive']//a";
 	public static final String CUSTOMER_REVIEW_LINK="//li[@class='customer-reviews inactive']//a";
+	
+	
+	public static final String DYNAMIC_LINK="//a[contains(text(),'%s')]";
+
 }

@@ -44,4 +44,13 @@ public class LoginUserPageObject extends BasePage {
 		inputToPasswordTextbox(password);
 		 return clickToLoginButton();
 	}
+	public String getElementValidationEmailMessage(WebDriver driver) {
+	waitForElementVisible(driver, LoginPageUI.VALIDATION_MESSAGE);
+	return  getElementText(driver, LoginPageUI.VALIDATION_MESSAGE);
+	}
+	
+	public String getErrorMessageNotRegister() {
+		waitForElementVisible(driver, LoginPageUI.ERROR_MESSAGE_UNSUCCESSFULL_LOGIN);
+		return getElementText(driver, LoginPageUI.ERROR_MESSAGE_UNSUCCESSFULL_LOGIN);
+	}
 }

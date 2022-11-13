@@ -1,6 +1,7 @@
 package common;
 
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 import org.openqa.selenium.Alert;
@@ -20,11 +21,10 @@ import pageObject.user.nopcommerce.BackUserObject;
 import pageObject.user.nopcommerce.ChangePasswordUserObject;
 import pageObject.user.nopcommerce.DownloadUserObject;
 import pageObject.user.nopcommerce.OrderUserObject;
-import pageObject.user.nopcommerce.ReviewUserObject;
+import pageObject.user.nopcommerce.ReviewCustomerObject;
+import pageObject.user.nopcommerce.ReviewProductObject;
 import pageObject.user.nopcommerce.RewardUserObject;
-import userPageUI.AddressPageUI;
 import userPageUI.BaseUI;
-import userPageUI.OrderUI;
 
 public class BasePage {
 
@@ -147,9 +147,16 @@ public class BasePage {
 	public WebElement getWebElement(WebDriver driver, String xpath) {
 		return driver.findElement(By.xpath(xpath));
 	}
+	public WebElement getWebElement(WebDriver driver, String locatorType,String...values) {
+		return driver.findElement(By.xpath(getDynamicXpath(locatorType, values)));
+	}
 
 	public void clickToElement(WebDriver driver, String xpath) {
 		getWebElement(driver, xpath).click();
+
+	}
+	public void clickToElement(WebDriver driver, String locatorType, String...values) {
+		getWebElement(driver, getDynamicXpath(locatorType, values)).click();
 
 	}
 
@@ -159,14 +166,31 @@ public class BasePage {
 		webElement.clear();
 		webElement.sendKeys(textValue);
 	}
+	
+	public void sendKeyToElement(WebDriver driver, String locatorType, String textValue,String... values) {
+		WebElement webElement = getWebElement(driver, getDynamicXpath(locatorType, values));
+		webElement.clear();
+		webElement.sendKeys(textValue);
+	}
 
 	public String getElementText(WebDriver driver, String xpath) {
 		return getWebElement(driver, xpath).getText();
 	}
+	public String getElementValue(WebDriver driver, String xpath) {
+		return getWebElement(driver, xpath).getAttribute("value");
+	}
+	public String getElementText(WebDriver driver, String locatorType,String... values) {
+		return getWebElement(driver, getDynamicXpath(locatorType, values)).getText();
+	}
 
-	public void selectItemInDefaultDropdown(WebDriver driver, String xpath, String textItem) {
+	public void selectItemInDefaultDropdownByValue(WebDriver driver, String xpath, String textItem) {
 		Select select = new Select(getWebElement(driver, xpath));
 		select.selectByValue(textItem);
+	}
+	
+	public void selectItemInDefaultDropdownByText(WebDriver driver, String xpath, String textItem) {
+		Select select = new Select(getWebElement(driver, xpath));
+		select.selectByVisibleText(textItem);
 	}
 
 	public String getFirstSelectedItemDefaultDropDown(WebDriver driver, String xpath) {
@@ -278,10 +302,21 @@ public class BasePage {
 		explicitWait.until(ExpectedConditions.invisibilityOfAllElements(getListWebElement(driver, xpath)));
 
 	}
+	private String getDynamicXpath(String dynamicLocator, String... params) {
+		 return String.format(dynamicLocator, (Object[])params);
+	//	System.out.println("Click to  : " + locator);
+	}
 
-	public void waitForElementClickable(WebDriver driver, String xpath) {
+	public void waitForElementClickable(WebDriver driver, String locatorType) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, 30);
-		explicitWait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+		explicitWait.until(ExpectedConditions.elementToBeClickable(By.xpath(locatorType)));
+
+	}
+
+
+	public void waitForElementClickable(WebDriver driver,String locatorType, String... values) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, 30);
+		explicitWait.until(ExpectedConditions.elementToBeClickable(By.xpath(getDynamicXpath(locatorType,values))));
 
 	}
 
@@ -401,12 +436,17 @@ public class BasePage {
 		return GenerateObject.getOrderPage(driver);
 	}
 
-	public ReviewUserObject getReviewPage(WebDriver driver) {
+	public ReviewProductObject getReviewPage(WebDriver driver) {
 		waitForElementClickable(driver, BaseUI.CUSTOMER_REVIEW_LINK);
 		clickToElement(driver, BaseUI.CUSTOMER_REVIEW_LINK);
 		return GenerateObject.getReviewPage(driver);
 	}
 
+	public ReviewCustomerObject getReviewCustomerPage(WebDriver driver) {
+		waitForElementClickable(driver, BaseUI.CUSTOMER_REVIEW_LINK);
+		clickToElement(driver, BaseUI.CUSTOMER_REVIEW_LINK);
+		return GenerateObject.getReviewCustomerPage(driver);
+	}
 	public BackUserObject getBackPage(WebDriver driver) {
 		waitForElementClickable(driver, BaseUI.BACK_LINK);
 		clickToElement(driver, BaseUI.BACK_LINK);
@@ -420,8 +460,8 @@ public class BasePage {
 	}
 
 	public ChangePasswordUserObject getPasswordObject(WebDriver driver) {
-		waitForElementClickable(driver, BaseUI.CUSTOMER_REVIEW_LINK);
-		clickToElement(driver, BaseUI.CUSTOMER_REVIEW_LINK);
+		waitForElementClickable(driver, BaseUI.CHANGE_PASS_LINK);
+		clickToElement(driver, BaseUI.CHANGE_PASS_LINK);
 		return GenerateObject.getChangePasswordPage(driver);
 	}
 
@@ -430,7 +470,24 @@ public class BasePage {
 		clickToElement(driver, BaseUI.REWARD_LINK);
 		return GenerateObject.getRewardPage(driver);
 	}
-
+	public BasePage getPageSwitchObject(WebDriver driver,  String pageName) {
+		waitForElementClickable(driver, BaseUI.DYNAMIC_LINK,pageName);
+		clickToElement(driver,  BaseUI.DYNAMIC_LINK,pageName);
+		switch (pageName) {
+		case "Change password":
+			 return GenerateObject.getChangePasswordPage(driver);
+		case "Orders":
+			 return GenerateObject.getOrderPage(driver);
+		case "Addresses":
+			 return GenerateObject.getAddressPage(driver);
+		case "Back in stock subscriptions":
+			 return GenerateObject.getBackPage(driver);
+		default:
+			throw new RuntimeException("Pagename invalid");
+		}
+		 
+	}
+	
 	
 	}
 

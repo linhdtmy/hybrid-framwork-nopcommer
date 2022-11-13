@@ -22,7 +22,7 @@ import pageObject.user.nopcommerce.HomeUserPageObject;
 import pageObject.user.nopcommerce.LoginUserPageObject;
 import pageObject.user.nopcommerce.OrderUserObject;
 import pageObject.user.nopcommerce.RegisterPageUserObject;
-import pageObject.user.nopcommerce.ReviewUserObject;
+import pageObject.user.nopcommerce.ReviewProductObject;
 import pageObject.user.nopcommerce.RewardUserObject;
 
 public class Test_07_Switch_Page  extends BaseTest{
@@ -40,7 +40,7 @@ public class Test_07_Switch_Page  extends BaseTest{
 	private AddressUserObject addressObject;
 	private ChangePasswordUserObject changePasswordObject;
 	private OrderUserObject orderObject;
-	private ReviewUserObject reviewObject;
+	private ReviewProductObject reviewObject;
 	private RewardUserObject rewardObject;
 	private BackUserObject backObject;
 	private DownloadUserObject downloadObject;
@@ -111,11 +111,7 @@ public class Test_07_Switch_Page  extends BaseTest{
 		downloadObject = backObject.getDownloadPage(driver);
 	}
 
-	@Test
-	public void TC_05_Switch_Role() {
-
-	}
-
+	
 	@AfterClass
 	public void afterClass() {
 		driver.quit();

@@ -2,18 +2,22 @@ package common;
 
 import org.openqa.selenium.WebDriver;
 
+import com.nopcommerce.data.User_Data.MyAccount;
+
 import pageObject.admin.nopcommerce.DashboardPageObject;
 import pageObject.admin.nopcommerce.LoginAdminPageObject;
 import pageObject.user.nopcommerce.AddressUserObject;
 import pageObject.user.nopcommerce.BackUserObject;
 import pageObject.user.nopcommerce.ChangePasswordUserObject;
 import pageObject.user.nopcommerce.CustomerInformUserObject;
+import pageObject.user.nopcommerce.DetailProductObject;
 import pageObject.user.nopcommerce.DownloadUserObject;
 import pageObject.user.nopcommerce.HomeUserPageObject;
 import pageObject.user.nopcommerce.LoginUserPageObject;
 import pageObject.user.nopcommerce.OrderUserObject;
 import pageObject.user.nopcommerce.RegisterPageUserObject;
-import pageObject.user.nopcommerce.ReviewUserObject;
+import pageObject.user.nopcommerce.ReviewCustomerObject;
+import pageObject.user.nopcommerce.ReviewProductObject;
 import pageObject.user.nopcommerce.RewardUserObject;
 
 public class GenerateObject {
@@ -45,10 +49,19 @@ public class GenerateObject {
 		return new ChangePasswordUserObject(driver);
 	}
 
-	public static ReviewUserObject getReviewPage(WebDriver driver) {
-		return new ReviewUserObject(driver);
+	public static ReviewProductObject getReviewPage(WebDriver driver) {
+		return new ReviewProductObject(driver);
 	}
-
+	
+	public static ReviewCustomerObject getReviewCustomerPage(WebDriver driver) {
+		return new ReviewCustomerObject(driver);
+	}
+	public static DetailProductObject getDetailPage(WebDriver driver) {
+		return new DetailProductObject(driver);
+	}
+	public static ReviewCustomerObject getCustomerObject(WebDriver driver) {
+		return new ReviewCustomerObject(driver);
+	}
 	public static RewardUserObject getRewardPage(WebDriver driver) {
 		return new RewardUserObject(driver);
 	}
@@ -68,4 +81,5 @@ public class GenerateObject {
 	public static DashboardPageObject getDashboardPageObject(WebDriver driver) {
 		return new DashboardPageObject(driver);
 	}
+	
 }

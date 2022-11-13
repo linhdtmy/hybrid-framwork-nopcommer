@@ -4,7 +4,9 @@ import org.openqa.selenium.WebDriver;
 
 import common.BasePage;
 import common.GenerateObject;
+import userPageUI.DetailProductUI;
 import userPageUI.HomePageUI;
+import userPageUI.LoginPageUI;
 
 public class HomeUserPageObject extends BasePage{
 	private WebDriver driver;
@@ -28,6 +30,15 @@ public class HomeUserPageObject extends BasePage{
 		waitForElementClickable(driver, HomePageUI.MY_ACCOUNT_TEXT);
 		clickToElement(driver, HomePageUI.MY_ACCOUNT_TEXT);
 		return GenerateObject.getMyAccountPage(driver);
+	}
+	public boolean isLogoutDisplay() {
+		waitForElementVisible(driver, HomePageUI.LOGOUT_LINK);
+		return isElementDisplay(driver, HomePageUI.LOGOUT_LINK);
+	}
+	public DetailProductObject clickToDetailLink() {
+		waitForElementClickable(driver, HomePageUI.MACBOOK_LINK);
+		clickToElement(driver,  HomePageUI.MACBOOK_LINK);
+		return GenerateObject.getDetailPage(driver);
 	}
 
 	

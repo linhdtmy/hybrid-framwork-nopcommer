@@ -23,7 +23,7 @@ import pageObject.user.nopcommerce.DownloadUserObject;
 import pageObject.user.nopcommerce.HomeUserPageObject;
 import pageObject.user.nopcommerce.LoginUserPageObject;
 import pageObject.user.nopcommerce.OrderUserObject;
-import pageObject.user.nopcommerce.ReviewUserObject;
+import pageObject.user.nopcommerce.ReviewProductObject;
 import pageObject.user.nopcommerce.RewardUserObject;
 
 public class Test_08_Switch_Role extends BaseTest {
@@ -41,7 +41,7 @@ public class Test_08_Switch_Role extends BaseTest {
 	private AddressUserObject addressUserObject;
 	private ChangePasswordUserObject changePasswordUserObject;
 	private OrderUserObject orderUserObject;
-	private ReviewUserObject reviewUserObject;
+	private ReviewProductObject reviewUserObject;
 	private RewardUserObject rewardUserObject;
 	private BackUserObject backUserObject;
 	private DownloadUserObject downloadUserObject;

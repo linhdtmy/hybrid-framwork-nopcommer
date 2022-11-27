@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Nopcommerce">
+  <parameter name="url" value="https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/"/>
   <test name="Run on Chrome">
   <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.nopcommerce.practice.Test_03_MyAccount"/>
+      <class name="com.jquery.Test_01_Paging"/>
     </classes>
   </test> <!-- Test -->
   

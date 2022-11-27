@@ -6,6 +6,7 @@ import com.nopcommerce.data.User_Data.MyAccount;
 
 import pageObject.admin.nopcommerce.DashboardPageObject;
 import pageObject.admin.nopcommerce.LoginAdminPageObject;
+import pageObject.jquery.HomePageJqueryObject;
 import pageObject.user.nopcommerce.AddressUserObject;
 import pageObject.user.nopcommerce.BackUserObject;
 import pageObject.user.nopcommerce.ChangePasswordUserObject;
@@ -14,11 +15,13 @@ import pageObject.user.nopcommerce.DetailProductObject;
 import pageObject.user.nopcommerce.DownloadUserObject;
 import pageObject.user.nopcommerce.HomeUserPageObject;
 import pageObject.user.nopcommerce.LoginUserPageObject;
+import pageObject.user.nopcommerce.NoteBookPageObject;
 import pageObject.user.nopcommerce.OrderUserObject;
 import pageObject.user.nopcommerce.RegisterPageUserObject;
 import pageObject.user.nopcommerce.ReviewCustomerObject;
 import pageObject.user.nopcommerce.ReviewProductObject;
 import pageObject.user.nopcommerce.RewardUserObject;
+import pageObject.user.nopcommerce.SearchUserPageObject;
 
 public class GenerateObject {
 	public static HomeUserPageObject getHomePage(WebDriver driver) {
@@ -77,9 +80,20 @@ public class GenerateObject {
 	public static LoginAdminPageObject getLoginAdminPageObject(WebDriver driver) {
 		return new LoginAdminPageObject(driver);
 	}
+	public static SearchUserPageObject getSearchUserPageObject(WebDriver driver) {
+		return new SearchUserPageObject(driver);
+	}
+
 
 	public static DashboardPageObject getDashboardPageObject(WebDriver driver) {
 		return new DashboardPageObject(driver);
+	}
+	
+	public static NoteBookPageObject getNoteBookPageObject(WebDriver driver) {
+		return new NoteBookPageObject(driver);
+	}
+	public static HomePageJqueryObject getHomePageObject(WebDriver driver) {
+		return new HomePageJqueryObject(driver);
 	}
 	
 }

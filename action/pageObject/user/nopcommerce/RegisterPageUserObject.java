@@ -3,6 +3,7 @@ package pageObject.user.nopcommerce;
 import org.openqa.selenium.WebDriver;
 
 import common.BasePage;
+import common.GenerateObject;
 import userPageUI.HomePageUI;
 import userPageUI.RegisterPageUI;
 
@@ -79,10 +80,10 @@ public class RegisterPageUserObject extends BasePage {
 		return getElementText(driver, RegisterPageUI.REGISTER_SUCCESS_MESSAGE);
 	}
 
-	public void clickToLogoutButton() {
+	public HomeUserPageObject clickToLogoutButton() {
 		waitForElementClickable(driver, RegisterPageUI.LOG_OUT_LINK);
 		clickToElement(driver, RegisterPageUI.LOG_OUT_LINK);
-
+		return GenerateObject.getHomePage(driver);
 	}
 
 	public String getExistsEmailErrorMessage() {

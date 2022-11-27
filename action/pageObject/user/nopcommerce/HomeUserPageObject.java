@@ -40,6 +40,23 @@ public class HomeUserPageObject extends BasePage{
 		clickToElement(driver,  HomePageUI.MACBOOK_LINK);
 		return GenerateObject.getDetailPage(driver);
 	}
+	public SearchUserPageObject clickToSearchLink() {
+		waitForElementClickable(driver, HomePageUI.SEARCH_LINK);
+		clickToElement(driver, HomePageUI.SEARCH_LINK);
+		return GenerateObject.getSearchUserPageObject(driver);
+		
+		
+	}
+	public void hoverToComputerLink() {
+		waitForElementClickable(driver, HomePageUI.COMPUTER_LINK);
+		hoverMouseToElement(driver, HomePageUI.COMPUTER_LINK);
+		
+	}
+	public NoteBookPageObject clickToNoteBookLink() {
+		waitForElementClickable(driver, HomePageUI.NOTE_BOOK_LINK);
+		clickToElement(driver, HomePageUI.NOTE_BOOK_LINK);
+		return GenerateObject.getNoteBookPageObject(driver);
+	}
 
 	
  

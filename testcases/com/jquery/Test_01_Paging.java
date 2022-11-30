@@ -1,7 +1,6 @@
 package com.jquery;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -11,21 +10,15 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import common.BasePage;
 import common.BaseTest;
 import common.GenerateObject;
 import pageObject.jquery.HomePageJqueryObject;
-import pageObject.user.nopcommerce.HomeUserPageObject;
-import pageObject.user.nopcommerce.LoginUserPageObject;
-import pageObject.user.nopcommerce.RegisterPageUserObject;
 
 public class Test_01_Paging extends BaseTest {
 
 	private WebDriver driver;
 	private HomePageJqueryObject homePageJqueryObject;
-	String inValidEmail = "jsfjdf";
-	String emailNotRegister = "linh@gmail.com";
-	String emailRegistetedEmail = "abc@gmail.com";
+	 
 
 	@Parameters({ "browser", "url" })
 	@BeforeClass

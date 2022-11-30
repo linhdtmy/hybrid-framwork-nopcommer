@@ -7,7 +7,7 @@ public class GlobalConstants {
 	public static final String PORTAL_PAGE = "https://demo.nopcommerce.com/";
 
 	public static final String PROJECT_PATH = System.getProperty("user.dir");
-	public static final String UPLOAD_FILE = PROJECT_PATH + File.separator + "uploadFile";
+	public static final String UPLOAD_FILE = PROJECT_PATH + File.separator + "uploadFile"+File.separator;
 	public static final String DOWNLOAD_FILE = PROJECT_PATH + File.separator + "downloadFile";
 
 	public static final String DB_DEV = "";

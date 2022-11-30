@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Nopcommerce">
+  <parameter name="url" value="http://live.techpanda.org/index.php"/>
+  <test name="Run on Chrome">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.techpanda.Test_01_DataGrid"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   
+</suite> <!-- Suite -->

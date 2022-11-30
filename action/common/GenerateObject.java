@@ -2,11 +2,14 @@ package common;
 
 import org.openqa.selenium.WebDriver;
 
-import com.nopcommerce.data.User_Data.MyAccount;
-
 import pageObject.admin.nopcommerce.DashboardPageObject;
 import pageObject.admin.nopcommerce.LoginAdminPageObject;
 import pageObject.jquery.HomePageJqueryObject;
+import pageObject.jqueryUploadFile.HomePageJqueryUploadObject;
+import pageObject.techpanda.HomePageTechpandaAdminObject;
+import pageObject.techpanda.HomePageTechpandaUserObject;
+import pageObject.techpanda.LoginTechPandaAdminObject;
+import pageObject.techpanda.LoginTechPandaUserObject;
 import pageObject.user.nopcommerce.AddressUserObject;
 import pageObject.user.nopcommerce.BackUserObject;
 import pageObject.user.nopcommerce.ChangePasswordUserObject;
@@ -55,16 +58,19 @@ public class GenerateObject {
 	public static ReviewProductObject getReviewPage(WebDriver driver) {
 		return new ReviewProductObject(driver);
 	}
-	
+
 	public static ReviewCustomerObject getReviewCustomerPage(WebDriver driver) {
 		return new ReviewCustomerObject(driver);
 	}
+
 	public static DetailProductObject getDetailPage(WebDriver driver) {
 		return new DetailProductObject(driver);
 	}
+
 	public static ReviewCustomerObject getCustomerObject(WebDriver driver) {
 		return new ReviewCustomerObject(driver);
 	}
+
 	public static RewardUserObject getRewardPage(WebDriver driver) {
 		return new RewardUserObject(driver);
 	}
@@ -80,20 +86,40 @@ public class GenerateObject {
 	public static LoginAdminPageObject getLoginAdminPageObject(WebDriver driver) {
 		return new LoginAdminPageObject(driver);
 	}
+
 	public static SearchUserPageObject getSearchUserPageObject(WebDriver driver) {
 		return new SearchUserPageObject(driver);
 	}
 
-
 	public static DashboardPageObject getDashboardPageObject(WebDriver driver) {
 		return new DashboardPageObject(driver);
 	}
-	
+
 	public static NoteBookPageObject getNoteBookPageObject(WebDriver driver) {
 		return new NoteBookPageObject(driver);
 	}
+
 	public static HomePageJqueryObject getHomePageObject(WebDriver driver) {
 		return new HomePageJqueryObject(driver);
 	}
-	
+
+	public static LoginTechPandaAdminObject getLoginTechPandaObject(WebDriver driver) {
+		return new LoginTechPandaAdminObject(driver);
+	}
+
+	public static HomePageTechpandaAdminObject getHomePageTechpandaObject(WebDriver driver) {
+		return new HomePageTechpandaAdminObject(driver);
+	}
+
+	public static HomePageJqueryUploadObject getHomePageJqueryUploadObject(WebDriver driver) {
+		return new HomePageJqueryUploadObject(driver);
+	}
+
+	public static HomePageTechpandaUserObject getHomePageTechpandaUserObject(WebDriver driver) {
+		return new HomePageTechpandaUserObject(driver);
+	}
+
+	public static LoginTechPandaUserObject getLoginTechPandaUserObject(WebDriver driver) {
+		return new LoginTechPandaUserObject(driver);
+	}
 }

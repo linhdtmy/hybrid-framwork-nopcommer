@@ -17,6 +17,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import jqueryUploadFileUI.BaseJqueryUploadUI;
+import jqueryUploadFileUI.HomeJqueryUploadUI;
 import pageObject.user.nopcommerce.AddressUserObject;
 import pageObject.user.nopcommerce.BackUserObject;
 import pageObject.user.nopcommerce.ChangePasswordUserObject;
@@ -157,11 +159,22 @@ public class BasePage {
 		getWebElement(driver, xpath).click();
 
 	}
-
 	public void clickToElement(WebDriver driver, String locatorType, String... values) {
 		getWebElement(driver, getDynamicXpath(locatorType, values)).click();
 
 	}
+	public boolean isLoadFileSuccess(WebDriver driver, String xpath) {
+		WebElement i = getWebElement(driver, xpath);
+		return (Boolean) ((JavascriptExecutor) driver).executeScript("return arguments[0].complete " + "&& typeof arguments[0].naturalWidth != \"undefined\" " + "&& arguments[0].naturalWidth > 0", i);
+
+	}
+	public boolean isLoadFileSuccess(WebDriver driver, String locatorType,String... values) {
+		WebElement i = getWebElement(driver, getDynamicXpath(locatorType, values));
+		return (Boolean) ((JavascriptExecutor) driver).executeScript("return arguments[0].complete " + "&& typeof arguments[0].naturalWidth != \"undefined\" " + "&& arguments[0].naturalWidth > 0", i);
+
+	}
+
+	
 
 	// Từ 2 lần dùng trở lên =>Dùng biến để ko bị lặp lại
 	public void sendKeyToElement(WebDriver driver, String xpath, String textValue) {
@@ -265,7 +278,8 @@ public class BasePage {
 
 		}
 	}
-	public void checkToDefaultCheckboxRadio(WebDriver driver, String locatorType,String... values) {
+
+	public void checkToDefaultCheckboxRadio(WebDriver driver, String locatorType, String... values) {
 		WebElement element = getWebElement(driver, getDynamicXpath(locatorType, values));
 		if (!element.isSelected()) {
 			element.click();
@@ -427,6 +441,21 @@ public class BasePage {
 	public void removeAttributeInDOM(WebDriver driver, String locator, String attributeRemove) {
 		jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].removeAttribute('" + attributeRemove + "');", getWebElement(driver, locator));
+	}
+
+	public void uploadMultipleFiles(WebDriver driver, String... fileName) {
+		// lấy đường dẫn thư mục upload
+		String filePath = GlobalConstants.UPLOAD_FILE;
+		// tạo biến để lưu danh sách tất cả các fie
+		String fullFileName = "";
+		for (String file : fileName) {
+			fullFileName = fullFileName + filePath + file + "\n";
+
+		}
+		fullFileName = fullFileName.trim();
+		System.out.println(BaseJqueryUploadUI.ADD_FILE);
+		getWebElement(driver, BaseJqueryUploadUI.ADD_FILE).sendKeys(fullFileName);
+		sleepInSecond(5);
 	}
 
 	public boolean areJQueryAndJSLoadedSuccess(WebDriver driver) {

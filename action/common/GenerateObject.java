@@ -9,7 +9,7 @@ import pageObject.jqueryUploadFile.HomePageJqueryUploadObject;
 import pageObject.techpanda.HomePageTechpandaAdminObject;
 import pageObject.techpanda.HomePageTechpandaUserObject;
 import pageObject.techpanda.LoginTechPandaAdminObject;
-import pageObject.techpanda.LoginTechPandaUserObject;
+import pageObject.techpanda.RegisterTechPandaUserObject;
 import pageObject.user.nopcommerce.AddressUserObject;
 import pageObject.user.nopcommerce.BackUserObject;
 import pageObject.user.nopcommerce.ChangePasswordUserObject;
@@ -119,7 +119,7 @@ public class GenerateObject {
 		return new HomePageTechpandaUserObject(driver);
 	}
 
-	public static LoginTechPandaUserObject getLoginTechPandaUserObject(WebDriver driver) {
-		return new LoginTechPandaUserObject(driver);
+	public static RegisterTechPandaUserObject getRegisterTechPandaUserObject(WebDriver driver) {
+		return new RegisterTechPandaUserObject(driver);
 	}
 }

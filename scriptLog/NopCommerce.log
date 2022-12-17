@@ -1,0 +1,42 @@
+[2022-12-09 05:56:20,265] Register Step 01: Init home page
+[2022-12-09 05:56:21,431] Register Step 02: Enter firstname abc
+[2022-12-09 05:56:21,584] Register Step 03: Enter lastname efgh 
+[2022-12-09 05:56:21,716] Register Step 04: Enter email  abc123-1554858909@gmail.com
+[2022-12-09 05:56:21,869] Register Step 05: Enter password Test@12345
+[2022-12-09 05:56:22,015] Register Step 06: Enter password confirm Test@12345
+[2022-12-09 05:56:22,167] Register Step 07: Click Register button 
+[2022-12-09 05:56:23,048] Register Step 08: Verify message  register successed 
+[2022-12-09 05:56:23,117] Register Step 09: Click to login button
+[2022-12-10 08:16:01,327] Register Step 01: Init home page
+[2022-12-10 08:16:02,576] Register Step 02: Enter firstname abc
+[2022-12-10 08:16:02,741] Register Step 03: Enter lastname efgh 
+[2022-12-10 08:16:02,884] Register Step 04: Enter email  abc123-2047966311@gmail.com
+[2022-12-10 08:16:03,060] Register Step 05: Enter password Test@12345
+[2022-12-10 08:16:03,214] Register Step 06: Enter password confirm Test@12345
+[2022-12-10 08:16:03,365] Register Step 07: Click Register button 
+[2022-12-10 08:16:04,289] Register Step 08: Verify message  register successed 
+[2022-12-10 08:16:04,353] Register Step 09: Click to login button
+[2022-12-14 21:56:46,758] Register Step 01: Init home page
+[2022-12-14 21:56:47,924] Register Step 02: Enter firstname abc
+[2022-12-14 21:56:48,072] Register Step 03: Enter lastname efgh 
+[2022-12-14 21:56:48,206] Register Step 04: Enter email  abc1231897725384@gmail.com
+[2022-12-14 21:56:48,380] Register Step 05: Enter password Test@12345
+[2022-12-14 21:56:48,519] Register Step 06: Enter password confirm Test@12345
+[2022-12-14 21:56:48,660] Register Step 07: Click Register button 
+[2022-12-14 21:56:49,557] Register Step 08: Verify message  register successed 
+[2022-12-16 07:40:43,525] Register Step 01: Init home page
+[2022-12-16 07:40:45,216] Register Step 02: Enter firstname abc
+[2022-12-16 07:40:45,435] Register Step 03: Enter lastname efgh 
+[2022-12-16 07:40:45,687] Register Step 04: Enter email  abc1231307856080@gmail.com
+[2022-12-16 07:40:45,918] Register Step 05: Enter password Test@12345
+[2022-12-16 07:40:46,156] Register Step 06: Enter password confirm Test@12345
+[2022-12-16 07:40:46,390] Register Step 07: Click Register button 
+[2022-12-16 07:40:47,711] Register Step 08: Verify message  register successed 
+[2022-12-16 07:47:22,060] Register Step 01: Init home page
+[2022-12-16 07:47:23,458] Register Step 02: Enter firstname abc
+[2022-12-16 07:47:23,643] Register Step 03: Enter lastname efgh 
+[2022-12-16 07:47:23,884] Register Step 04: Enter email  abc123983926957@gmail.com
+[2022-12-16 07:47:24,120] Register Step 05: Enter password Test@12345
+[2022-12-16 07:47:24,336] Register Step 06: Enter password confirm Test@12345
+[2022-12-16 07:47:24,547] Register Step 07: Click Register button 
+[2022-12-16 07:47:25,491] Register Step 08: Verify message  register successed 

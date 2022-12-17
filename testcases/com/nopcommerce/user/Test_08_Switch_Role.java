@@ -15,38 +15,17 @@ import common.GenerateObject;
 import common.GlobalConstants;
 import pageObject.admin.nopcommerce.DashboardPageObject;
 import pageObject.admin.nopcommerce.LoginAdminPageObject;
-import pageObject.user.nopcommerce.AddressUserObject;
-import pageObject.user.nopcommerce.BackUserObject;
-import pageObject.user.nopcommerce.ChangePasswordUserObject;
-import pageObject.user.nopcommerce.CustomerInformUserObject;
-import pageObject.user.nopcommerce.DownloadUserObject;
 import pageObject.user.nopcommerce.HomeUserPageObject;
 import pageObject.user.nopcommerce.LoginUserPageObject;
-import pageObject.user.nopcommerce.OrderUserObject;
-import pageObject.user.nopcommerce.ReviewProductObject;
-import pageObject.user.nopcommerce.RewardUserObject;
 
 public class Test_08_Switch_Role extends BaseTest {
 
 	private WebDriver driver;
-	private String projectPath = System.getProperty("user.dir");
-	private String validEmail = "abc123" + generate_Random() + "@gmail.com";
-	private String emailNotFound = "abc123" + generate_Random() + "@gmail.com";
-	private String invalidEmail = "dddd";
-	private String firstName = "abc", lastName = "efgh ", password = "Test@12345";
-	private String incorrectPassword = "123";
 	private HomeUserPageObject homePageUserObject;
 	private LoginUserPageObject loginPageUserObject;
-	private CustomerInformUserObject customerInformUserObject;
-	private AddressUserObject addressUserObject;
-	private ChangePasswordUserObject changePasswordUserObject;
-	private OrderUserObject orderUserObject;
-	private ReviewProductObject reviewUserObject;
-	private RewardUserObject rewardUserObject;
-	private BackUserObject backUserObject;
-	private DownloadUserObject downloadUserObject;
-	private LoginAdminPageObject loginAdminPageObject ;
-	private DashboardPageObject dashboardPageObject ;
+
+	private LoginAdminPageObject loginAdminPageObject;
+	private DashboardPageObject dashboardPageObject;
 
 	String emailAddress, passwWord;
 
@@ -72,12 +51,12 @@ public class Test_08_Switch_Role extends BaseTest {
 
 	@Test
 	public void TC_02_RoleAdmin() {
-		String email="admin@yourstore.com";
-		String password ="admin";
-	    homePageUserObject.openPageUrl(driver, GlobalConstants.ADMIN_PAGE);
-	    //Sau khi vào trang admin thì sẽ hiển thị màn login
-	    loginAdminPageObject = GenerateObject.getLoginAdminPageObject(driver);
-	    dashboardPageObject= loginAdminPageObject.loginAsAdmin(email, password);
+		String email = "admin@yourstore.com";
+		String password = "admin";
+		homePageUserObject.openPageUrl(driver, GlobalConstants.ADMIN_PAGE);
+		// Sau khi vào trang admin thì sẽ hiển thị màn login
+		loginAdminPageObject = GenerateObject.getLoginAdminPageObject(driver);
+		dashboardPageObject = loginAdminPageObject.loginAsAdmin(email, password);
 		Assert.assertTrue(dashboardPageObject.isDisplayDashboard());
 	}
 

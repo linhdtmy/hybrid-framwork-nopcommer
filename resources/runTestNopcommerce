@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Nopcommerce">
+ 
   <parameter name="browser" value="chrome"/>
   <test name="Run on Chrome">
   <parameter name="browser" value="chrome"/>

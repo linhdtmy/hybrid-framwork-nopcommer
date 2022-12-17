@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="src" path="javaTester"/>
 	<classpathentry kind="src" path="testcases"/>
 	<classpathentry kind="src" path="testdata"/>
@@ -41,7 +41,16 @@
 	<classpathentry kind="lib" path="libWebdriver/jsr305-3.0.2.jar"/>
 	<classpathentry kind="lib" path="libWebdriver/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"/>
 	<classpathentry kind="lib" path="libWebdriver/webdrivermanager-5.0.2.jar"/>
-	<classpathentry kind="lib" path="libWebdriver/jcl-over-slf4j-1.7.30.jar"/>
+	<classpathentry kind="lib" path="log4J/commons-codec-1.11.jar"/>
+	<classpathentry kind="lib" path="log4J/commons-lang3-3.8.1.jar"/>
+	<classpathentry kind="lib" path="log4J/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="log4J/log4j-1.2.16.jar"/>
 	<classpathentry kind="lib" path="libWebdriver/slf4j-api-1.7.30.jar"/>
+	<classpathentry kind="lib" path="libWebdriver/slf4j-simple-1.7.30.jar"/>
+	<classpathentry kind="lib" path="log4J/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="reportNG/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="reportNG/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="reportNG/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="reportNG/velocity-1.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

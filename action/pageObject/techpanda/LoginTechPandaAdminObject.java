@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import common.BasePage;
 import common.GenerateObject;
 import jqueryUI.HomeJqueryUI;
-import techpandaUI.LoginTechPandaUI;
+import techpandaUI.LoginTechPandaAdminUI;
 import userPageUI.LoginPageUI;
 
 public class LoginTechPandaAdminObject extends BasePage {
@@ -21,12 +21,12 @@ public class LoginTechPandaAdminObject extends BasePage {
 
 	public HomePageTechpandaAdminObject loginToPage(String userName, String password) {
 
-		waitForElementClickable(driver, LoginTechPandaUI.USER_NAME);
-		sendKeyToElement(driver, LoginTechPandaUI.USER_NAME, userName);
-		waitForElementClickable(driver, LoginTechPandaUI.PASSWORD);
-		sendKeyToElement(driver, LoginTechPandaUI.PASSWORD, password);
-		waitForElementClickable(driver, LoginTechPandaUI.LOGIN_BUTTON);
-		clickToElement(driver, LoginTechPandaUI.LOGIN_BUTTON);
+		waitForElementClickable(driver, LoginTechPandaAdminUI.USER_NAME);
+		sendKeyToElement(driver, LoginTechPandaAdminUI.USER_NAME, userName);
+		waitForElementClickable(driver, LoginTechPandaAdminUI.PASSWORD);
+		sendKeyToElement(driver, LoginTechPandaAdminUI.PASSWORD, password);
+		waitForElementClickable(driver, LoginTechPandaAdminUI.LOGIN_BUTTON);
+		clickToElement(driver, LoginTechPandaAdminUI.LOGIN_BUTTON);
 		return GenerateObject.getHomePageTechpandaObject(driver);
 	}
 

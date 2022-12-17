@@ -3,6 +3,7 @@ package common;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -159,26 +160,28 @@ public class BasePage {
 		getWebElement(driver, xpath).click();
 
 	}
+
 	public void clickToElement(WebDriver driver, String locatorType, String... values) {
 		getWebElement(driver, getDynamicXpath(locatorType, values)).click();
 
 	}
+
 	public boolean isLoadFileSuccess(WebDriver driver, String xpath) {
 		WebElement i = getWebElement(driver, xpath);
 		return (Boolean) ((JavascriptExecutor) driver).executeScript("return arguments[0].complete " + "&& typeof arguments[0].naturalWidth != \"undefined\" " + "&& arguments[0].naturalWidth > 0", i);
 
 	}
-	public boolean isLoadFileSuccess(WebDriver driver, String locatorType,String... values) {
+
+	public boolean isLoadFileSuccess(WebDriver driver, String locatorType, String... values) {
 		WebElement i = getWebElement(driver, getDynamicXpath(locatorType, values));
 		return (Boolean) ((JavascriptExecutor) driver).executeScript("return arguments[0].complete " + "&& typeof arguments[0].naturalWidth != \"undefined\" " + "&& arguments[0].naturalWidth > 0", i);
 
 	}
 
-	
-
 	// Từ 2 lần dùng trở lên =>Dùng biến để ko bị lặp lại
 	public void sendKeyToElement(WebDriver driver, String xpath, String textValue) {
 		WebElement webElement = getWebElement(driver, xpath);
+
 		webElement.clear();
 		webElement.sendKeys(textValue);
 	}
@@ -565,4 +568,44 @@ public class BasePage {
 
 	}
 
+	public void overrideGlobalTimeout(WebDriver driver, long timeout) {
+		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+
+	}
+
+	int shortTimeout = 5, longTimeout = 30;
+
+	public boolean isElementUnDisplay(WebDriver driver, String locator) {
+		overrideGlobalTimeout(driver, shortTimeout);
+		List<WebElement> elements = getListWebElement(driver, locator);
+		overrideGlobalTimeout(driver, longTimeout);
+		if (elements.size() == 0) {
+			// element ko có trong DOM =>Element không hiển thị
+			return true;
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+			// element có trong DOM nhưng ko hiển thị
+			return true;
+		} else {
+			// element có trong DOM và có hiển thị
+			return false;
+		}
+
+	}
+
+	public boolean isElementUnDisplay(WebDriver driver, String locatorType, String... values) {
+		overrideGlobalTimeout(driver, shortTimeout);
+		List<WebElement> elements = getListWebElement(driver, getDynamicXpath(locatorType, values));
+		overrideGlobalTimeout(driver, longTimeout);
+		if (elements.size() == 0) {
+			// element ko có trong DOM =>Element không hiển thị
+			return true;
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+			// element có trong DOM nhưng ko hiển thị
+			return true;
+		} else {
+			// element có trong DOM và có hiển thị
+			return false;
+		}
+
+	}
 }

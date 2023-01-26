@@ -47,17 +47,7 @@ public class HomeUserPageObject extends BasePage{
 		
 		
 	}
-	public void hoverToComputerLink() {
-		waitForElementClickable(driver, HomePageUI.COMPUTER_LINK);
-		hoverMouseToElement(driver, HomePageUI.COMPUTER_LINK);
-		
-	}
-	public NoteBookPageObject clickToNoteBookLink() {
-		waitForElementClickable(driver, HomePageUI.NOTE_BOOK_LINK);
-		clickToElement(driver, HomePageUI.NOTE_BOOK_LINK);
-		return GenerateObject.getNoteBookPageObject(driver);
-	}
-
+	 
 	
  
 

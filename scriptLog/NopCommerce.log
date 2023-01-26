@@ -40,3 +40,542 @@
 [2022-12-16 07:47:24,336] Register Step 06: Enter password confirm Test@12345
 [2022-12-16 07:47:24,547] Register Step 07: Click Register button 
 [2022-12-16 07:47:25,491] Register Step 08: Verify message  register successed 
+[2023-01-07 00:10:18,132] Register Step 01: Init home page
+[2023-01-07 00:10:19,662] Register Step 02: Enter firstname abc
+[2023-01-07 00:10:19,819] Register Step 03: Enter lastname efgh 
+[2023-01-07 00:10:19,978] Register Step 04: Enter email  abc1231674170525@gmail.com
+[2023-01-07 00:10:20,134] Register Step 05: Enter password Test@12345
+[2023-01-07 00:10:20,279] Register Step 06: Enter password confirm Test@12345
+[2023-01-07 00:10:20,434] Register Step 07: Click Register button 
+[2023-01-07 00:10:21,323] Register Step 08: Verify message  register successed 
+[2023-01-07 00:12:12,507] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-07 00:12:33,693] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-07 00:12:34,013] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-07 00:12:34,207] Pre-condition - Step 04 : Click button Login
+[2023-01-07 00:12:38,446] Step 01 : Click to Post 
+[2023-01-07 00:12:40,477] Step 02 : Click Add new 
+[2023-01-07 00:12:46,485] Step 03 : Enter title post Title -2008722852
+[2023-01-07 00:12:48,857] Step 04 : Enter content post 
+[2023-01-07 00:12:51,343] Step 05 : Click Button Publish  
+[2023-01-07 00:12:53,659] Step 06 : Verify message post published  
+[2023-01-07 00:12:54,460] OS name = windows 11
+[2023-01-07 00:12:54,462] Driver instance name = chromedriver: chrome on windows (ec9d13122ed2eb5939bebf0b1a5d72bb)
+[2023-01-16 22:08:16,874] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-16 22:08:43,239] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-16 22:08:43,508] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-16 22:08:43,687] Pre-condition - Step 04 : Click button Login
+[2023-01-16 22:08:51,160] Step 01 : Click to Post 
+[2023-01-16 22:08:52,711] Step 02 : Click Add new 
+[2023-01-16 22:08:58,807] Step 03 : Enter title post Title 1507582417
+[2023-01-16 22:09:01,159] Step 04 : Enter content post 
+[2023-01-16 22:09:03,719] Step 05 : Click Button Publish  
+[2023-01-16 22:09:06,029] Step 06 : Verify message post published  
+[2023-01-16 22:09:06,774] OS name = windows 11
+[2023-01-16 22:09:06,775] Driver instance name = chromedriver: chrome on windows (a223c93b3a5eedbcd6ec8bdc2c553485)
+[2023-01-22 22:48:12,609] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-22 22:48:36,914] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-22 22:48:37,130] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-22 22:48:37,277] Pre-condition - Step 04 : Click button Login
+[2023-01-22 22:48:52,395] Step 01 : Click to Post 
+[2023-01-22 22:48:53,917] Step 02 : Click Add new 
+[2023-01-22 22:49:00,407] Step 03 : Enter title post Title -1560897076
+[2023-01-22 22:49:02,871] Step 04 : Enter content post 
+[2023-01-22 22:49:05,345] Step 05 : Click Button Publish  
+[2023-01-22 22:49:07,643] Step 06 : Verify message post published  
+[2023-01-22 22:49:08,511] OS name = windows 11
+[2023-01-22 22:49:08,511] Driver instance name = chromedriver: chrome on windows (586a9bce8f7b58c35d819bbec184c48a)
+[2023-01-23 21:41:16,673] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-23 21:41:29,638] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-23 21:41:29,863] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-23 21:41:30,029] Pre-condition - Step 04 : Click button Login
+[2023-01-23 21:41:33,032] Step 01 : Open page  
+[2023-01-23 21:41:33,032] Step 02 : Enter to search textbox  
+[2023-01-23 21:41:33,032] Step 03 : Click to search button 
+[2023-01-23 21:41:33,032] Step 04 : Verify search table  
+[2023-01-23 21:41:33,032] Step 05 : Open user site 
+[2023-01-23 21:41:33,032] Step 06 : Verify post title display at home page  
+[2023-01-23 21:41:33,032] Step 07 : Click to post title   
+[2023-01-23 21:41:33,033] Step 08 : Verify in page detail   
+[2023-01-23 21:41:33,042] OS name = windows 11
+[2023-01-23 21:41:33,042] Driver instance name = chromedriver: chrome on windows (8cf60054ad68afb9dec42f060b266f4c)
+[2023-01-23 21:43:59,369] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-23 21:44:03,869] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-23 21:44:04,080] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-23 21:44:04,228] Pre-condition - Step 04 : Click button Login
+[2023-01-23 21:44:05,978] Step 01 : Click to Post 
+[2023-01-23 21:44:07,259] Step 02 : Click Add new 
+[2023-01-23 21:44:12,743] Step 03 : Enter title post Title 886246158
+[2023-01-23 21:44:15,144] Step 04 : Enter content post 
+[2023-01-23 21:44:17,648] Step 05 : Click Button Publish  
+[2023-01-23 21:44:19,946] Step 06 : Verify message post published  
+[2023-01-23 21:44:20,699] Step 01 : Open page  
+[2023-01-23 21:44:20,700] Step 02 : Enter to search textbox  
+[2023-01-23 21:44:20,700] Step 03 : Click to search button 
+[2023-01-23 21:44:20,700] Step 04 : Verify search table  
+[2023-01-23 21:44:20,700] Step 05 : Open user site 
+[2023-01-23 21:44:20,700] Step 06 : Verify post title display at home page  
+[2023-01-23 21:44:20,700] Step 07 : Click to post title   
+[2023-01-23 21:44:20,700] Step 08 : Verify in page detail   
+[2023-01-23 21:44:20,703] OS name = windows 11
+[2023-01-23 21:44:20,703] Driver instance name = chromedriver: chrome on windows (f49ec7fc86a0ce9a4121d58665c97f51)
+[2023-01-23 22:39:19,586] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-23 22:39:25,290] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-23 22:39:25,488] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-23 22:39:25,633] Pre-condition - Step 04 : Click button Login
+[2023-01-23 22:39:31,067] Step 01 : Click to Post 
+[2023-01-23 22:39:32,539] Step 02 : Click Add new 
+[2023-01-23 22:39:34,551] Step 03 : Enter title post Title 2138528650
+[2023-01-23 22:39:36,941] Step 04 : Enter content post 
+[2023-01-23 22:39:39,406] Step 05 : Click Button Publish  
+[2023-01-23 22:39:41,701] Step 06 : Verify message post published  
+[2023-01-23 22:39:42,491] Step 01 : Open page  
+[2023-01-23 22:39:42,635] Step 02 : Enter to search textbox  
+[2023-01-23 22:40:12,868] OS name = windows 11
+[2023-01-23 22:40:12,868] Driver instance name = chromedriver: chrome on windows (8edb716fd4b972b9d896046fbf578013)
+[2023-01-23 22:42:14,407] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-23 22:42:19,238] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-23 22:42:19,417] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-23 22:42:19,579] Pre-condition - Step 04 : Click button Login
+[2023-01-23 22:42:21,115] Step 01 : Click to Post 
+[2023-01-23 22:42:21,999] Step 02 : Click Add new 
+[2023-01-23 22:42:23,879] Step 03 : Enter title post Title -544717168
+[2023-01-23 22:42:26,214] Step 04 : Enter content post 
+[2023-01-23 22:42:28,652] Step 05 : Click Button Publish  
+[2023-01-23 22:42:30,969] Step 06 : Verify message post published  
+[2023-01-23 22:42:31,702] Step 01 : Open page  
+[2023-01-23 22:42:32,630] Step 02 : Enter to search textbox  
+[2023-01-23 22:42:32,861] Step 03 : Click to search button 
+[2023-01-23 22:42:34,207] Step 04 : Verify search table  
+[2023-01-23 22:43:04,518] OS name = windows 11
+[2023-01-23 22:43:04,518] Driver instance name = chromedriver: chrome on windows (5c337857f7b79f4d2eee4ccd6d150028)
+[2023-01-23 22:45:22,277] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-23 22:45:25,943] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-23 22:45:26,109] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-23 22:45:26,282] Pre-condition - Step 04 : Click button Login
+[2023-01-23 22:45:27,832] Step 01 : Click to Post 
+[2023-01-23 22:45:28,694] Step 02 : Click Add new 
+[2023-01-23 22:45:30,542] Step 03 : Enter title post Title-1161027142
+[2023-01-23 22:45:32,911] Step 04 : Enter content post 
+[2023-01-23 22:45:35,363] Step 05 : Click Button Publish  
+[2023-01-23 22:45:37,658] Step 06 : Verify message post published  
+[2023-01-23 22:45:38,400] Step 01 : Open page  
+[2023-01-23 22:45:39,300] Step 02 : Enter to search textbox  
+[2023-01-23 22:45:39,473] Step 03 : Click to search button 
+[2023-01-23 22:45:40,685] Step 04 : Verify search table  
+[2023-01-23 22:46:41,091] OS name = windows 11
+[2023-01-23 22:46:41,091] Driver instance name = chromedriver: chrome on windows (a12534e8a691c5a201fa2152750836dc)
+[2023-01-23 22:49:34,696] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-23 22:49:38,920] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-23 22:49:39,104] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-23 22:49:39,249] Pre-condition - Step 04 : Click button Login
+[2023-01-23 22:49:42,267] Step 01 : Click to Post 
+[2023-01-23 22:49:43,232] Step 02 : Click Add new 
+[2023-01-23 22:49:45,129] Step 03 : Enter title post Title-288975553
+[2023-01-23 22:49:47,497] Step 04 : Enter content post 
+[2023-01-23 22:49:49,951] Step 05 : Click Button Publish  
+[2023-01-23 22:49:52,285] Step 06 : Verify message post published  
+[2023-01-23 22:49:52,992] Step 01 : Open page  
+[2023-01-23 22:49:53,889] Step 02 : Enter to search textbox  
+[2023-01-23 22:49:54,080] Step 03 : Click to search button 
+[2023-01-23 22:49:55,297] Step 04 : Verify search table  
+[2023-01-23 22:50:55,633] OS name = windows 11
+[2023-01-23 22:50:55,633] Driver instance name = chromedriver: chrome on windows (ffa8635c61802d88630b67db34d33108)
+[2023-01-23 22:59:39,108] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-23 22:59:42,842] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-23 22:59:43,059] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-23 22:59:43,199] Pre-condition - Step 04 : Click button Login
+[2023-01-23 22:59:44,988] Step 01 : Click to Post 
+[2023-01-23 22:59:45,954] Step 02 : Click Add new 
+[2023-01-23 22:59:47,930] Step 03 : Enter title post Title-1526133952
+[2023-01-23 22:59:50,313] Step 04 : Enter content post 
+[2023-01-23 22:59:52,753] Step 05 : Click Button Publish  
+[2023-01-23 22:59:55,093] Step 06 : Verify message post published  
+[2023-01-23 22:59:55,866] Step 01 : Open page  
+[2023-01-23 22:59:56,804] Step 02 : Enter to search textbox  
+[2023-01-23 22:59:56,983] Step 03 : Click to search button 
+[2023-01-23 22:59:58,241] Step 04 : Verify search table  
+[2023-01-23 23:00:28,392] Step 05 : Open user site 
+[2023-01-23 23:00:28,392] Step 06 : Verify post title display at home page  
+[2023-01-23 23:00:28,392] Step 07 : Click to post title   
+[2023-01-23 23:00:28,392] Step 08 : Verify in page detail   
+[2023-01-23 23:00:28,394] OS name = windows 11
+[2023-01-23 23:00:28,394] Driver instance name = chromedriver: chrome on windows (88cc98d5e255822d0bed0ab31326877f)
+[2023-01-23 23:57:36,671] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-23 23:57:43,850] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-23 23:57:44,051] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-23 23:57:44,206] Pre-condition - Step 04 : Click button Login
+[2023-01-23 23:57:57,343] Step 01 : Click to Post 
+[2023-01-23 23:57:58,723] Step 02 : Click Add new 
+[2023-01-23 23:58:04,480] Step 03 : Enter title post Title-1715996903
+[2023-01-23 23:58:06,928] Step 04 : Enter content post 
+[2023-01-23 23:58:09,381] Step 05 : Click Button Publish  
+[2023-01-23 23:58:11,670] Step 06 : Verify message post published  
+[2023-01-23 23:58:12,417] Step 01 : Open page  
+[2023-01-23 23:58:13,594] Step 02 : Enter to search textbox  
+[2023-01-23 23:58:13,793] Step 03 : Click to search button 
+[2023-01-23 23:58:15,082] Step 04 : Verify search table  
+[2023-01-23 23:58:45,227] Step 05 : Open user site 
+[2023-01-23 23:58:45,998] Step 06 : Click to search icon   
+[2023-01-23 23:58:46,141] Step 06 : Send key to search textbox   
+[2023-01-23 23:58:46,287] Step 06 : Enter    
+[2023-01-23 23:58:46,957] Step 06 : Verify post title display at home page  
+[2023-01-23 23:58:47,132] Step 07 : Click to post title   
+[2023-01-23 23:58:47,827] Step 08 : Verify in page detail   
+[2023-01-23 23:58:47,828] OS name = windows 11
+[2023-01-23 23:58:47,828] Driver instance name = chromedriver: chrome on windows (8bfa04abaa9790303e8502bde97400d3)
+[2023-01-24 23:11:25,474] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-24 23:11:32,963] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-24 23:11:33,163] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-24 23:11:33,305] Pre-condition - Step 04 : Click button Login
+[2023-01-24 23:11:39,698] Step 01 : Click to Post 
+[2023-01-24 23:11:41,023] Step 02 : Click Add new 
+[2023-01-24 23:11:43,752] Step 03 : Enter title post Title15363795
+[2023-01-24 23:11:46,148] Step 04 : Enter content post 
+[2023-01-24 23:11:48,592] Step 05 : Click Button Publish  
+[2023-01-24 23:11:50,901] Step 06 : Verify message post published  
+[2023-01-24 23:11:51,757] Step 01 : Open page  
+[2023-01-24 23:11:52,711] Step 02 : Enter to search textbox  
+[2023-01-24 23:11:52,915] Step 03 : Click to search button 
+[2023-01-24 23:11:54,177] Step 04 : Verify search table  
+[2023-01-24 23:12:24,358] Step 05 : Open user site 
+[2023-01-24 23:12:25,065] Step 06 : Click to search icon   
+[2023-01-24 23:12:25,216] Step 06 : Send key to search textbox   
+[2023-01-24 23:12:25,358] Step 06 : Enter    
+[2023-01-24 23:12:26,016] Step 06 : Verify post title display at home page  
+[2023-01-24 23:12:26,150] Step 07 : Click to post title   
+[2023-01-24 23:12:26,811] Step 08 : Verify in page detail   
+[2023-01-24 23:12:26,815] OS name = windows 11
+[2023-01-24 23:12:26,816] Driver instance name = chromedriver: chrome on windows (b13863162fbbc3255b2ded7a8a43e816)
+[2023-01-24 23:25:57,550] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-24 23:26:01,910] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-24 23:26:02,102] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-24 23:26:02,258] Pre-condition - Step 04 : Click button Login
+[2023-01-24 23:26:05,049] Step 01 : Click to Post 
+[2023-01-24 23:26:05,953] Step 02 : Click Add new 
+[2023-01-24 23:26:09,982] Step 03 : Enter title post Title1422872997
+[2023-01-24 23:26:12,354] Step 04 : Enter content post 
+[2023-01-24 23:26:14,781] Step 05 : Click Button Publish  
+[2023-01-24 23:26:17,080] Step 06 : Verify message post published  
+[2023-01-24 23:26:17,777] Step 01 : Open page  
+[2023-01-24 23:26:18,806] Step 02 : Enter to search textbox  
+[2023-01-24 23:26:19,010] Step 03 : Click to search button 
+[2023-01-24 23:26:20,198] Step 04 : Verify search table  
+[2023-01-24 23:26:50,323] Step 05 : Open user site 
+[2023-01-24 23:26:51,045] Step 06 : Click to search icon   
+[2023-01-24 23:26:51,189] Step 06 : Send key to search textbox   
+[2023-01-24 23:26:51,323] Step 06 : Enter    
+[2023-01-24 23:26:52,006] Step 06 : Verify post title display at home page  
+[2023-01-24 23:26:52,272] Step 07 : Click to post title   
+[2023-01-24 23:26:52,912] Step 08 : Verify in page detail   
+[2023-01-24 23:26:52,915] OS name = windows 11
+[2023-01-24 23:26:52,915] Driver instance name = chromedriver: chrome on windows (096e24826dc567e5c0ba252fb0f9c8f5)
+[2023-01-25 09:55:55,847] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-25 09:56:04,154] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-25 09:56:04,369] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-25 09:56:04,518] Pre-condition - Step 04 : Click button Login
+[2023-01-25 09:56:08,243] Step 01 : Click to Post 
+[2023-01-25 09:56:09,554] Step 02 : Click Add new 
+[2023-01-25 09:56:14,759] Step 03 : Enter title post Title1870709461
+[2023-01-25 09:56:17,206] Step 04 : Enter content post 
+[2023-01-25 09:56:19,642] Step 05 : Click Button Publish  
+[2023-01-25 09:56:22,661] Step 06 : Verify message post published  
+[2023-01-25 09:56:24,050] Step 01 : Open page  
+[2023-01-25 09:56:25,010] Step 02 : Enter to search textbox  
+[2023-01-25 09:56:25,230] Step 03 : Click to search button 
+[2023-01-25 09:56:26,489] Step 04 : Verify search table  
+[2023-01-25 09:56:56,640] Step 05 : Open user site 
+[2023-01-25 09:56:57,350] Step 06 : Click to search icon   
+[2023-01-25 09:56:57,476] Step 06 : Send key to search textbox   
+[2023-01-25 09:56:57,608] Step 06 : Enter    
+[2023-01-25 09:56:58,376] Step 06 : Verify post title display at home page  
+[2023-01-25 09:56:58,609] Step 07 : Click to post title   
+[2023-01-25 09:56:59,347] OS name = windows 11
+[2023-01-25 09:56:59,347] Driver instance name = chromedriver: chrome on windows (06b4f79132379449c9911bfc4fb83649)
+[2023-01-25 11:20:19,130] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-25 11:20:37,200] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-25 11:20:37,407] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-25 11:20:37,570] Pre-condition - Step 04 : Click button Login
+[2023-01-25 11:20:39,263] TC_01 - Step 01 : Click to Post 
+[2023-01-25 11:20:40,535] TC_01 - Step 02 : Click Add new 
+[2023-01-25 11:20:42,478] TC_01 - Step 03 : Enter title post Title1423569672
+[2023-01-25 11:20:44,846] TC_01 - Step 04 : Enter content post 
+[2023-01-25 11:20:47,311] TC_01 - Step 05 : Click Button Publish  
+[2023-01-25 11:20:49,615] TC_01 - Step 06 : Verify message post published  
+[2023-01-25 11:20:50,332] TC_02_Search - Step 01 : Open page  
+[2023-01-25 11:20:51,252] TC_02_Search - Step 02 : Enter to search textbox  
+[2023-01-25 11:20:51,452] TC_02_Search - Step 03 : Click to search button 
+[2023-01-25 11:20:52,718] TC_02_Search - Step 04 : Verify search table  
+[2023-01-25 11:21:22,914] TC_02_Search - Step 05 : Open user site 
+[2023-01-25 11:21:23,601] TC_02_Search - Step 06 : Click to search icon   
+[2023-01-25 11:21:23,740] TC_02_Search - Step 07 : Send key to search textbox   
+[2023-01-25 11:21:23,881] TC_02_Search - Step 08 : Enter    
+[2023-01-25 11:21:24,562] TC_02_Search - Step 09 : Verify post title display at home page  
+[2023-01-25 11:21:24,800] TC_03_Edit - Step 01 : Open admin page 
+[2023-01-25 11:21:25,601] TC_03_Edit - Step 02 : Click to post item
+[2023-01-25 11:21:26,427] TC_03_Edit - Step 03 : Click to Edit link 
+[2023-01-25 11:21:31,679] OS name = windows 11
+[2023-01-25 11:21:31,679] Driver instance name = chromedriver: chrome on windows (f4700f34f4919672e7480ca8abfe34ee)
+[2023-01-25 11:25:51,812] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-25 11:25:56,043] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-25 11:25:56,238] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-25 11:25:56,381] Pre-condition - Step 04 : Click button Login
+[2023-01-25 11:25:57,950] TC_01 - Step 01 : Click to Post 
+[2023-01-25 11:25:58,916] TC_01 - Step 02 : Click Add new 
+[2023-01-25 11:26:00,772] TC_01 - Step 03 : Enter title post Title1454347413
+[2023-01-25 11:26:03,120] TC_01 - Step 04 : Enter content post 
+[2023-01-25 11:26:05,538] TC_01 - Step 05 : Click Button Publish  
+[2023-01-25 11:26:07,840] TC_01 - Step 06 : Verify message post published  
+[2023-01-25 11:26:08,592] TC_02_Search - Step 01 : Open page  
+[2023-01-25 11:26:09,463] TC_02_Search - Step 02 : Enter to search textbox  
+[2023-01-25 11:26:09,672] TC_02_Search - Step 03 : Click to search button 
+[2023-01-25 11:26:10,926] TC_02_Search - Step 04 : Verify search table  
+[2023-01-25 11:26:41,134] TC_02_Search - Step 05 : Open user site 
+[2023-01-25 11:26:41,803] TC_02_Search - Step 06 : Click to search icon   
+[2023-01-25 11:26:41,957] TC_02_Search - Step 07 : Send key to search textbox   
+[2023-01-25 11:26:42,091] TC_02_Search - Step 08 : Enter    
+[2023-01-25 11:26:42,736] TC_02_Search - Step 09 : Verify post title display at home page  
+[2023-01-25 11:26:42,986] TC_03_Edit - Step 01 : Open admin page 
+[2023-01-25 11:26:43,727] TC_03_Edit - Step 02 : Click to post item
+[2023-01-25 11:26:44,546] TC_03_Edit - Step 03 : Click to Edit link 
+[2023-01-25 11:26:44,792] TC_03_Edit - Step 01 : Edit title +content 
+[2023-01-25 11:27:15,038] OS name = windows 11
+[2023-01-25 11:27:15,038] Driver instance name = chromedriver: chrome on windows (f8caa558c998eb01f79166e450071a72)
+[2023-01-25 11:27:52,893] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-25 11:27:57,081] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-25 11:27:57,259] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-25 11:27:57,428] Pre-condition - Step 04 : Click button Login
+[2023-01-25 11:27:59,070] TC_01 - Step 01 : Click to Post 
+[2023-01-25 11:28:00,056] TC_01 - Step 02 : Click Add new 
+[2023-01-25 11:28:01,906] TC_01 - Step 03 : Enter title post Title844668838
+[2023-01-25 11:28:04,263] TC_01 - Step 04 : Enter content post 
+[2023-01-25 11:28:06,689] TC_01 - Step 05 : Click Button Publish  
+[2023-01-25 11:28:08,972] TC_01 - Step 06 : Verify message post published  
+[2023-01-25 11:28:09,683] TC_02_Search - Step 01 : Open page  
+[2023-01-25 11:28:10,586] TC_02_Search - Step 02 : Enter to search textbox  
+[2023-01-25 11:28:10,746] TC_02_Search - Step 03 : Click to search button 
+[2023-01-25 11:28:11,995] TC_02_Search - Step 04 : Verify search table  
+[2023-01-25 11:28:42,193] TC_02_Search - Step 05 : Open user site 
+[2023-01-25 11:28:42,858] TC_02_Search - Step 06 : Click to search icon   
+[2023-01-25 11:28:42,992] TC_02_Search - Step 07 : Send key to search textbox   
+[2023-01-25 11:28:43,120] TC_02_Search - Step 08 : Enter    
+[2023-01-25 11:28:43,807] TC_02_Search - Step 09 : Verify post title display at home page  
+[2023-01-25 11:28:44,020] TC_03_Edit - Step 01 : Open admin page 
+[2023-01-25 11:28:44,774] TC_03_Edit - Step 02 : Click to post item
+[2023-01-25 11:28:45,565] TC_03_Edit - Step 03 : Click to Edit link 
+[2023-01-25 11:28:47,551] TC_03_Edit - Step 01 : Edit title +content 
+[2023-01-25 11:28:52,411] TC_03_Edit - Step 01 : Click update button 
+[2023-01-25 11:28:52,547] TC_03_Edit - Step 01 : Verify post update message display 
+[2023-01-25 11:28:53,205]  -------------------------- PASSED -------------------------- 
+[2023-01-25 11:28:53,205] TC_03_Edit - Step 01 : Open list post
+[2023-01-25 11:28:55,048] TC_03_Edit - Step 01 : Verify post update title + content in admin page  
+[2023-01-25 11:28:55,110]  -------------------------- PASSED -------------------------- 
+[2023-01-25 11:28:55,173]  -------------------------- PASSED -------------------------- 
+[2023-01-25 11:28:55,173] TC_03_Edit - Step 01 : Verify post update title + content in user page 
+[2023-01-25 11:28:55,850]  -------------------------- PASSED -------------------------- 
+[2023-01-25 11:29:26,120] OS name = windows 11
+[2023-01-25 11:29:26,121] Driver instance name = chromedriver: chrome on windows (eec70f64bf0c311d8df304ab9131403c)
+[2023-01-25 11:32:24,515] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-25 11:32:28,184] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-25 11:32:28,370] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-25 11:32:28,517] Pre-condition - Step 04 : Click button Login
+[2023-01-25 11:32:30,168] TC_01 - Step 01 : Click to Post 
+[2023-01-25 11:32:31,166] TC_01 - Step 02 : Click Add new 
+[2023-01-25 11:32:32,947] TC_01 - Step 03 : Enter title post Title243975771
+[2023-01-25 11:32:35,387] TC_01 - Step 04 : Enter content post 
+[2023-01-25 11:32:35,655] TC_02_Search - Step 01 : Open page  
+[2023-01-25 11:32:35,778] TC_02_Search - Step 02 : Enter to search textbox  
+[2023-01-25 11:32:35,988] TC_03_Edit - Step 01 : Open admin page 
+[2023-01-25 11:32:36,132] OS name = windows 11
+[2023-01-25 11:32:36,133] Driver instance name = chromedriver: chrome on windows (a93d80e61db08395def600f8364083aa)
+[2023-01-25 11:33:24,167] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-25 11:33:28,216] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-25 11:33:28,383] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-25 11:33:28,544] Pre-condition - Step 04 : Click button Login
+[2023-01-25 11:33:30,088] TC_01 - Step 01 : Click to Post 
+[2023-01-25 11:33:30,951] TC_01 - Step 02 : Click Add new 
+[2023-01-25 11:33:32,684] TC_01 - Step 03 : Enter title post Title-261249992
+[2023-01-25 11:33:33,231] TC_01 - Step 04 : Enter content post 
+[2023-01-25 11:34:03,770] TC_02_Search - Step 01 : Open page  
+[2023-01-25 11:34:03,889] TC_02_Search - Step 02 : Enter to search textbox  
+[2023-01-25 11:34:04,121] TC_03_Edit - Step 01 : Open admin page 
+[2023-01-25 11:34:04,339] OS name = windows 11
+[2023-01-25 11:34:04,339] Driver instance name = chromedriver: chrome on windows (0fe6fa5cacb5de45116dc8ef60a146fd)
+[2023-01-25 11:34:54,553] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-25 11:34:58,865] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-25 11:34:59,029] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-25 11:34:59,192] Pre-condition - Step 04 : Click button Login
+[2023-01-25 11:35:00,750] TC_01 - Step 01 : Click to Post 
+[2023-01-25 11:35:01,649] TC_01 - Step 02 : Click Add new 
+[2023-01-25 11:35:03,496] TC_01 - Step 03 : Enter title post Title-584632632
+[2023-01-25 11:35:04,001] TC_01 - Step 04 : Enter content post 
+[2023-01-25 11:35:04,705] TC_01 - Step 05 : Click Button Publish  
+[2023-01-25 11:35:06,989] TC_01 - Step 06 : Verify message post published  
+[2023-01-25 11:35:07,716] TC_02_Search - Step 01 : Open page  
+[2023-01-25 11:35:08,633] TC_02_Search - Step 02 : Enter to search textbox  
+[2023-01-25 11:35:08,818] TC_02_Search - Step 03 : Click to search button 
+[2023-01-25 11:35:10,132] TC_02_Search - Step 04 : Verify search table  
+[2023-01-25 11:35:40,316] TC_02_Search - Step 05 : Open user site 
+[2023-01-25 11:35:41,018] TC_02_Search - Step 06 : Click to search icon   
+[2023-01-25 11:35:41,170] TC_02_Search - Step 07 : Send key to search textbox   
+[2023-01-25 11:35:41,325] TC_02_Search - Step 08 : Enter    
+[2023-01-25 11:35:41,995] TC_02_Search - Step 09 : Verify post title display at home page  
+[2023-01-25 11:35:42,241] TC_03_Edit - Step 01 : Open admin page 
+[2023-01-25 11:35:43,026] TC_03_Edit - Step 02 : Click to post item
+[2023-01-25 11:35:43,819] TC_03_Edit - Step 03 : Click to Edit link 
+[2023-01-25 11:35:45,831] TC_03_Edit - Step 01 : Edit title +content 
+[2023-01-25 11:35:47,072] TC_03_Edit - Step 01 : Click update button 
+[2023-01-25 11:35:47,195] TC_03_Edit - Step 01 : Verify post update message display 
+[2023-01-25 11:35:47,845]  -------------------------- PASSED -------------------------- 
+[2023-01-25 11:35:47,845] TC_03_Edit - Step 01 : Open list post
+[2023-01-25 11:35:49,075] TC_03_Edit - Step 01 : Verify post update title + content in admin page  
+[2023-01-25 11:35:49,140]  -------------------------- PASSED -------------------------- 
+[2023-01-25 11:35:49,217]  -------------------------- PASSED -------------------------- 
+[2023-01-25 11:35:49,217] TC_03_Edit - Step 01 : Verify post update title + content in user page 
+[2023-01-25 11:35:49,925]  -------------------------- PASSED -------------------------- 
+[2023-01-25 11:36:20,206] OS name = windows 11
+[2023-01-25 11:36:20,206] Driver instance name = chromedriver: chrome on windows (c903707dda1172fe28844c7d8c59c182)
+[2023-01-25 13:06:30,479] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-25 13:06:36,007] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-25 13:06:36,250] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-25 13:06:36,407] Pre-condition - Step 04 : Click button Login
+[2023-01-25 13:06:38,212] TC_01 - Step 01 : Click to Post 
+[2023-01-25 13:06:39,173] TC_01 - Step 02 : Click Add new 
+[2023-01-25 13:06:41,162] TC_01 - Step 03 : Enter title post Title-526256471
+[2023-01-25 13:06:44,639] TC_01 - Step 04 : Enter content post 
+[2023-01-25 13:06:48,149] TC_01 - Step 05 : Click Button Publish  
+[2023-01-25 13:06:50,448] TC_01 - Step 06 : Verify message post published  
+[2023-01-25 13:06:51,159] TC_02_Search - Step 01 : Open page  
+[2023-01-25 13:06:52,124] TC_02_Search - Step 02 : Enter to search textbox  
+[2023-01-25 13:06:52,302] TC_02_Search - Step 03 : Click to search button 
+[2023-01-25 13:06:53,580] TC_02_Search - Step 04 : Verify search table  
+[2023-01-25 13:07:23,709] TC_02_Search - Step 05 : Open user site 
+[2023-01-25 13:07:24,495] TC_02_Search - Step 06 : Click to search icon   
+[2023-01-25 13:07:24,628] TC_02_Search - Step 07 : Send key to search textbox   
+[2023-01-25 13:07:24,761] TC_02_Search - Step 08 : Enter    
+[2023-01-25 13:07:25,420] TC_02_Search - Step 09 : Verify post title display at home page  
+[2023-01-25 13:07:25,631] TC_03_Edit - Step 01 : Open admin page 
+[2023-01-25 13:07:26,385] TC_03_Edit - Step 02 : Click to post item
+[2023-01-25 13:07:27,193] TC_03_Edit - Step 03 : Click to Edit link 
+[2023-01-25 13:07:29,201] TC_03_Edit - Step 01 : Edit title +content 
+[2023-01-25 13:07:36,201] TC_03_Edit - Step 01 : Click update button 
+[2023-01-25 13:07:36,325] TC_03_Edit - Step 01 : Verify post update message display 
+[2023-01-25 13:07:36,976]  -------------------------- PASSED -------------------------- 
+[2023-01-25 13:07:36,976] TC_03_Edit - Step 01 : Open list post
+[2023-01-25 13:07:38,227] TC_03_Edit - Step 01 : Verify post update title + content in admin page  
+[2023-01-25 13:07:38,342]  -------------------------- PASSED -------------------------- 
+[2023-01-25 13:07:38,435]  -------------------------- PASSED -------------------------- 
+[2023-01-25 13:07:38,436] TC_03_Edit - Step 01 : Verify post update title + content in user page 
+[2023-01-25 13:07:39,110]  -------------------------- PASSED -------------------------- 
+[2023-01-25 13:10:27,271] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-25 13:10:31,267] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-25 13:10:31,492] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-25 13:10:31,642] Pre-condition - Step 04 : Click button Login
+[2023-01-25 13:10:33,313] TC_01 - Step 01 : Click to Post 
+[2023-01-25 13:10:34,199] TC_01 - Step 02 : Click Add new 
+[2023-01-25 13:10:35,914] TC_01 - Step 03 : Enter title post Title1306376904
+[2023-01-25 13:10:39,445] TC_01 - Step 04 : Enter content post 
+[2023-01-25 13:10:42,992] TC_01 - Step 05 : Click Button Publish  
+[2023-01-25 13:10:45,258] TC_01 - Step 06 : Verify message post published  
+[2023-01-25 13:10:45,962] TC_02_Search - Step 01 : Open page  
+[2023-01-25 13:10:46,918] TC_02_Search - Step 02 : Enter to search textbox  
+[2023-01-25 13:10:47,118] TC_02_Search - Step 03 : Click to search button 
+[2023-01-25 13:10:48,805] TC_02_Search - Step 04 : Verify search table  
+[2023-01-25 13:11:18,958] TC_02_Search - Step 05 : Open user site 
+[2023-01-25 13:11:19,612] TC_02_Search - Step 06 : Click to search icon   
+[2023-01-25 13:11:19,757] TC_02_Search - Step 07 : Send key to search textbox   
+[2023-01-25 13:11:19,898] TC_02_Search - Step 08 : Enter    
+[2023-01-25 13:11:20,553] TC_02_Search - Step 09 : Verify post title display at home page  
+[2023-01-25 13:11:20,747] TC_03_Edit - Step 01 : Open admin page 
+[2023-01-25 13:11:21,509] TC_03_Edit - Step 02 : Click to post item
+[2023-01-25 13:11:22,304] TC_03_Edit - Step 03 : Click to Edit link 
+[2023-01-25 13:11:24,262] TC_03_Edit - Step 01 : Edit title +content 
+[2023-01-25 13:11:31,489] TC_03_Edit - Step 01 : Click update button 
+[2023-01-25 13:11:31,613] TC_03_Edit - Step 01 : Verify post update message display 
+[2023-01-25 13:11:32,304]  -------------------------- PASSED -------------------------- 
+[2023-01-25 13:11:32,304] TC_03_Edit - Step 01 : Open list post
+[2023-01-25 13:11:33,199] TC_03_Edit - Step 01 : Verify post update title + content in admin page  
+[2023-01-25 13:11:33,273]  -------------------------- PASSED -------------------------- 
+[2023-01-25 13:11:33,351]  -------------------------- PASSED -------------------------- 
+[2023-01-25 13:11:33,351] TC_03_Edit - Step 01 : Verify post update title + content in user page 
+[2023-01-25 13:11:34,068]  -------------------------- PASSED -------------------------- 
+[2023-01-25 13:12:04,321] OS name = windows 11
+[2023-01-25 13:12:04,321] Driver instance name = chromedriver: chrome on windows (9444b8d0c2bc8b21f4154393aa1cacf2)
+[2023-01-25 13:41:47,515] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-25 13:41:51,462] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-25 13:41:51,671] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-25 13:41:51,819] Pre-condition - Step 04 : Click button Login
+[2023-01-25 13:41:53,421] TC_01 - Step 01 : Click to Post 
+[2023-01-25 13:41:54,315] TC_01 - Step 02 : Click Add new 
+[2023-01-25 13:41:56,086] TC_01 - Step 03 : Enter title post Title-2075238037
+[2023-01-25 13:41:59,558] TC_01 - Step 04 : Enter content post 
+[2023-01-25 13:42:03,200] TC_01 - Step 05 : Click Button Publish  
+[2023-01-25 13:42:05,474] TC_01 - Step 06 : Verify message post published  
+[2023-01-25 13:42:06,180] TC_02_Search - Step 01 : Open page  
+[2023-01-25 13:42:07,125] TC_02_Search - Step 02 : Enter to search textbox  
+[2023-01-25 13:42:07,324] TC_02_Search - Step 03 : Click to search button 
+[2023-01-25 13:42:08,560] TC_02_Search - Step 04 : Verify search table  
+[2023-01-25 13:42:38,734] TC_02_Search - Step 05 : Open user site 
+[2023-01-25 13:42:39,525] TC_02_Search - Step 06 : Click to search icon   
+[2023-01-25 13:42:39,657] TC_02_Search - Step 07 : Send key to search textbox   
+[2023-01-25 13:42:39,790] TC_02_Search - Step 08 : Enter    
+[2023-01-25 13:42:40,447] TC_02_Search - Step 09 : Verify post title display at home page  
+[2023-01-25 13:42:40,655] TC_03_Edit - Step 01 : Open admin page 
+[2023-01-25 13:42:41,399] TC_03_Edit - Step 02 : Click to post item
+[2023-01-25 13:42:42,217] TC_03_Edit - Step 03 : Click to Edit link 
+[2023-01-25 13:42:44,335] TC_03_Edit - Step 01 : Edit title +content 
+[2023-01-25 13:42:51,512] TC_03_Edit - Step 01 : Click update button 
+[2023-01-25 13:42:51,638] TC_03_Edit - Step 01 : Verify post update message display 
+[2023-01-25 13:42:52,792]  -------------------------- PASSED -------------------------- 
+[2023-01-25 13:42:52,792] TC_03_Edit - Step 01 : Open list post
+[2023-01-25 13:42:54,636] TC_03_Edit - Step 01 : Verify post update title + content in admin page  
+[2023-01-25 13:42:54,709]  -------------------------- PASSED -------------------------- 
+[2023-01-25 13:42:54,789]  -------------------------- PASSED -------------------------- 
+[2023-01-25 13:42:54,789] TC_03_Edit - Step 01 : Verify post update title + content in user page 
+[2023-01-25 13:42:55,432]  -------------------------- PASSED -------------------------- 
+[2023-01-25 13:42:55,493]  -------------------------- PASSED -------------------------- 
+[2023-01-25 13:42:55,497] OS name = windows 11
+[2023-01-25 13:42:55,498] Driver instance name = chromedriver: chrome on windows (7afc7141a3313295422e110468f16da3)
+[2023-01-25 14:13:46,199] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-25 14:13:51,295] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-25 14:13:51,525] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-25 14:13:51,669] Pre-condition - Step 04 : Click button Login
+[2023-01-25 14:13:53,376] TC_01 - Step 01 : Click to Post 
+[2023-01-25 14:13:54,299] TC_01 - Step 02 : Click Add new 
+[2023-01-25 14:13:56,564] TC_01 - Step 03 : Enter title post Title241586562
+[2023-01-25 14:14:00,184] TC_01 - Step 04 : Enter content post 
+[2023-01-25 14:14:03,772] TC_01 - Step 05 : Click Button Publish  
+[2023-01-25 14:14:06,059] TC_01 - Step 06 : Verify message post published  
+[2023-01-25 14:14:06,817] TC_02_Search - Step 01 : Open page  
+[2023-01-25 14:14:07,800] TC_02_Search - Step 02 : Enter to search textbox  
+[2023-01-25 14:14:07,962] TC_02_Search - Step 03 : Click to search button 
+[2023-01-25 14:14:09,226] TC_02_Search - Step 04 : Verify search table  
+[2023-01-25 14:14:39,351] TC_02_Search - Step 05 : Open user site 
+[2023-01-25 14:14:40,082] TC_02_Search - Step 06 : Click to search icon   
+[2023-01-25 14:14:40,223] TC_02_Search - Step 07 : Send key to search textbox   
+[2023-01-25 14:14:40,361] TC_02_Search - Step 08 : Enter    
+[2023-01-25 14:14:41,056] TC_02_Search - Step 09 : Verify post title display at home page  
+[2023-01-25 14:14:41,267] TC_03_Edit - Step 01 : Open admin page 
+[2023-01-25 14:14:42,090] TC_03_Edit - Step 02 : Click to post item
+[2023-01-25 14:14:42,981] TC_03_Edit - Step 03 : Click to Edit link 
+[2023-01-25 14:14:45,501] TC_03_Edit - Step 04 : Edit title +content 
+[2023-01-25 14:14:52,714] TC_03_Edit - Step 05 : Click update button 
+[2023-01-25 14:14:52,846] TC_03_Edit - Step 06 : Verify post update message display 
+[2023-01-25 14:14:54,033]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:14:54,033] TC_03_Edit - Step 07 : Open list post
+[2023-01-25 14:14:54,916] TC_03_Edit - Step 08 : Verify post update title + content in admin page  
+[2023-01-25 14:14:55,003]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:14:55,082]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:14:55,082] TC_03_Edit - Step 09 : Verify post update title + content in user page 
+[2023-01-25 14:14:55,746]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:14:55,807]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:14:55,810] TC_04_Delete - Step 01 : Open admin Page  + click to post item 
+[2023-01-25 14:14:57,349] TC_04_Delete - Step 01 : Check to checkbox by title  
+[2023-01-25 14:14:57,488] TC_04_Delete - Step 01 : Click pulldown + select option Move to trash   
+[2023-01-25 14:14:57,635] TC_04_Delete - Step 01 : Click button Apply   
+[2023-01-25 14:14:59,013] TC_04_Delete - Step 01 : Verify messsage move to trash   
+[2023-01-25 14:14:59,114]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:14:59,114] TC_04_Delete - Step 01 : Enter to search textbox +Click button search    
+[2023-01-25 14:15:00,436] TC_04_Delete - Step 01 : Verify post  undisplay    
+[2023-01-25 14:15:00,507]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:15:00,510] OS name = windows 11
+[2023-01-25 14:15:00,510] Driver instance name = chromedriver: chrome on windows (14361284a18651182737fcd455600a6d)

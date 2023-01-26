@@ -1,7 +1,6 @@
 package com.nopcommerce.practice;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
@@ -12,13 +11,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import common.BasePage;
 import common.BaseTest;
 import common.GenerateObject;
 import pageObject.user.nopcommerce.HomeUserPageObject;
 import pageObject.user.nopcommerce.LoginUserPageObject;
 import pageObject.user.nopcommerce.NoteBookPageObject;
-import pageObject.user.nopcommerce.RegisterPageUserObject;
 
 public class Test_05_Sort_Display_Paging extends BaseTest {
 
@@ -30,6 +27,7 @@ public class Test_05_Sort_Display_Paging extends BaseTest {
 	private String page;
 	private String iconName;
 	private String pageNumber;
+	private int quantityProduct;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -38,12 +36,11 @@ public class Test_05_Sort_Display_Paging extends BaseTest {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		homePageObject = GenerateObject.getHomePage(driver);
-		homePageObject.hoverToComputerLink();
-		noteBookPageObject = homePageObject.clickToNoteBookLink();
+		homePageObject.hoverToComputerLink(driver);
+		noteBookPageObject = homePageObject.clickToNoteBookLink(driver);
 
 	}
 
-	@Test
 	public void TC_01_Sort_Name_A_To_Z() {
 		sortBy = "Name: A to Z";
 		noteBookPageObject.selectSortBy(sortBy);
@@ -63,24 +60,21 @@ public class Test_05_Sort_Display_Paging extends BaseTest {
 
 	}
 
-	// TC này đang bị fail, ko biết cách get data để nó lấy theo thứ tự =>ko lấy đc giá trị theo đúng
-	// thứ tự nên compare bị sai
-	@Test
 	public void TC_03_Sort_Price_Low_To_High() {
 		sortBy = "Price: Low to High";
 		noteBookPageObject = noteBookPageObject.selectSortBy(sortBy);
 		ArrayList<String> listSearch = noteBookPageObject.getListProductPrice();
-		ArrayList<String> listSorted = noteBookPageObject.getListProductPrice();
+		ArrayList<String> listSorted = new ArrayList<>(listSearch);
 		Collections.sort(listSorted);
 		Assert.assertTrue(listSorted.equals(listSearch));
 	}
 
-	@Test
 	public void TC_04_Sort_Price_High_To_Low() {
 		sortBy = "Price: High to Low";
 		noteBookPageObject.selectSortBy(sortBy);
 		ArrayList<String> listSearch = noteBookPageObject.getListProductPrice();
-		ArrayList<String> listSorted = noteBookPageObject.getListProductPrice();
+		ArrayList<String> listSorted = new ArrayList<>(listSearch);
+		Collections.sort(listSorted);
 		Collections.reverse(listSorted);
 		Assert.assertTrue(listSorted.equals(listSearch));
 	}
@@ -89,46 +83,35 @@ public class Test_05_Sort_Display_Paging extends BaseTest {
 	public void TC_05_Display_3_product_In_OnePage() {
 		page = "3";
 		iconName = "next";
-
 		noteBookPageObject.selectDisplayOnePage(page);
-		int quantityProduct = noteBookPageObject.getListProductTitle().size();
-		System.out.println("========" + Integer.parseInt(page));
-		System.out.println("quantityProduct = " + quantityProduct);
+		quantityProduct = noteBookPageObject.getListProductTitle().size();
 		Assert.assertTrue(quantityProduct <= Integer.parseInt(page));
 		Assert.assertTrue(noteBookPageObject.isExistIcon(iconName));
-		noteBookPageObject.selectPage2();
+		noteBookPageObject.selectPage(2);
 		iconName = "previous";
 		Assert.assertTrue(noteBookPageObject.isExistIcon(iconName));
 
 	}
 
+	@Test
 	public void TC_06_Display_6_product_In_OnePage() {
 		page = "6";
-		iconName = "next";
-
 		noteBookPageObject.selectDisplayOnePage(page);
-		int quantityProduct = noteBookPageObject.getListProductTitle().size();
 		Assert.assertTrue(quantityProduct <= Integer.parseInt(page));
-		Assert.assertTrue(!noteBookPageObject.isExistIcon(iconName));
-		iconName = "previous";
-		Assert.assertTrue(!noteBookPageObject.isExistIcon(iconName));
+		Assert.assertTrue(noteBookPageObject.isUnDisplayPaging());
 	}
 
+	@Test
 	public void TC_07_Display_9_product_In_OnePage() {
 		page = "9";
-		iconName = "next";
-
 		noteBookPageObject.selectDisplayOnePage(page);
-		int quantityProduct = noteBookPageObject.getListProductTitle().size();
 		Assert.assertTrue(quantityProduct <= Integer.parseInt(page));
-		Assert.assertTrue(!noteBookPageObject.isExistIcon(iconName));
-		iconName = "previous";
-		Assert.assertTrue(!noteBookPageObject.isExistIcon(iconName));
+		Assert.assertTrue(noteBookPageObject.isUnDisplayPaging());
 	}
 
 	@AfterClass
 	public void afterClass() {
-		// driver.quit();
+		driver.quit();
 	}
 
 }

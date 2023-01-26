@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Wordpress">
+	<listeners>
+		<listener class-name="common.MethodListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="reportConfig.ReportNGListener" />
+	</listeners>
+	<parameter name="browser" value="chrome" />
+	<parameter name="urlAdmin" value="http://localhost/automationtest/wp-admin" />
+	<parameter name="urlUser" value="http://localhost/automationtest" />
+	<test name="Run on Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search_TC" />
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

@@ -91,4 +91,10 @@ public class RegisterPageUserObject extends BasePage {
 		return getElementText(driver, RegisterPageUI.EMAIL_EXISTS_ERROR_MESSAGE);
 	}
 
+	public LoginUserPageObject clickLoginButton() {
+		waitForElementClickable(driver, RegisterPageUI.LOG_IN_LINK);
+		clickToElement(driver, RegisterPageUI.LOG_IN_LINK);
+		return GenerateObject.getLoginPage(driver);
+	}
+
 }

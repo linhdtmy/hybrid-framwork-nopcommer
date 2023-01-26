@@ -24,11 +24,13 @@ import pageObject.user.nopcommerce.AddressUserObject;
 import pageObject.user.nopcommerce.BackUserObject;
 import pageObject.user.nopcommerce.ChangePasswordUserObject;
 import pageObject.user.nopcommerce.DownloadUserObject;
+import pageObject.user.nopcommerce.NoteBookPageObject;
 import pageObject.user.nopcommerce.OrderUserObject;
 import pageObject.user.nopcommerce.ReviewCustomerObject;
 import pageObject.user.nopcommerce.ReviewProductObject;
 import pageObject.user.nopcommerce.RewardUserObject;
 import userPageUI.BaseUI;
+import userPageUI.CartUI;
 
 public class BasePage {
 
@@ -274,6 +276,10 @@ public class BasePage {
 		return driver.findElements(By.xpath(xpath));
 	}
 
+	public List<WebElement> getListWebElement(WebDriver driver, String locatorType, String... values) {
+		return driver.findElements(By.xpath(getDynamicXpath(locatorType, values)));
+	}
+
 	public void checkToDefaultCheckboxRadio(WebDriver driver, String xpath) {
 		WebElement element = getWebElement(driver, xpath);
 		if (!element.isSelected()) {
@@ -326,6 +332,11 @@ public class BasePage {
 		action.moveToElement(getWebElement(driver, xpath)).perform();
 	}
 
+	public void hoverMouseToElement(WebDriver driver, String locatorType, String... values) {
+		Actions action = new Actions(driver);
+		action.moveToElement(getWebElement(driver, getDynamicXpath(locatorType, values))).perform();
+	}
+
 	public void pressKeyToElement(WebDriver driver, String xpath, Keys key) {
 		Actions action = new Actions(driver);
 		action.sendKeys(getWebElement(driver, xpath), key).perform();
@@ -355,8 +366,9 @@ public class BasePage {
 	}
 
 	public void waitForElementInVisible(WebDriver driver, String xpath) {
-		WebDriverWait explicitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explicitWait = new WebDriverWait(driver, 10);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
+		explicitWait = new WebDriverWait(driver, 30);
 
 	}
 
@@ -434,6 +446,11 @@ public class BasePage {
 	public void scrollToElement(WebDriver driver, String locator) {
 		jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", getWebElement(driver, locator));
+	}
+
+	public void scrollToElement(WebDriver driver, String locatorType, String... values) {
+		jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", getWebElement(driver, getDynamicXpath(locatorType, values)));
 	}
 
 	public void sendkeyToElementByJS(WebDriver driver, String locator, String value) {
@@ -607,5 +624,18 @@ public class BasePage {
 			return false;
 		}
 
+	}
+
+	public void hoverToComputerLink(WebDriver driver) {
+		waitForElementClickable(driver, CartUI.COMPUTER_LINK);
+		hoverMouseToElement(driver, CartUI.COMPUTER_LINK);
+		sleepInSecond(1);
+
+	}
+
+	public NoteBookPageObject clickToNoteBookLink(WebDriver driver) {
+		waitForElementClickable(driver, CartUI.NOTE_BOOK_LINK);
+		clickToElement(driver, CartUI.NOTE_BOOK_LINK);
+		return GenerateObject.getNoteBookPageObject(driver);
 	}
 }

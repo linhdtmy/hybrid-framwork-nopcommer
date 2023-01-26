@@ -22,6 +22,8 @@ public class Test_13_Share_Data extends BaseTest {
 
 	private HomeUserPageObject homePageObject;
 	private LoginUserPageObject loginPageObject;
+    //Cần thêm vào file xml class com.nopcommerce.com.Test_01_Register_Common chạy trước nếu 
+	//ko sẽ ko có data để chạy testcase này 
 
 	@Parameters("browser")
 	@BeforeClass

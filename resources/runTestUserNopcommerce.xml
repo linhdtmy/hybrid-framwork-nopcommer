@@ -10,8 +10,8 @@
 	<test name="Run on Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.nopcommerce.com.Test_01_Register_Common" />
-			<class name="com.nopcommerce.user.Test_13_Share_Data" />
+			<!-- <class name="com.nopcommerce.com.Test_01_Register_Common" />-->
+			<class name="com.nopcommerce.user.Test_11_Log_Report" />
 		</classes>
 	</test> <!-- Test -->
 

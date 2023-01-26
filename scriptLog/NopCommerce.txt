@@ -1,0 +1,44 @@
+[2023-01-25 14:13:46,199] Pre-condition - Step 01 :Openbrowser and admin URL 
+[2023-01-25 14:13:51,295] Pre-condition - Step 02 :Enter to usernameautomationtest
+[2023-01-25 14:13:51,525] Pre-condition - Step 03 :Enter to password 123456
+[2023-01-25 14:13:51,669] Pre-condition - Step 04 : Click button Login
+[2023-01-25 14:13:53,376] TC_01 - Step 01 : Click to Post 
+[2023-01-25 14:13:54,299] TC_01 - Step 02 : Click Add new 
+[2023-01-25 14:13:56,564] TC_01 - Step 03 : Enter title post Title241586562
+[2023-01-25 14:14:00,184] TC_01 - Step 04 : Enter content post 
+[2023-01-25 14:14:03,772] TC_01 - Step 05 : Click Button Publish  
+[2023-01-25 14:14:06,059] TC_01 - Step 06 : Verify message post published  
+[2023-01-25 14:14:06,817] TC_02_Search - Step 01 : Open page  
+[2023-01-25 14:14:07,800] TC_02_Search - Step 02 : Enter to search textbox  
+[2023-01-25 14:14:07,962] TC_02_Search - Step 03 : Click to search button 
+[2023-01-25 14:14:09,226] TC_02_Search - Step 04 : Verify search table  
+[2023-01-25 14:14:39,351] TC_02_Search - Step 05 : Open user site 
+[2023-01-25 14:14:40,082] TC_02_Search - Step 06 : Click to search icon   
+[2023-01-25 14:14:40,223] TC_02_Search - Step 07 : Send key to search textbox   
+[2023-01-25 14:14:40,361] TC_02_Search - Step 08 : Enter    
+[2023-01-25 14:14:41,056] TC_02_Search - Step 09 : Verify post title display at home page  
+[2023-01-25 14:14:41,267] TC_03_Edit - Step 01 : Open admin page 
+[2023-01-25 14:14:42,090] TC_03_Edit - Step 02 : Click to post item
+[2023-01-25 14:14:42,981] TC_03_Edit - Step 03 : Click to Edit link 
+[2023-01-25 14:14:45,501] TC_03_Edit - Step 04 : Edit title +content 
+[2023-01-25 14:14:52,714] TC_03_Edit - Step 05 : Click update button 
+[2023-01-25 14:14:52,846] TC_03_Edit - Step 06 : Verify post update message display 
+[2023-01-25 14:14:54,033]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:14:54,033] TC_03_Edit - Step 07 : Open list post
+[2023-01-25 14:14:54,916] TC_03_Edit - Step 08 : Verify post update title + content in admin page  
+[2023-01-25 14:14:55,003]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:14:55,082]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:14:55,082] TC_03_Edit - Step 09 : Verify post update title + content in user page 
+[2023-01-25 14:14:55,746]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:14:55,807]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:14:55,810] TC_04_Delete - Step 01 : Open admin Page  + click to post item 
+[2023-01-25 14:14:57,349] TC_04_Delete - Step 01 : Check to checkbox by title  
+[2023-01-25 14:14:57,488] TC_04_Delete - Step 01 : Click pulldown + select option Move to trash   
+[2023-01-25 14:14:57,635] TC_04_Delete - Step 01 : Click button Apply   
+[2023-01-25 14:14:59,013] TC_04_Delete - Step 01 : Verify messsage move to trash   
+[2023-01-25 14:14:59,114]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:14:59,114] TC_04_Delete - Step 01 : Enter to search textbox +Click button search    
+[2023-01-25 14:15:00,436] TC_04_Delete - Step 01 : Verify post  undisplay    
+[2023-01-25 14:15:00,507]  -------------------------- PASSED -------------------------- 
+[2023-01-25 14:15:00,510] OS name = windows 11
+[2023-01-25 14:15:00,510] Driver instance name = chromedriver: chrome on windows (14361284a18651182737fcd455600a6d)

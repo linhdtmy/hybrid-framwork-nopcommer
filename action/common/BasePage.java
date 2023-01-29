@@ -201,6 +201,9 @@ public class BasePage {
 	public String getElementValue(WebDriver driver, String xpath) {
 		return getWebElement(driver, xpath).getAttribute("value");
 	}
+	public String getElementValue(WebDriver driver, String locatorType,String... values) {
+		return getWebElement(driver, getDynamicXpath(locatorType, values)).getAttribute("value");
+	}
 
 	public String getElementText(WebDriver driver, String locatorType, String... values) {
 		return getWebElement(driver, getDynamicXpath(locatorType, values)).getText();

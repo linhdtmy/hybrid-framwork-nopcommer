@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 
 import pageObject.admin.nopcommerce.DashboardPageObject;
 import pageObject.admin.nopcommerce.LoginAdminPageObject;
+import pageObject.bankguru.AddNewCustomerBankGuruObject;
+import pageObject.bankguru.HomePageBankGuruObject;
+import pageObject.bankguru.LoginPageBankGuruObject;
 import pageObject.jquery.HomePageJqueryObject;
 import pageObject.jqueryUploadFile.HomePageJqueryUploadObject;
 import pageObject.techpanda.HomePageTechpandaAdminObject;
@@ -142,6 +145,18 @@ public class GenerateObject {
 
 	public static HomePageTechpandaUserObject getHomePageTechpandaUserObject(WebDriver driver) {
 		return new HomePageTechpandaUserObject(driver);
+	}
+
+	public static AddNewCustomerBankGuruObject getAddNewCustomerBankGuruObject(WebDriver driver) {
+		return new AddNewCustomerBankGuruObject(driver);
+	}
+
+	public static HomePageBankGuruObject getHomePageBankGuruObject(WebDriver driver) {
+		return new HomePageBankGuruObject(driver);
+	}
+
+	public static LoginPageBankGuruObject getLoginPageBankGuruObject(WebDriver driver) {
+		return new LoginPageBankGuruObject(driver);
 	}
 
 	public static HomePageUserObject getHomePageUserObject(WebDriver driver) {

@@ -58,7 +58,11 @@ public class Test_07_Order extends BaseTest {
 		loginPageObject.inputToPasswordTextbox(password);
 		homePageObject = loginPageObject.clickToLoginButton();
 		homePageObject.hoverToComputerLink(driver);
+		log.info("Step 01: Open Notebook link");
 		noteBookPageObject = homePageObject.clickToNoteBookLink(driver);
+		log.info("Step 02: Open a random Product");
+		
+
 	}
 
 	@Test
@@ -84,9 +88,10 @@ public class Test_07_Order extends BaseTest {
 
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-		// driver.quit();
+		closeBrowserAndDriver();
+
 	}
 
 }

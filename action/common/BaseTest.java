@@ -1,5 +1,6 @@
 package common;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -93,9 +94,13 @@ public class BaseTest {
 			driver = new FirefoxDriver(options);
 
 		} else if (browserName.equals("chrome")) {
+			File file = new File(projectPath + "\\browserExtensions\\extension_Ublock.crx");
 
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addExtensions(file);
+			 WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver(options);
+
 		} else if (browserName.equals("h_chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
@@ -248,5 +253,5 @@ public class BaseTest {
 			}
 		}
 	}
-	
+
 }

@@ -10,7 +10,7 @@
 	<test name="Run on Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.nopcommerce.practice.Test_06_Wishlist_Compare_Recentview" />
+			<class name="com.nopcommerce.practice.Test_07_Order" />
 		</classes>
 	</test> <!-- Test -->
 

@@ -1,44 +1,140 @@
-[2023-01-25 14:13:46,199] Pre-condition - Step 01 :Openbrowser and admin URL 
-[2023-01-25 14:13:51,295] Pre-condition - Step 02 :Enter to usernameautomationtest
-[2023-01-25 14:13:51,525] Pre-condition - Step 03 :Enter to password 123456
-[2023-01-25 14:13:51,669] Pre-condition - Step 04 : Click button Login
-[2023-01-25 14:13:53,376] TC_01 - Step 01 : Click to Post 
-[2023-01-25 14:13:54,299] TC_01 - Step 02 : Click Add new 
-[2023-01-25 14:13:56,564] TC_01 - Step 03 : Enter title post Title241586562
-[2023-01-25 14:14:00,184] TC_01 - Step 04 : Enter content post 
-[2023-01-25 14:14:03,772] TC_01 - Step 05 : Click Button Publish  
-[2023-01-25 14:14:06,059] TC_01 - Step 06 : Verify message post published  
-[2023-01-25 14:14:06,817] TC_02_Search - Step 01 : Open page  
-[2023-01-25 14:14:07,800] TC_02_Search - Step 02 : Enter to search textbox  
-[2023-01-25 14:14:07,962] TC_02_Search - Step 03 : Click to search button 
-[2023-01-25 14:14:09,226] TC_02_Search - Step 04 : Verify search table  
-[2023-01-25 14:14:39,351] TC_02_Search - Step 05 : Open user site 
-[2023-01-25 14:14:40,082] TC_02_Search - Step 06 : Click to search icon   
-[2023-01-25 14:14:40,223] TC_02_Search - Step 07 : Send key to search textbox   
-[2023-01-25 14:14:40,361] TC_02_Search - Step 08 : Enter    
-[2023-01-25 14:14:41,056] TC_02_Search - Step 09 : Verify post title display at home page  
-[2023-01-25 14:14:41,267] TC_03_Edit - Step 01 : Open admin page 
-[2023-01-25 14:14:42,090] TC_03_Edit - Step 02 : Click to post item
-[2023-01-25 14:14:42,981] TC_03_Edit - Step 03 : Click to Edit link 
-[2023-01-25 14:14:45,501] TC_03_Edit - Step 04 : Edit title +content 
-[2023-01-25 14:14:52,714] TC_03_Edit - Step 05 : Click update button 
-[2023-01-25 14:14:52,846] TC_03_Edit - Step 06 : Verify post update message display 
-[2023-01-25 14:14:54,033]  -------------------------- PASSED -------------------------- 
-[2023-01-25 14:14:54,033] TC_03_Edit - Step 07 : Open list post
-[2023-01-25 14:14:54,916] TC_03_Edit - Step 08 : Verify post update title + content in admin page  
-[2023-01-25 14:14:55,003]  -------------------------- PASSED -------------------------- 
-[2023-01-25 14:14:55,082]  -------------------------- PASSED -------------------------- 
-[2023-01-25 14:14:55,082] TC_03_Edit - Step 09 : Verify post update title + content in user page 
-[2023-01-25 14:14:55,746]  -------------------------- PASSED -------------------------- 
-[2023-01-25 14:14:55,807]  -------------------------- PASSED -------------------------- 
-[2023-01-25 14:14:55,810] TC_04_Delete - Step 01 : Open admin Page  + click to post item 
-[2023-01-25 14:14:57,349] TC_04_Delete - Step 01 : Check to checkbox by title  
-[2023-01-25 14:14:57,488] TC_04_Delete - Step 01 : Click pulldown + select option Move to trash   
-[2023-01-25 14:14:57,635] TC_04_Delete - Step 01 : Click button Apply   
-[2023-01-25 14:14:59,013] TC_04_Delete - Step 01 : Verify messsage move to trash   
-[2023-01-25 14:14:59,114]  -------------------------- PASSED -------------------------- 
-[2023-01-25 14:14:59,114] TC_04_Delete - Step 01 : Enter to search textbox +Click button search    
-[2023-01-25 14:15:00,436] TC_04_Delete - Step 01 : Verify post  undisplay    
-[2023-01-25 14:15:00,507]  -------------------------- PASSED -------------------------- 
-[2023-01-25 14:15:00,510] OS name = windows 11
-[2023-01-25 14:15:00,510] Driver instance name = chromedriver: chrome on windows (14361284a18651182737fcd455600a6d)
+[2023-01-29 18:53:49,581] Precondition - Step 01 : Open URL 
+[2023-01-29 18:53:59,796] Precondition - Step 02 : Enter username + password  
+[2023-01-29 18:54:00,197] Precondition - Step 03 : Click button Login  
+[2023-01-29 18:54:01,310] Precondition - Step 04 : Click New Customer   
+[2023-01-29 18:54:01,835] TC_01 - Name cannot be empty
+[2023-01-29 18:54:01,836] TC_01 - Step 01 : Press Tab and move the next field 
+[2023-01-29 18:54:02,071] TC_01 - Step 02 : Verify message not be blank display
+[2023-01-29 18:54:02,148]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:02,150] TC_01 - Name cannot be numberic
+[2023-01-29 18:54:02,150] TC_01 - Step 03 : Enter number into name field 
+[2023-01-29 18:54:02,346] TC_01 - Step 04 : Verify error message
+[2023-01-29 18:54:02,431]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:02,431] TC_01 - Step 05 : Enter number and text  into name field 
+[2023-01-29 18:54:02,618] TC_01 - Step 06 : Verify error message
+[2023-01-29 18:54:02,680]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:02,681] TC_01 - Name cannot have special characters
+[2023-01-29 18:54:02,681] TC_01 - Step 07 : Enter special charactor into name field
+[2023-01-29 18:54:02,879] TC_01 - Step 08 : Verify error message
+[2023-01-29 18:54:02,962]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:02,962] TC_01 - Name cannot have first is  space 
+[2023-01-29 18:54:02,963] TC_01 - Step 01 : Enter first is blank space
+[2023-01-29 18:54:03,152] TC_01 - Step 01 : Verify error message
+[2023-01-29 18:54:03,215]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:03,221] TC_02 - Address cannot be empty 
+[2023-01-29 18:54:03,222] TC_02 - Step 01 : Press Tab and move the next field 
+[2023-01-29 18:54:03,513]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:03,513] TC_02 - Address cannot have first is  space 
+[2023-01-29 18:54:03,513] TC_02 - Step 02 : Enter first is blank space
+[2023-01-29 18:54:03,683] TC_02 - Step 03 : Verify error message
+[2023-01-29 18:54:03,751]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:03,753] TC_03 - City cannot be empty
+[2023-01-29 18:54:03,754] TC_03 - Step 01 : Press Tab and move the next field 
+[2023-01-29 18:54:03,955] TC_03 - Step 02 : Verify message not be blank display
+[2023-01-29 18:54:04,013]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:04,014] TC_03 - City cannot be numberic
+[2023-01-29 18:54:04,014] TC_03 - Step 03 : Enter number into City field 
+[2023-01-29 18:54:04,201] TC_03 - Step 04 : Verify error message
+[2023-01-29 18:54:04,262]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:04,262] TC_03 - Step 05 : Enter number and text  into City field 
+[2023-01-29 18:54:04,433] TC_03 - Step 06 : Verify error message
+[2023-01-29 18:54:04,499]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:04,499] TC_03 - City cannot have special characters
+[2023-01-29 18:54:04,499] TC_03 - Step 07 : Enter special charactor into name field
+[2023-01-29 18:54:04,694] TC_03 - Step 08 : Verify error message
+[2023-01-29 18:54:04,750]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:04,750] TC_03 - City cannot have first is  space 
+[2023-01-29 18:54:04,750] TC_03 - Step 01 : Enter first is blank space
+[2023-01-29 18:54:04,938] TC_03 - Step 01 : Verify error message
+[2023-01-29 18:54:05,003]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:05,005] TC_04 - state cannot be empty
+[2023-01-29 18:54:05,005] TC_04 - Step 01 : Press Tab and move the next field 
+[2023-01-29 18:54:05,208] TC_04 - Step 02 : Verify message not be blank display
+[2023-01-29 18:54:05,285]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:05,285] TC_04 - state cannot be numberic
+[2023-01-29 18:54:05,285] TC_04 - Step 03 : Enter number into state field 
+[2023-01-29 18:54:05,468] TC_04 - Step 04 : Verify error message
+[2023-01-29 18:54:05,536]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:05,536] TC_04 - Step 05 : Enter number and text  into state field 
+[2023-01-29 18:54:05,706] TC_04 - Step 06 : Verify error message
+[2023-01-29 18:54:05,766]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:05,766] TC_04 - state cannot have special characters
+[2023-01-29 18:54:05,766] TC_04 - Step 07 : Enter special charactor into state field
+[2023-01-29 18:54:05,959] TC_04 - Step 08 : Verify error message
+[2023-01-29 18:54:06,014]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:06,015] TC_04 - state cannot have first is  space 
+[2023-01-29 18:54:06,015] TC_04 - Step 09 : Enter first is blank space
+[2023-01-29 18:54:06,190] TC_04 - Step 10 : Verify error message
+[2023-01-29 18:54:06,248]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:06,251] TC_05 - Pin must be numberic
+[2023-01-29 18:54:06,251] TC_05 - Step 01 : Enter number into PIN field 
+[2023-01-29 18:54:06,440] TC_05 - Step 02 : Verify not display error message
+[2023-01-29 18:54:11,525]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:11,526] TC_05 - Step 03 : Enter characters into PIN field 
+[2023-01-29 18:54:11,737] TC_05 - Step 04 : Verify not display error message
+[2023-01-29 18:54:11,812]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:11,812] TC_05 - Step 05 : Enter  empty into PIN field 
+[2023-01-29 18:54:12,015] TC_05 - Step 06 : Verify not display error message
+[2023-01-29 18:54:12,087]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:12,087] TC_05 - Step 07 : Enter  less than 6 characters into PIN field 
+[2023-01-29 18:54:12,287] TC_05 - Step 08 : Verify not display error message
+[2023-01-29 18:54:12,365]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:12,365] TC_05 - Step 09 : Enter  more than 6 characters into PIN field 
+[2023-01-29 18:54:12,543] TC_05 - Step 10 : Verify value is 6 characters
+[2023-01-29 18:54:12,601]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:12,601] TC_05 - Step 11 : Enter  special characters into PIN field 
+[2023-01-29 18:54:12,774] TC_05 - Step 12 : Verify not display error message
+[2023-01-29 18:54:12,838]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:12,838] TC_05 - PIN cannot have first is  space 
+[2023-01-29 18:54:12,838] TC_05 - Step 13 : Enter first is blank space
+[2023-01-29 18:54:13,004] TC_05 - Step 14 : Verify error message
+[2023-01-29 18:54:13,079]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:13,079] TC_05 - PIN cannot  is  blank space 
+[2023-01-29 18:54:13,079] TC_05 - Step 15 : Enter first is blank space
+[2023-01-29 18:54:13,236] TC_05 - Step 16 : Verify error message
+[2023-01-29 18:54:13,292]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:13,294] TC_06 - Name cannot be empty
+[2023-01-29 18:54:13,294] TC_06 - Step 01 : Press Tab and move the next field 
+[2023-01-29 18:54:13,495] TC_06 - Step 02 : Verify message not be blank display
+[2023-01-29 18:54:13,556]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:13,556] TC_06 - phone cannot have first is  space 
+[2023-01-29 18:54:13,556] TC_06 - Step 03 : Enter first is blank phone
+[2023-01-29 18:54:13,723] TC_06 - Step 04 : Verify error message
+[2023-01-29 18:54:13,790]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:13,790] TC_06 - phone cannot have space  
+[2023-01-29 18:54:13,790] TC_06 - Step 05 : Enter space
+[2023-01-29 18:54:13,939] TC_06 - Step 06 : Verify error message
+[2023-01-29 18:54:14,011]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:14,011] TC_06 - Name cannot have special characters
+[2023-01-29 18:54:14,011] TC_06 - Step 07 : Enter special charactor into name field
+[2023-01-29 18:54:14,193] TC_06 - Step 08 : Verify error message
+[2023-01-29 18:54:14,262]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:14,265] TC_07 - Email cannot be empty
+[2023-01-29 18:54:14,265] TC_07 - Step 01 : Press Tab and move the next field 
+[2023-01-29 18:54:14,450] TC_07 - Step 02 : Verify message not be blank display
+[2023-01-29 18:54:14,510]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:14,511] TC_07 - Step 03 : Enter first is blank phone
+[2023-01-29 18:54:14,707] TC_07 - Step 04 : Verify error message
+[2023-01-29 18:54:14,782]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:14,955] TC_07 - Step 05 : Verify error message
+[2023-01-29 18:54:15,020]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:15,193] TC_07 - Step 06 : Verify error message
+[2023-01-29 18:54:15,287]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:15,488] TC_07 - Step 07 : Verify error message
+[2023-01-29 18:54:15,562]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:15,562] TC_07 - Step 08 : Enter first is blank phone
+[2023-01-29 18:54:15,802] TC_07 - Step 09 : Verify error message
+[2023-01-29 18:54:15,868]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:15,871] TC_08 - Step 01 :Tab all items
+[2023-01-29 18:54:17,959] TC_08 - Step 02 :Verify require message display 
+[2023-01-29 18:54:18,039]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:18,143]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:18,232]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:18,339]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:18,431]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:18,529]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:18,624]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:18,718]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:18,824]  -------------------------- PASSED -------------------------- 
+[2023-01-29 18:54:18,826] OS name = windows 11
+[2023-01-29 18:54:18,826] Driver instance name = chromedriver: chrome on windows (ba8e0a3fc21e976b605ded03e9a49c93)

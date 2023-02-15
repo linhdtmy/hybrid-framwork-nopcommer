@@ -11,7 +11,7 @@
 	<test name="Run on Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.bankguru.Test_01_New_Customer" />
+			<class name="com.bankguru.Test_02_Edit_Customer" />
 		</classes>
 	</test> <!-- Test -->
 

@@ -317,6 +317,9 @@ public class BasePage {
 	public boolean isElementEnable(WebDriver driver, String xpath) {
 		return getWebElement(driver, xpath).isEnabled();
 	}
+	public boolean isElementEnable(WebDriver driver, String locatorType, String... values) {
+		return getWebElement(driver, getDynamicXpath(locatorType, values)).isEnabled();
+	}
 
 	public boolean isElementSelected(WebDriver driver, String xpath) {
 		return getWebElement(driver, xpath).isSelected();

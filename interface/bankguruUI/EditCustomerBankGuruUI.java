@@ -1,6 +1,6 @@
 package bankguruUI;
 
-public class AddNewCustomerBankGuruUI {
+public class EditCustomerBankGuruUI {
 	public static final String INPUT_TEXTBOX = "//input[@name='%s']";
 	public static final String CUSTOMERNAME_ERROR_MESSAGE = "//label[text()='%s' and @id='message']";
 	public static final String ADDRESS_ERROR_MESSAGE = "//label[text()='%s' and @id='message3']";
@@ -12,7 +12,8 @@ public class AddNewCustomerBankGuruUI {
 	public static final String DOB_ERROR_MESSAGE = "//label[text()='%s' and @id='message24']";
 	public static final String PASSWORD_ERROR_MESSAGE = "//label[text()='%s' and @id='message18']";
 	public static final String ADDRESS_TEXTAREA = "//textarea[@name='addr']";
-	public static final String SUBMIT_BUTTON = "//input[@name='sub']";
+	public static final String CUTOMER_ID= "//input[@name='cusid']";
+	public static final String SUBMIT_BUTTON= "//input[@name='AccSubmit']";
 
 	
 }

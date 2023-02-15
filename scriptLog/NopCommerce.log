@@ -2266,3 +2266,800 @@ Session ID: 49ceb316a2e9b0c4da1e7d2e43179446
 [2023-01-29 18:54:18,824]  -------------------------- PASSED -------------------------- 
 [2023-01-29 18:54:18,826] OS name = windows 11
 [2023-01-29 18:54:18,826] Driver instance name = chromedriver: chrome on windows (ba8e0a3fc21e976b605ded03e9a49c93)
+[2023-01-30 23:09:48,269] Precondition - Step 01 : Open URL 
+[2023-01-30 23:09:58,441] Precondition - Step 02 : Enter username + password  
+[2023-01-30 23:09:58,825] Precondition - Step 03 : Click button Login  
+[2023-01-30 23:09:59,870] Precondition - Step 04 : Click New Customer   
+[2023-01-30 23:10:00,373] TC_01 - Name cannot be empty
+[2023-01-30 23:10:00,373] TC_01 - Step 01 : Press Tab and move the next field 
+[2023-01-30 23:10:00,618] TC_01 - Step 02 : Verify message not be blank display
+[2023-01-30 23:10:00,692]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:00,694] TC_01 - Name cannot be numberic
+[2023-01-30 23:10:00,694] TC_01 - Step 03 : Enter number into name field 
+[2023-01-30 23:10:00,881] TC_01 - Step 04 : Verify error message
+[2023-01-30 23:10:00,942]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:00,942] TC_01 - Step 05 : Enter number and text  into name field 
+[2023-01-30 23:10:01,145] TC_01 - Step 06 : Verify error message
+[2023-01-30 23:10:01,216]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:01,216] TC_01 - Name cannot have special characters
+[2023-01-30 23:10:01,216] TC_01 - Step 07 : Enter special charactor into name field
+[2023-01-30 23:10:01,407] TC_01 - Step 08 : Verify error message
+[2023-01-30 23:10:01,482]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:01,482] TC_01 - Name cannot have first is  space 
+[2023-01-30 23:10:01,482] TC_01 - Step 01 : Enter first is blank space
+[2023-01-30 23:10:01,681] TC_01 - Step 01 : Verify error message
+[2023-01-30 23:10:01,746]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:01,751] TC_02 - Address cannot be empty 
+[2023-01-30 23:10:01,751] TC_02 - Step 01 : Press Tab and move the next field 
+[2023-01-30 23:10:02,032]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:02,032] TC_02 - Address cannot have first is  space 
+[2023-01-30 23:10:02,033] TC_02 - Step 02 : Enter first is blank space
+[2023-01-30 23:10:02,213] TC_02 - Step 03 : Verify error message
+[2023-01-30 23:10:02,279]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:02,283] TC_03 - City cannot be empty
+[2023-01-30 23:10:02,283] TC_03 - Step 01 : Press Tab and move the next field 
+[2023-01-30 23:10:02,503] TC_03 - Step 02 : Verify message not be blank display
+[2023-01-30 23:10:02,583]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:02,584] TC_03 - City cannot be numberic
+[2023-01-30 23:10:02,584] TC_03 - Step 03 : Enter number into City field 
+[2023-01-30 23:10:02,765] TC_03 - Step 04 : Verify error message
+[2023-01-30 23:10:02,833]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:02,833] TC_03 - Step 05 : Enter number and text  into City field 
+[2023-01-30 23:10:03,022] TC_03 - Step 06 : Verify error message
+[2023-01-30 23:10:03,094]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:03,094] TC_03 - City cannot have special characters
+[2023-01-30 23:10:03,094] TC_03 - Step 07 : Enter special charactor into name field
+[2023-01-30 23:10:03,290] TC_03 - Step 08 : Verify error message
+[2023-01-30 23:10:03,347]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:03,347] TC_03 - City cannot have first is  space 
+[2023-01-30 23:10:03,347] TC_03 - Step 01 : Enter first is blank space
+[2023-01-30 23:10:03,519] TC_03 - Step 01 : Verify error message
+[2023-01-30 23:10:03,577]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:03,579] TC_04 - state cannot be empty
+[2023-01-30 23:10:03,579] TC_04 - Step 01 : Press Tab and move the next field 
+[2023-01-30 23:10:03,804] TC_04 - Step 02 : Verify message not be blank display
+[2023-01-30 23:10:03,895]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:03,895] TC_04 - state cannot be numberic
+[2023-01-30 23:10:03,895] TC_04 - Step 03 : Enter number into state field 
+[2023-01-30 23:10:04,113] TC_04 - Step 04 : Verify error message
+[2023-01-30 23:10:04,182]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:04,182] TC_04 - Step 05 : Enter number and text  into state field 
+[2023-01-30 23:10:04,377] TC_04 - Step 06 : Verify error message
+[2023-01-30 23:10:04,450]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:04,450] TC_04 - state cannot have special characters
+[2023-01-30 23:10:04,450] TC_04 - Step 07 : Enter special charactor into state field
+[2023-01-30 23:10:04,663] TC_04 - Step 08 : Verify error message
+[2023-01-30 23:10:04,727]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:04,727] TC_04 - state cannot have first is  space 
+[2023-01-30 23:10:04,727] TC_04 - Step 09 : Enter first is blank space
+[2023-01-30 23:10:04,914] TC_04 - Step 10 : Verify error message
+[2023-01-30 23:10:04,983]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:04,987] TC_05 - Pin must be numberic
+[2023-01-30 23:10:04,987] TC_05 - Step 01 : Enter number into PIN field 
+[2023-01-30 23:10:05,196] TC_05 - Step 02 : Verify not display error message
+[2023-01-30 23:10:10,262]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:10,262] TC_05 - Step 03 : Enter characters into PIN field 
+[2023-01-30 23:10:10,480] TC_05 - Step 04 : Verify not display error message
+[2023-01-30 23:10:10,539]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:10,539] TC_05 - Step 05 : Enter  empty into PIN field 
+[2023-01-30 23:10:10,744] TC_05 - Step 06 : Verify not display error message
+[2023-01-30 23:10:10,839]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:10,839] TC_05 - Step 07 : Enter  less than 6 characters into PIN field 
+[2023-01-30 23:10:11,025] TC_05 - Step 08 : Verify not display error message
+[2023-01-30 23:10:11,105]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:11,105] TC_05 - Step 09 : Enter  more than 6 characters into PIN field 
+[2023-01-30 23:10:11,288] TC_05 - Step 10 : Verify value is 6 characters
+[2023-01-30 23:10:11,356]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:11,356] TC_05 - Step 11 : Enter  special characters into PIN field 
+[2023-01-30 23:10:11,529] TC_05 - Step 12 : Verify not display error message
+[2023-01-30 23:10:11,599]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:11,599] TC_05 - PIN cannot have first is  space 
+[2023-01-30 23:10:11,599] TC_05 - Step 13 : Enter first is blank space
+[2023-01-30 23:10:11,795] TC_05 - Step 14 : Verify error message
+[2023-01-30 23:10:11,877]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:11,877] TC_05 - PIN cannot  is  blank space 
+[2023-01-30 23:10:11,877] TC_05 - Step 15 : Enter first is blank space
+[2023-01-30 23:10:12,055] TC_05 - Step 16 : Verify error message
+[2023-01-30 23:10:12,122]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:12,124] TC_06 - Name cannot be empty
+[2023-01-30 23:10:12,125] TC_06 - Step 01 : Press Tab and move the next field 
+[2023-01-30 23:10:12,328] TC_06 - Step 02 : Verify message not be blank display
+[2023-01-30 23:10:12,387]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:12,387] TC_06 - phone cannot have first is  space 
+[2023-01-30 23:10:12,387] TC_06 - Step 03 : Enter first is blank phone
+[2023-01-30 23:10:12,575] TC_06 - Step 04 : Verify error message
+[2023-01-30 23:10:12,632]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:12,632] TC_06 - phone cannot have space  
+[2023-01-30 23:10:12,632] TC_06 - Step 05 : Enter space
+[2023-01-30 23:10:12,800] TC_06 - Step 06 : Verify error message
+[2023-01-30 23:10:12,874]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:12,874] TC_06 - Name cannot have special characters
+[2023-01-30 23:10:12,874] TC_06 - Step 07 : Enter special charactor into name field
+[2023-01-30 23:10:13,041] TC_06 - Step 08 : Verify error message
+[2023-01-30 23:10:13,107]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:13,110] TC_07 - Email cannot be empty
+[2023-01-30 23:10:13,110] TC_07 - Step 01 : Press Tab and move the next field 
+[2023-01-30 23:10:13,299] TC_07 - Step 02 : Verify message not be blank display
+[2023-01-30 23:10:13,361]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:13,361] TC_07 - Step 03 : Enter first is blank phone
+[2023-01-30 23:10:13,536] TC_07 - Step 04 : Verify error message
+[2023-01-30 23:10:13,596]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:13,774] TC_07 - Step 05 : Verify error message
+[2023-01-30 23:10:13,842]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:14,041] TC_07 - Step 06 : Verify error message
+[2023-01-30 23:10:14,097]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:14,268] TC_07 - Step 07 : Verify error message
+[2023-01-30 23:10:14,330]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:14,330] TC_07 - Step 08 : Enter first is blank phone
+[2023-01-30 23:10:14,497] TC_07 - Step 09 : Verify error message
+[2023-01-30 23:10:14,569]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:14,572] TC_08 - Step 01 :Tab all items
+[2023-01-30 23:10:16,471] TC_08 - Step 02 :Verify require message display 
+[2023-01-30 23:10:16,538]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:16,602]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:16,664]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:16,723]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:16,782]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:16,844]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:16,906]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:16,971]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:17,033]  -------------------------- PASSED -------------------------- 
+[2023-01-30 23:10:17,035] OS name = windows 11
+[2023-01-30 23:10:17,035] Driver instance name = chromedriver: chrome on windows (e3f51121729e1410766f131b70b42ff6)
+[2023-01-30 23:13:37,019] Precondition - Step 01 : Open URL 
+[2023-01-30 23:13:55,350] OS name = windows 11
+[2023-01-30 23:13:55,351] Driver instance name = chromedriver: chrome on windows (795a1e7bce285b3a5963506c6962139a)
+[2023-01-30 23:13:55,368] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-2B79L9MS', ip: '192.168.1.59', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\QUOCKH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50467}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 795a1e7bce285b3a5963506c6962139a
+[2023-01-30 23:14:33,144] Precondition - Step 01 : Open URL 
+[2023-01-30 23:14:40,459] Precondition - Step 02 : Enter username + password  
+[2023-01-30 23:14:40,876] Precondition - Step 03 : Click button Login  
+[2023-01-30 23:14:41,966] Precondition - Step 04 : Click New Customer   
+[2023-01-30 23:14:42,497] Precondition - Step 05 : Enter Customer name  
+[2023-01-30 23:14:42,713] Precondition - Step 06 : Enter DOB  
+[2023-01-30 23:14:42,713] Precondition - Step 07 : Enter address 
+[2023-01-30 23:14:42,893] Precondition - Step 08 : Enter City   
+[2023-01-30 23:14:43,104] Precondition - Step 09 : Enter State  
+[2023-01-30 23:14:43,312] Precondition - Step 10 : Enter PIN  
+[2023-01-30 23:14:43,516] Precondition - Step 11 : Enter mobile phone  
+[2023-01-30 23:14:43,732] Precondition - Step 12 : Enter email  
+[2023-01-30 23:14:43,945] Precondition - Step 13 : Enter password   
+[2023-01-30 23:14:43,945] Precondition - Step 14 : Click button Submit   
+[2023-01-30 23:14:44,097] Precondition - Step 15 : Get Id  
+[2023-01-30 23:14:44,177] OS name = windows 11
+[2023-01-30 23:14:44,177] Driver instance name = chromedriver: chrome on windows (e2ec29277b801b162e16b97b3c7ddbb8)
+[2023-01-30 23:15:16,267] Precondition - Step 01 : Open URL 
+[2023-01-30 23:15:23,584] Precondition - Step 02 : Enter username + password  
+[2023-01-30 23:15:23,941] Precondition - Step 03 : Click button Login  
+[2023-01-30 23:15:24,983] Precondition - Step 04 : Click New Customer   
+[2023-01-30 23:15:25,496] Precondition - Step 05 : Enter Customer name  
+[2023-01-30 23:15:25,733] Precondition - Step 06 : Enter DOB  
+[2023-01-30 23:15:25,734] Precondition - Step 07 : Enter address 
+[2023-01-30 23:15:25,927] Precondition - Step 08 : Enter City   
+[2023-01-30 23:15:26,146] Precondition - Step 09 : Enter State  
+[2023-01-30 23:15:26,344] Precondition - Step 10 : Enter PIN  
+[2023-01-30 23:15:26,542] Precondition - Step 11 : Enter mobile phone  
+[2023-01-30 23:15:26,780] Precondition - Step 12 : Enter email  
+[2023-01-30 23:15:27,009] Precondition - Step 13 : Enter password   
+[2023-01-30 23:15:27,010] Precondition - Step 14 : Click button Submit   
+[2023-01-30 23:15:27,164] Precondition - Step 15 : Get Id  
+[2023-01-30 23:16:44,362] Precondition - Step 01 : Open URL 
+[2023-01-30 23:16:54,430] Precondition - Step 02 : Enter username + password  
+[2023-01-30 23:16:54,812] Precondition - Step 03 : Click button Login  
+[2023-01-30 23:16:56,761] Precondition - Step 04 : Click New Customer   
+[2023-01-30 23:16:57,273] Precondition - Step 05 : Enter Customer name  
+[2023-01-30 23:16:57,482] Precondition - Step 06 : Enter DOB  
+[2023-01-30 23:16:57,482] Precondition - Step 07 : Enter address 
+[2023-01-30 23:16:57,678] Precondition - Step 08 : Enter City   
+[2023-01-30 23:16:57,901] Precondition - Step 09 : Enter State  
+[2023-01-30 23:16:58,115] Precondition - Step 10 : Enter PIN  
+[2023-01-30 23:16:58,311] Precondition - Step 11 : Enter mobile phone  
+[2023-01-30 23:16:58,531] Precondition - Step 12 : Enter email  
+[2023-01-30 23:16:58,746] Precondition - Step 13 : Enter password   
+[2023-01-30 23:16:58,946] Precondition - Step 14 : Click button Submit   
+[2023-01-30 23:16:59,134] Precondition - Step 15 : Get Id  
+[2023-01-30 23:17:50,986] Precondition - Step 01 : Open URL 
+[2023-01-30 23:17:58,563] Precondition - Step 02 : Enter username + password  
+[2023-01-30 23:17:58,931] Precondition - Step 03 : Click button Login  
+[2023-01-30 23:18:00,010] Precondition - Step 04 : Click New Customer   
+[2023-01-30 23:18:00,547] Precondition - Step 05 : Enter Customer name  
+[2023-01-30 23:18:00,795] Precondition - Step 06 : Enter DOB  
+[2023-01-30 23:18:00,998] Precondition - Step 07 : Enter address 
+[2023-01-30 23:18:01,193] Precondition - Step 08 : Enter City   
+[2023-01-30 23:18:01,418] Precondition - Step 09 : Enter State  
+[2023-01-30 23:18:01,628] Precondition - Step 10 : Enter PIN  
+[2023-01-30 23:18:01,862] Precondition - Step 11 : Enter mobile phone  
+[2023-01-30 23:18:02,082] Precondition - Step 12 : Enter email  
+[2023-01-30 23:18:02,337] Precondition - Step 13 : Enter password   
+[2023-01-30 23:18:02,544] Precondition - Step 14 : Click button Submit   
+[2023-01-30 23:18:02,691] Precondition - Step 15 : Get Id  
+[2023-01-30 23:18:47,404] Precondition - Step 01 : Open URL 
+[2023-01-30 23:18:54,861] Precondition - Step 02 : Enter username + password  
+[2023-01-30 23:18:55,242] Precondition - Step 03 : Click button Login  
+[2023-01-30 23:18:56,893] Precondition - Step 04 : Click New Customer   
+[2023-01-30 23:18:57,399] Precondition - Step 05 : Enter Customer name  
+[2023-01-30 23:18:57,628] Precondition - Step 06 : Enter DOB  
+[2023-01-30 23:18:57,854] Precondition - Step 07 : Enter address 
+[2023-01-30 23:18:58,057] Precondition - Step 08 : Enter City   
+[2023-01-30 23:18:58,280] Precondition - Step 09 : Enter State  
+[2023-01-30 23:18:58,463] Precondition - Step 10 : Enter PIN  
+[2023-01-30 23:18:58,677] Precondition - Step 11 : Enter mobile phone  
+[2023-01-30 23:18:58,875] Precondition - Step 12 : Enter email  
+[2023-01-30 23:18:59,089] Precondition - Step 13 : Enter password   
+[2023-01-30 23:18:59,276] Precondition - Step 14 : Click button Submit   
+[2023-01-30 23:19:00,478] Precondition - Step 15 : Get Id  
+[2023-01-30 23:20:00,578] Precondition - Step 01 : Open URL 
+[2023-01-30 23:20:25,689] Precondition - Step 02 : Enter username + password  
+[2023-01-30 23:20:26,083] Precondition - Step 03 : Click button Login  
+[2023-01-30 23:20:27,270] Precondition - Step 04 : Click New Customer   
+[2023-01-30 23:20:27,760] Precondition - Step 05 : Enter Customer name  
+[2023-01-30 23:20:27,996] Precondition - Step 06 : Enter DOB  
+[2023-01-30 23:20:28,197] Precondition - Step 07 : Enter address 
+[2023-01-30 23:20:28,402] Precondition - Step 08 : Enter City   
+[2023-01-30 23:20:28,614] Precondition - Step 09 : Enter State  
+[2023-01-30 23:20:28,828] Precondition - Step 10 : Enter PIN  
+[2023-01-30 23:20:29,043] Precondition - Step 11 : Enter mobile phone  
+[2023-01-30 23:20:29,239] Precondition - Step 12 : Enter email  
+[2023-01-30 23:20:29,470] Precondition - Step 13 : Enter password   
+[2023-01-30 23:20:29,667] Precondition - Step 14 : Click button Submit   
+[2023-01-30 23:20:31,319] Precondition - Step 15 : Get Id  
+[2023-01-30 23:20:31,377] Precondition - Step 16 : Click Edit customer link   
+[2023-01-30 23:20:32,088] Precondition - Step 17 : Enter To customerID   
+[2023-01-30 23:20:32,255] Precondition - Step 18 : Click Button Submit   
+[2023-02-04 01:43:55,234] Precondition - Step 01 : Open URL 
+[2023-02-04 01:44:06,445] Precondition - Step 02 : Enter username + password  
+[2023-02-04 01:44:06,849] Precondition - Step 03 : Click button Login  
+[2023-02-04 01:44:07,941] Precondition - Step 04 : Click New Customer   
+[2023-02-04 01:44:08,457] Precondition - Step 05 : Enter Customer name  
+[2023-02-04 01:44:08,664] Precondition - Step 06 : Enter DOB  
+[2023-02-04 01:44:08,898] Precondition - Step 07 : Enter address 
+[2023-02-04 01:44:09,125] Precondition - Step 08 : Enter City   
+[2023-02-04 01:44:09,346] Precondition - Step 09 : Enter State  
+[2023-02-04 01:44:09,547] Precondition - Step 10 : Enter PIN  
+[2023-02-04 01:44:09,739] Precondition - Step 11 : Enter mobile phone  
+[2023-02-04 01:44:09,978] Precondition - Step 12 : Enter email  
+[2023-02-04 01:44:10,239] Precondition - Step 13 : Enter password   
+[2023-02-04 01:44:10,441] Precondition - Step 14 : Click button Submit   
+[2023-02-04 01:44:11,558] Precondition - Step 15 : Get Id  
+[2023-02-04 01:44:11,630] Precondition - Step 16 : Click Edit customer link   
+[2023-02-04 01:44:12,330] Precondition - Step 17 : Enter To customerID   
+[2023-02-04 01:44:12,482] Precondition - Step 18 : Click Button Submit   
+[2023-02-04 23:09:13,988] Precondition - Step 01 : Open URL 
+[2023-02-04 23:09:24,193] Precondition - Step 02 : Enter username + password  
+[2023-02-04 23:09:24,557] Precondition - Step 03 : Click button Login  
+[2023-02-04 23:09:25,638] Precondition - Step 04 : Click New Customer   
+[2023-02-04 23:09:26,155] Precondition - Step 05 : Enter Customer name  
+[2023-02-04 23:09:26,354] Precondition - Step 06 : Enter DOB  
+[2023-02-04 23:09:26,550] Precondition - Step 07 : Enter address 
+[2023-02-04 23:09:26,753] Precondition - Step 08 : Enter City   
+[2023-02-04 23:09:26,963] Precondition - Step 09 : Enter State  
+[2023-02-04 23:09:27,149] Precondition - Step 10 : Enter PIN  
+[2023-02-04 23:09:27,346] Precondition - Step 11 : Enter mobile phone  
+[2023-02-04 23:09:27,548] Precondition - Step 12 : Enter email  
+[2023-02-04 23:09:27,759] Precondition - Step 13 : Enter password   
+[2023-02-04 23:09:27,953] Precondition - Step 14 : Click button Submit   
+[2023-02-04 23:09:29,070] Precondition - Step 15 : Get Id  
+[2023-02-04 23:09:29,131] Precondition - Step 16 : Click Edit customer link   
+[2023-02-04 23:09:29,860] Precondition - Step 17 : Enter To customerID   
+[2023-02-04 23:09:30,010] Precondition - Step 18 : Click Button Submit   
+[2023-02-04 23:09:33,344] TC_01 - Customer name cannot be empty
+[2023-02-04 23:09:33,344] TC_01 - Step 01 : Do not enter value to customer id 
+[2023-02-04 23:09:38,590] TC_02 - Address cannot be empty 
+[2023-02-04 23:09:38,793] TC_02 - Step 03 : Verify error message
+[2023-02-04 23:10:09,044] TC_03 - City cannot be empty
+[2023-02-04 23:10:09,283] TC_03 - Step 02 : Verify message not be blank display
+[2023-02-04 23:10:09,346]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:09,348] TC_03 - City cannot be numberic
+[2023-02-04 23:10:09,349] TC_03 - Step 03 : Enter number into City field 
+[2023-02-04 23:10:09,514] TC_03 - Step 04 : Verify error message
+[2023-02-04 23:10:09,575]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:09,575] TC_03 - Step 05 : Enter number and text  into City field 
+[2023-02-04 23:10:09,748] TC_03 - Step 06 : Verify error message
+[2023-02-04 23:10:09,810]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:09,810] TC_03 - City cannot have special characters
+[2023-02-04 23:10:09,810] TC_03 - Step 07 : Enter special charactor into name field
+[2023-02-04 23:10:10,006] TC_03 - Step 08 : Verify error message
+[2023-02-04 23:10:10,074]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:10,076] TC_04 - state cannot be empty
+[2023-02-04 23:10:10,270] TC_04 - Step 02 : Verify message not be blank display
+[2023-02-04 23:10:10,326]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:10,326] TC_04 - state cannot be numberic
+[2023-02-04 23:10:10,326] TC_04 - Step 03 : Enter number into state field 
+[2023-02-04 23:10:10,497] TC_04 - Step 04 : Verify error message
+[2023-02-04 23:10:10,558]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:10,558] TC_04 - Step 05 : Enter number and text  into state field 
+[2023-02-04 23:10:10,749] TC_04 - Step 06 : Verify error message
+[2023-02-04 23:10:10,811]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:10,811] TC_04 - state cannot have special characters
+[2023-02-04 23:10:10,811] TC_04 - Step 07 : Enter special charactor into state field
+[2023-02-04 23:10:10,993] TC_04 - Step 08 : Verify error message
+[2023-02-04 23:10:11,063]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:11,066] TC_05 - Pin must be numberic
+[2023-02-04 23:10:11,067] TC_05 - Step 01 : Enter number into PIN field 
+[2023-02-04 23:10:11,261] TC_05 - Step 02 : Verify not display error message
+[2023-02-04 23:10:16,358]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:16,358] TC_05 - Step 03 : Enter characters into PIN field 
+[2023-02-04 23:10:16,546] TC_05 - Step 04 : Verify not display error message
+[2023-02-04 23:10:16,616]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:16,617] TC_05 - Step 05 : Enter  empty into PIN field 
+[2023-02-04 23:10:16,793] TC_05 - Step 06 : Verify not display error message
+[2023-02-04 23:10:16,851]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:16,851] TC_05 - Step 07 : Enter  less than 6 characters into PIN field 
+[2023-02-04 23:10:17,025] TC_05 - Step 08 : Verify not display error message
+[2023-02-04 23:10:17,087]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:17,087] TC_05 - Step 09 : Enter  more than 6 characters into PIN field 
+[2023-02-04 23:10:17,260] TC_05 - Step 10 : Verify value is 6 characters
+[2023-02-04 23:10:17,317]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:17,317] TC_05 - Step 11 : Enter  special characters into PIN field 
+[2023-02-04 23:10:17,490] TC_05 - Step 12 : Verify not display error message
+[2023-02-04 23:10:17,551]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:17,552] TC_05 - PIN cannot have first is  space 
+[2023-02-04 23:10:17,552] TC_05 - Step 13 : Enter first is blank space
+[2023-02-04 23:10:17,737] TC_05 - Step 14 : Verify error message
+[2023-02-04 23:10:17,799]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:17,799] TC_05 - PIN cannot  is  blank space 
+[2023-02-04 23:10:17,799] TC_05 - Step 15 : Enter first is blank space
+[2023-02-04 23:10:17,978] TC_05 - Step 16 : Verify error message
+[2023-02-04 23:10:18,044]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:18,047] TC_06 - Name cannot be empty
+[2023-02-04 23:10:18,259] TC_06 - Step 02 : Verify message not be blank display
+[2023-02-04 23:10:18,330]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:18,330] TC_06 - Name cannot have special characters
+[2023-02-04 23:10:18,330] TC_06 - Step 07 : Enter special charactor into name field
+[2023-02-04 23:10:18,500] TC_06 - Step 08 : Verify error message
+[2023-02-04 23:10:18,561]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:18,563] TC_07 - Email cannot be empty
+[2023-02-04 23:10:18,760] TC_07 - Step 02 : Verify message not be blank display
+[2023-02-04 23:10:18,825]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:18,825] TC_07 - Step 03 : Enter first is blank phone
+[2023-02-04 23:10:18,992] TC_07 - Step 04 : Verify error message
+[2023-02-04 23:10:19,061]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:19,263] TC_07 - Step 05 : Verify error message
+[2023-02-04 23:10:19,325]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:19,514] TC_07 - Step 06 : Verify error message
+[2023-02-04 23:10:19,587]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:19,765] TC_07 - Step 07 : Verify error message
+[2023-02-04 23:10:19,821]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:10:19,821] TC_07 - Step 08 : Enter first is blank phone
+[2023-02-04 23:10:20,000] TC_07 - Step 09 : Verify error message
+[2023-02-04 23:10:20,069]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:12:50,022] Precondition - Step 01 : Open URL 
+[2023-02-04 23:12:58,402] Precondition - Step 02 : Enter username + password  
+[2023-02-04 23:12:58,780] Precondition - Step 03 : Click button Login  
+[2023-02-04 23:13:00,795] Precondition - Step 04 : Click New Customer   
+[2023-02-04 23:13:01,295] Precondition - Step 05 : Enter Customer name  
+[2023-02-04 23:13:01,510] Precondition - Step 06 : Enter DOB  
+[2023-02-04 23:13:01,701] Precondition - Step 07 : Enter address 
+[2023-02-04 23:13:01,914] Precondition - Step 08 : Enter City   
+[2023-02-04 23:13:02,125] Precondition - Step 09 : Enter State  
+[2023-02-04 23:13:02,315] Precondition - Step 10 : Enter PIN  
+[2023-02-04 23:13:02,531] Precondition - Step 11 : Enter mobile phone  
+[2023-02-04 23:13:02,759] Precondition - Step 12 : Enter email  
+[2023-02-04 23:13:03,010] Precondition - Step 13 : Enter password   
+[2023-02-04 23:13:03,231] Precondition - Step 14 : Click button Submit   
+[2023-02-04 23:13:04,330] Precondition - Step 15 : Get Id  
+[2023-02-04 23:13:04,393] Precondition - Step 16 : Click Edit customer link   
+[2023-02-04 23:13:05,146] Precondition - Step 17 : Enter To customerID   
+[2023-02-04 23:13:05,297] Precondition - Step 18 : Click Button Submit   
+[2023-02-04 23:13:08,647] TC_01 - Customer name cannot be empty
+[2023-02-04 23:13:08,647] TC_01 - Step 01 : Do not enter value to customer id 
+[2023-02-04 23:13:13,893] TC_02 - Address cannot be empty 
+[2023-02-04 23:13:14,054] TC_02 - Step 03 : Verify error message
+[2023-02-04 23:13:44,282] TC_03 - City cannot be empty
+[2023-02-04 23:13:44,470] TC_03 - Step 02 : Verify message not be blank display
+[2023-02-04 23:13:44,549]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:44,551] TC_03 - City cannot be numberic
+[2023-02-04 23:13:44,551] TC_03 - Step 03 : Enter number into City field 
+[2023-02-04 23:13:44,706] TC_03 - Step 04 : Verify error message
+[2023-02-04 23:13:44,782]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:44,782] TC_03 - Step 05 : Enter number and text  into City field 
+[2023-02-04 23:13:44,964] TC_03 - Step 06 : Verify error message
+[2023-02-04 23:13:45,029]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:45,029] TC_03 - City cannot have special characters
+[2023-02-04 23:13:45,029] TC_03 - Step 07 : Enter special charactor into name field
+[2023-02-04 23:13:45,223] TC_03 - Step 08 : Verify error message
+[2023-02-04 23:13:45,279]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:45,281] TC_04 - state cannot be empty
+[2023-02-04 23:13:45,457] TC_04 - Step 02 : Verify message not be blank display
+[2023-02-04 23:13:45,527]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:45,527] TC_04 - state cannot be numberic
+[2023-02-04 23:13:45,527] TC_04 - Step 03 : Enter number into state field 
+[2023-02-04 23:13:45,699] TC_04 - Step 04 : Verify error message
+[2023-02-04 23:13:45,762]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:45,763] TC_04 - Step 05 : Enter number and text  into state field 
+[2023-02-04 23:13:45,945] TC_04 - Step 06 : Verify error message
+[2023-02-04 23:13:46,011]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:46,011] TC_04 - state cannot have special characters
+[2023-02-04 23:13:46,011] TC_04 - Step 07 : Enter special charactor into state field
+[2023-02-04 23:13:46,205] TC_04 - Step 08 : Verify error message
+[2023-02-04 23:13:46,273]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:46,275] TC_05 - Pin must be numberic
+[2023-02-04 23:13:46,275] TC_05 - Step 01 : Enter number into PIN field 
+[2023-02-04 23:13:46,477] TC_05 - Step 02 : Verify not display error message
+[2023-02-04 23:13:51,574]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:51,574] TC_05 - Step 03 : Enter characters into PIN field 
+[2023-02-04 23:13:51,767] TC_05 - Step 04 : Verify not display error message
+[2023-02-04 23:13:51,828]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:51,828] TC_05 - Step 05 : Enter  empty into PIN field 
+[2023-02-04 23:13:52,006] TC_05 - Step 06 : Verify not display error message
+[2023-02-04 23:13:52,066]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:52,066] TC_05 - Step 07 : Enter  less than 6 characters into PIN field 
+[2023-02-04 23:13:52,238] TC_05 - Step 08 : Verify not display error message
+[2023-02-04 23:13:52,299]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:52,299] TC_05 - Step 09 : Enter  more than 6 characters into PIN field 
+[2023-02-04 23:13:52,481] TC_05 - Step 10 : Verify value is 6 characters
+[2023-02-04 23:13:52,546]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:52,546] TC_05 - Step 11 : Enter  special characters into PIN field 
+[2023-02-04 23:13:52,718] TC_05 - Step 12 : Verify not display error message
+[2023-02-04 23:13:52,783]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:52,783] TC_05 - PIN cannot have first is  space 
+[2023-02-04 23:13:52,783] TC_05 - Step 13 : Enter first is blank space
+[2023-02-04 23:13:52,964] TC_05 - Step 14 : Verify error message
+[2023-02-04 23:13:53,030]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:53,030] TC_05 - PIN cannot  is  blank space 
+[2023-02-04 23:13:53,030] TC_05 - Step 15 : Enter first is blank space
+[2023-02-04 23:13:53,210] TC_05 - Step 16 : Verify error message
+[2023-02-04 23:13:53,278]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:53,280] TC_06 - Name cannot be empty
+[2023-02-04 23:13:53,477] TC_06 - Step 02 : Verify message not be blank display
+[2023-02-04 23:13:53,544]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:53,544] TC_06 - Name cannot have special characters
+[2023-02-04 23:13:53,544] TC_06 - Step 07 : Enter special charactor into name field
+[2023-02-04 23:13:53,728] TC_06 - Step 08 : Verify error message
+[2023-02-04 23:13:53,792]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:53,794] TC_07 - Email cannot be empty
+[2023-02-04 23:13:53,988] TC_07 - Step 02 : Verify message not be blank display
+[2023-02-04 23:13:54,057]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:54,057] TC_07 - Step 03 : Enter first is blank phone
+[2023-02-04 23:13:54,221] TC_07 - Step 04 : Verify error message
+[2023-02-04 23:13:54,289]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:54,483] TC_07 - Step 05 : Verify error message
+[2023-02-04 23:13:54,539]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:54,732] TC_07 - Step 06 : Verify error message
+[2023-02-04 23:13:54,788]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:54,977] TC_07 - Step 07 : Verify error message
+[2023-02-04 23:13:55,040]  -------------------------- PASSED -------------------------- 
+[2023-02-04 23:13:55,040] TC_07 - Step 08 : Enter first is blank phone
+[2023-02-04 23:13:55,220] TC_07 - Step 09 : Verify error message
+[2023-02-04 23:13:55,291]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:13:38,530] Precondition - Step 01 : Open URL 
+[2023-02-05 08:13:46,634] Precondition - Step 02 : Enter username + password  
+[2023-02-05 08:13:47,017] Precondition - Step 03 : Click button Login  
+[2023-02-05 08:13:48,050] Precondition - Step 04 : Click New Customer   
+[2023-02-05 08:13:48,556] Precondition - Step 05 : Enter Customer name  
+[2023-02-05 08:13:48,793] Precondition - Step 06 : Enter DOB  
+[2023-02-05 08:13:48,986] Precondition - Step 07 : Enter address 
+[2023-02-05 08:13:49,187] Precondition - Step 08 : Enter City   
+[2023-02-05 08:13:49,381] Precondition - Step 09 : Enter State  
+[2023-02-05 08:13:49,581] Precondition - Step 10 : Enter PIN  
+[2023-02-05 08:13:49,812] Precondition - Step 11 : Enter mobile phone  
+[2023-02-05 08:13:50,020] Precondition - Step 12 : Enter email  
+[2023-02-05 08:13:50,254] Precondition - Step 13 : Enter password   
+[2023-02-05 08:13:50,470] Precondition - Step 14 : Click button Submit   
+[2023-02-05 08:13:52,291] Precondition - Step 15 : Get Id  
+[2023-02-05 08:13:52,348] Precondition - Step 16 : Click Edit customer link   
+[2023-02-05 08:13:53,056] Precondition - Step 17 : Enter To customerID   
+[2023-02-05 08:13:53,211] Precondition - Step 18 : Click Button Submit   
+[2023-02-05 08:13:55,980] TC_01 - Customer name cannot be empty
+[2023-02-05 08:13:55,981] TC_01 - Step 01 : Do not enter value to customer id 
+[2023-02-05 08:14:01,266] TC_02 - Address cannot be empty 
+[2023-02-05 08:14:01,693] TC_02 - Step 03 : Verify error message
+[2023-02-05 08:14:31,892] TC_03 - City cannot be empty
+[2023-02-05 08:14:32,127] TC_03 - Step 02 : Verify message not be blank display
+[2023-02-05 08:14:32,202]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:32,203] TC_03 - City cannot be numberic
+[2023-02-05 08:14:32,204] TC_03 - Step 03 : Enter number into City field 
+[2023-02-05 08:14:32,404] TC_03 - Step 04 : Verify error message
+[2023-02-05 08:14:32,469]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:32,469] TC_03 - Step 05 : Enter number and text  into City field 
+[2023-02-05 08:14:32,672] TC_03 - Step 06 : Verify error message
+[2023-02-05 08:14:32,748]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:32,748] TC_03 - City cannot have special characters
+[2023-02-05 08:14:32,748] TC_03 - Step 07 : Enter special charactor into name field
+[2023-02-05 08:14:32,934] TC_03 - Step 08 : Verify error message
+[2023-02-05 08:14:33,026]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:33,029] TC_04 - state cannot be empty
+[2023-02-05 08:14:33,238] TC_04 - Step 02 : Verify message not be blank display
+[2023-02-05 08:14:33,316]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:33,316] TC_04 - state cannot be numberic
+[2023-02-05 08:14:33,316] TC_04 - Step 03 : Enter number into state field 
+[2023-02-05 08:14:33,525] TC_04 - Step 04 : Verify error message
+[2023-02-05 08:14:33,590]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:33,590] TC_04 - Step 05 : Enter number and text  into state field 
+[2023-02-05 08:14:33,784] TC_04 - Step 06 : Verify error message
+[2023-02-05 08:14:33,865]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:33,865] TC_04 - state cannot have special characters
+[2023-02-05 08:14:33,865] TC_04 - Step 07 : Enter special charactor into state field
+[2023-02-05 08:14:34,066] TC_04 - Step 08 : Verify error message
+[2023-02-05 08:14:34,144]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:34,147] TC_05 - Pin must be numberic
+[2023-02-05 08:14:34,148] TC_05 - Step 01 : Enter number into PIN field 
+[2023-02-05 08:14:34,363] TC_05 - Step 02 : Verify not display error message
+[2023-02-05 08:14:39,450]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:39,450] TC_05 - Step 03 : Enter characters into PIN field 
+[2023-02-05 08:14:39,632] TC_05 - Step 04 : Verify not display error message
+[2023-02-05 08:14:39,700]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:39,700] TC_05 - Step 05 : Enter  empty into PIN field 
+[2023-02-05 08:14:39,848] TC_05 - Step 06 : Verify not display error message
+[2023-02-05 08:14:39,911]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:39,912] TC_05 - Step 07 : Enter  less than 6 characters into PIN field 
+[2023-02-05 08:14:40,094] TC_05 - Step 08 : Verify not display error message
+[2023-02-05 08:14:40,155]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:40,155] TC_05 - Step 09 : Enter  more than 6 characters into PIN field 
+[2023-02-05 08:14:40,374] TC_05 - Step 10 : Verify value is 6 characters
+[2023-02-05 08:14:40,445]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:40,445] TC_05 - Step 11 : Enter  special characters into PIN field 
+[2023-02-05 08:14:40,638] TC_05 - Step 12 : Verify not display error message
+[2023-02-05 08:14:40,698]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:40,698] TC_05 - PIN cannot have first is  space 
+[2023-02-05 08:14:40,698] TC_05 - Step 13 : Enter first is blank space
+[2023-02-05 08:14:40,915] TC_05 - Step 14 : Verify error message
+[2023-02-05 08:14:40,989]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:40,989] TC_05 - PIN cannot  is  blank space 
+[2023-02-05 08:14:40,989] TC_05 - Step 15 : Enter first is blank space
+[2023-02-05 08:14:41,187] TC_05 - Step 16 : Verify error message
+[2023-02-05 08:14:41,268]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:41,270] TC_06 - Name cannot be empty
+[2023-02-05 08:14:41,490] TC_06 - Step 02 : Verify message not be blank display
+[2023-02-05 08:14:41,580]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:41,580] TC_06 - Name cannot have special characters
+[2023-02-05 08:14:41,580] TC_06 - Step 07 : Enter special charactor into name field
+[2023-02-05 08:14:41,781] TC_06 - Step 08 : Verify error message
+[2023-02-05 08:14:41,844]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:41,847] TC_07 - Email cannot be empty
+[2023-02-05 08:14:42,075] TC_07 - Step 02 : Verify message not be blank display
+[2023-02-05 08:14:42,152]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:42,152] TC_07 - Step 03 : Enter first is blank phone
+[2023-02-05 08:14:42,341] TC_07 - Step 04 : Verify error message
+[2023-02-05 08:14:42,415]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:42,622] TC_07 - Step 05 : Verify error message
+[2023-02-05 08:14:42,695]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:42,880] TC_07 - Step 06 : Verify error message
+[2023-02-05 08:14:42,951]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:43,161] TC_07 - Step 07 : Verify error message
+[2023-02-05 08:14:43,234]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:14:43,234] TC_07 - Step 08 : Enter first is blank phone
+[2023-02-05 08:14:43,429] TC_07 - Step 09 : Verify error message
+[2023-02-05 08:14:43,497]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:37:45,461] Precondition - Step 01 : Open URL 
+[2023-02-05 08:37:54,032] Precondition - Step 02 : Enter username + password  
+[2023-02-05 08:37:54,408] Precondition - Step 03 : Click button Login  
+[2023-02-05 08:37:56,059] Precondition - Step 04 : Click New Customer   
+[2023-02-05 08:37:56,582] Precondition - Step 05 : Enter Customer name  
+[2023-02-05 08:37:56,809] Precondition - Step 06 : Enter DOB  
+[2023-02-05 08:37:57,014] Precondition - Step 07 : Enter address 
+[2023-02-05 08:37:57,219] Precondition - Step 08 : Enter City   
+[2023-02-05 08:37:57,412] Precondition - Step 09 : Enter State  
+[2023-02-05 08:37:57,600] Precondition - Step 10 : Enter PIN  
+[2023-02-05 08:37:57,795] Precondition - Step 11 : Enter mobile phone  
+[2023-02-05 08:37:57,992] Precondition - Step 12 : Enter email  
+[2023-02-05 08:37:58,203] Precondition - Step 13 : Enter password   
+[2023-02-05 08:37:58,410] Precondition - Step 14 : Click button Submit   
+[2023-02-05 08:37:58,930] Precondition - Step 15 : Get Id  
+[2023-02-05 08:38:58,623] Precondition - Step 01 : Open URL 
+[2023-02-05 08:39:06,121] Precondition - Step 02 : Enter username + password  
+[2023-02-05 08:39:06,471] Precondition - Step 03 : Click button Login  
+[2023-02-05 08:39:07,497] Precondition - Step 04 : Click New Customer   
+[2023-02-05 08:39:07,996] Precondition - Step 05 : Enter Customer name  
+[2023-02-05 08:39:08,228] Precondition - Step 06 : Enter DOB  
+[2023-02-05 08:39:08,421] Precondition - Step 07 : Enter address 
+[2023-02-05 08:39:08,641] Precondition - Step 08 : Enter City   
+[2023-02-05 08:39:08,878] Precondition - Step 09 : Enter State  
+[2023-02-05 08:39:09,103] Precondition - Step 10 : Enter PIN  
+[2023-02-05 08:39:09,307] Precondition - Step 11 : Enter mobile phone  
+[2023-02-05 08:39:09,523] Precondition - Step 12 : Enter email  
+[2023-02-05 08:39:09,748] Precondition - Step 13 : Enter password   
+[2023-02-05 08:39:09,966] Precondition - Step 14 : Click button Submit   
+[2023-02-05 08:39:11,722] Precondition - Step 15 : Get Id  
+[2023-02-05 08:39:11,786] Precondition - Step 16 : Click Edit customer link   
+[2023-02-05 08:39:12,578] Precondition - Step 17 : Enter To customerID   
+[2023-02-05 08:39:12,728] Precondition - Step 18 : Click Button Submit   
+[2023-02-05 08:39:13,532] TC_01 - Customer name must be dissable
+[2023-02-05 08:39:13,532] TC_01 - Step 01 : Verify input text is disable 
+[2023-02-05 08:39:13,560]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:13,569] TC_02 - Address cannot be empty 
+[2023-02-05 08:39:13,758] TC_02 - Step 03 : Verify error message
+[2023-02-05 08:39:13,824]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:13,828] TC_03 - City cannot be empty
+[2023-02-05 08:39:14,026] TC_03 - Step 02 : Verify message not be blank display
+[2023-02-05 08:39:14,104]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:14,104] TC_03 - City cannot be numberic
+[2023-02-05 08:39:14,104] TC_03 - Step 03 : Enter number into City field 
+[2023-02-05 08:39:14,297] TC_03 - Step 04 : Verify error message
+[2023-02-05 08:39:14,368]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:14,368] TC_03 - Step 05 : Enter number and text  into City field 
+[2023-02-05 08:39:14,579] TC_03 - Step 06 : Verify error message
+[2023-02-05 08:39:14,642]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:14,642] TC_03 - City cannot have special characters
+[2023-02-05 08:39:14,642] TC_03 - Step 07 : Enter special charactor into name field
+[2023-02-05 08:39:14,842] TC_03 - Step 08 : Verify error message
+[2023-02-05 08:39:14,934]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:14,937] TC_04 - state cannot be empty
+[2023-02-05 08:39:15,129] TC_04 - Step 02 : Verify message not be blank display
+[2023-02-05 08:39:15,206]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:15,206] TC_04 - state cannot be numberic
+[2023-02-05 08:39:15,206] TC_04 - Step 03 : Enter number into state field 
+[2023-02-05 08:39:15,380] TC_04 - Step 04 : Verify error message
+[2023-02-05 08:39:15,445]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:15,445] TC_04 - Step 05 : Enter number and text  into state field 
+[2023-02-05 08:39:15,638] TC_04 - Step 06 : Verify error message
+[2023-02-05 08:39:15,704]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:15,704] TC_04 - state cannot have special characters
+[2023-02-05 08:39:15,705] TC_04 - Step 07 : Enter special charactor into state field
+[2023-02-05 08:39:15,923] TC_04 - Step 08 : Verify error message
+[2023-02-05 08:39:15,986]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:15,989] TC_05 - Pin must be numberic
+[2023-02-05 08:39:15,989] TC_05 - Step 01 : Enter number into PIN field 
+[2023-02-05 08:39:16,208] TC_05 - Step 02 : Verify not display error message
+[2023-02-05 08:39:21,285]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:21,285] TC_05 - Step 03 : Enter characters into PIN field 
+[2023-02-05 08:39:21,471] TC_05 - Step 04 : Verify not display error message
+[2023-02-05 08:39:21,536]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:21,537] TC_05 - Step 05 : Enter  empty into PIN field 
+[2023-02-05 08:39:21,697] TC_05 - Step 06 : Verify not display error message
+[2023-02-05 08:39:21,755]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:21,755] TC_05 - Step 07 : Enter  less than 6 characters into PIN field 
+[2023-02-05 08:39:21,926] TC_05 - Step 08 : Verify not display error message
+[2023-02-05 08:39:22,005]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:22,006] TC_05 - Step 09 : Enter  more than 6 characters into PIN field 
+[2023-02-05 08:39:22,192] TC_05 - Step 10 : Verify value is 6 characters
+[2023-02-05 08:39:22,256]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:22,256] TC_05 - Step 11 : Enter  special characters into PIN field 
+[2023-02-05 08:39:22,426] TC_05 - Step 12 : Verify not display error message
+[2023-02-05 08:39:22,493]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:22,494] TC_05 - PIN cannot have first is  space 
+[2023-02-05 08:39:22,494] TC_05 - Step 13 : Enter first is blank space
+[2023-02-05 08:39:22,656] TC_05 - Step 14 : Verify error message
+[2023-02-05 08:39:22,719]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:22,719] TC_05 - PIN cannot  is  blank space 
+[2023-02-05 08:39:22,719] TC_05 - Step 15 : Enter first is blank space
+[2023-02-05 08:39:22,915] TC_05 - Step 16 : Verify error message
+[2023-02-05 08:39:22,984]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:22,985] TC_06 - Name cannot be empty
+[2023-02-05 08:39:23,184] TC_06 - Step 02 : Verify message not be blank display
+[2023-02-05 08:39:23,250]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:23,250] TC_06 - Name cannot have special characters
+[2023-02-05 08:39:23,250] TC_06 - Step 07 : Enter special charactor into name field
+[2023-02-05 08:39:23,394] TC_06 - Step 08 : Verify error message
+[2023-02-05 08:39:23,460]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:23,462] TC_07 - Email cannot be empty
+[2023-02-05 08:39:23,652] TC_07 - Step 02 : Verify message not be blank display
+[2023-02-05 08:39:23,714]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:23,714] TC_07 - Step 03 : Enter first is blank phone
+[2023-02-05 08:39:23,869] TC_07 - Step 04 : Verify error message
+[2023-02-05 08:39:23,939]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:24,125] TC_07 - Step 05 : Verify error message
+[2023-02-05 08:39:24,191]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:24,369] TC_07 - Step 06 : Verify error message
+[2023-02-05 08:39:24,427]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:24,596] TC_07 - Step 07 : Verify error message
+[2023-02-05 08:39:24,660]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:39:24,660] TC_07 - Step 08 : Enter first is blank phone
+[2023-02-05 08:39:24,837] TC_07 - Step 09 : Verify error message
+[2023-02-05 08:39:24,894]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:01,501] Precondition - Step 01 : Open URL 
+[2023-02-05 08:40:13,434] Precondition - Step 02 : Enter username + password  
+[2023-02-05 08:40:13,777] Precondition - Step 03 : Click button Login  
+[2023-02-05 08:40:15,097] Precondition - Step 04 : Click New Customer   
+[2023-02-05 08:40:15,584] Precondition - Step 05 : Enter Customer name  
+[2023-02-05 08:40:15,784] Precondition - Step 06 : Enter DOB  
+[2023-02-05 08:40:15,974] Precondition - Step 07 : Enter address 
+[2023-02-05 08:40:16,152] Precondition - Step 08 : Enter City   
+[2023-02-05 08:40:16,362] Precondition - Step 09 : Enter State  
+[2023-02-05 08:40:16,550] Precondition - Step 10 : Enter PIN  
+[2023-02-05 08:40:16,742] Precondition - Step 11 : Enter mobile phone  
+[2023-02-05 08:40:16,940] Precondition - Step 12 : Enter email  
+[2023-02-05 08:40:17,152] Precondition - Step 13 : Enter password   
+[2023-02-05 08:40:17,349] Precondition - Step 14 : Click button Submit   
+[2023-02-05 08:40:18,428] Precondition - Step 15 : Get Id  
+[2023-02-05 08:40:18,518] OS name = windows 11
+[2023-02-05 08:40:18,518] Driver instance name = chromedriver: chrome on windows (77eb8d45c7c2897527842959a1eee51d)
+[2023-02-05 08:40:26,514] Precondition - Step 01 : Open URL 
+[2023-02-05 08:40:33,948] Precondition - Step 02 : Enter username + password  
+[2023-02-05 08:40:34,298] Precondition - Step 03 : Click button Login  
+[2023-02-05 08:40:35,361] Precondition - Step 04 : Click New Customer   
+[2023-02-05 08:40:35,859] Precondition - Step 05 : Enter Customer name  
+[2023-02-05 08:40:36,067] Precondition - Step 06 : Enter DOB  
+[2023-02-05 08:40:36,258] Precondition - Step 07 : Enter address 
+[2023-02-05 08:40:36,455] Precondition - Step 08 : Enter City   
+[2023-02-05 08:40:36,665] Precondition - Step 09 : Enter State  
+[2023-02-05 08:40:36,865] Precondition - Step 10 : Enter PIN  
+[2023-02-05 08:40:37,057] Precondition - Step 11 : Enter mobile phone  
+[2023-02-05 08:40:37,270] Precondition - Step 12 : Enter email  
+[2023-02-05 08:40:37,483] Precondition - Step 13 : Enter password   
+[2023-02-05 08:40:37,693] Precondition - Step 14 : Click button Submit   
+[2023-02-05 08:40:39,424] Precondition - Step 15 : Get Id  
+[2023-02-05 08:40:39,492] Precondition - Step 16 : Click Edit customer link   
+[2023-02-05 08:40:40,262] Precondition - Step 17 : Enter To customerID   
+[2023-02-05 08:40:40,408] Precondition - Step 18 : Click Button Submit   
+[2023-02-05 08:40:41,180] TC_01 - Customer name must be dissable
+[2023-02-05 08:40:41,181] TC_01 - Step 01 : Verify input text is disable 
+[2023-02-05 08:40:41,212]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:41,217] TC_02 - Address cannot be empty 
+[2023-02-05 08:40:41,410] TC_02 - Step 03 : Verify error message
+[2023-02-05 08:40:41,493]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:41,495] TC_03 - City cannot be empty
+[2023-02-05 08:40:41,711] TC_03 - Step 02 : Verify message not be blank display
+[2023-02-05 08:40:41,803]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:41,803] TC_03 - City cannot be numberic
+[2023-02-05 08:40:41,803] TC_03 - Step 03 : Enter number into City field 
+[2023-02-05 08:40:41,991] TC_03 - Step 04 : Verify error message
+[2023-02-05 08:40:42,052]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:42,052] TC_03 - Step 05 : Enter number and text  into City field 
+[2023-02-05 08:40:42,256] TC_03 - Step 06 : Verify error message
+[2023-02-05 08:40:42,318]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:42,318] TC_03 - City cannot have special characters
+[2023-02-05 08:40:42,319] TC_03 - Step 07 : Enter special charactor into name field
+[2023-02-05 08:40:42,535] TC_03 - Step 08 : Verify error message
+[2023-02-05 08:40:42,601]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:42,604] TC_04 - state cannot be empty
+[2023-02-05 08:40:42,809] TC_04 - Step 02 : Verify message not be blank display
+[2023-02-05 08:40:42,890]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:42,890] TC_04 - state cannot be numberic
+[2023-02-05 08:40:42,890] TC_04 - Step 03 : Enter number into state field 
+[2023-02-05 08:40:43,096] TC_04 - Step 04 : Verify error message
+[2023-02-05 08:40:43,153]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:43,153] TC_04 - Step 05 : Enter number and text  into state field 
+[2023-02-05 08:40:43,358] TC_04 - Step 06 : Verify error message
+[2023-02-05 08:40:43,441]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:43,441] TC_04 - state cannot have special characters
+[2023-02-05 08:40:43,441] TC_04 - Step 07 : Enter special charactor into state field
+[2023-02-05 08:40:43,655] TC_04 - Step 08 : Verify error message
+[2023-02-05 08:40:43,719]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:43,722] TC_05 - Pin must be numberic
+[2023-02-05 08:40:43,722] TC_05 - Step 01 : Enter number into PIN field 
+[2023-02-05 08:40:43,960] TC_05 - Step 02 : Verify not display error message
+[2023-02-05 08:40:49,004]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:49,004] TC_05 - Step 03 : Enter characters into PIN field 
+[2023-02-05 08:40:49,171] TC_05 - Step 04 : Verify not display error message
+[2023-02-05 08:40:49,236]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:49,236] TC_05 - Step 05 : Enter  empty into PIN field 
+[2023-02-05 08:40:49,392] TC_05 - Step 06 : Verify not display error message
+[2023-02-05 08:40:49,463]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:49,463] TC_05 - Step 07 : Enter  less than 6 characters into PIN field 
+[2023-02-05 08:40:49,646] TC_05 - Step 08 : Verify not display error message
+[2023-02-05 08:40:49,704]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:49,704] TC_05 - Step 09 : Enter  more than 6 characters into PIN field 
+[2023-02-05 08:40:49,888] TC_05 - Step 10 : Verify value is 6 characters
+[2023-02-05 08:40:49,953]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:49,953] TC_05 - Step 11 : Enter  special characters into PIN field 
+[2023-02-05 08:40:50,122] TC_05 - Step 12 : Verify not display error message
+[2023-02-05 08:40:50,186]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:50,186] TC_05 - PIN cannot have first is  space 
+[2023-02-05 08:40:50,186] TC_05 - Step 13 : Enter first is blank space
+[2023-02-05 08:40:50,355] TC_05 - Step 14 : Verify error message
+[2023-02-05 08:40:50,411]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:50,412] TC_05 - PIN cannot  is  blank space 
+[2023-02-05 08:40:50,412] TC_05 - Step 15 : Enter first is blank space
+[2023-02-05 08:40:50,568] TC_05 - Step 16 : Verify error message
+[2023-02-05 08:40:50,633]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:50,635] TC_06 - Name cannot be empty
+[2023-02-05 08:40:50,818] TC_06 - Step 02 : Verify message not be blank display
+[2023-02-05 08:40:50,883]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:50,883] TC_06 - Name cannot have special characters
+[2023-02-05 08:40:50,883] TC_06 - Step 07 : Enter special charactor into name field
+[2023-02-05 08:40:51,040] TC_06 - Step 08 : Verify error message
+[2023-02-05 08:40:51,099]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:51,101] TC_07 - Email cannot be empty
+[2023-02-05 08:40:51,297] TC_07 - Step 02 : Verify message not be blank display
+[2023-02-05 08:40:51,370]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:51,370] TC_07 - Step 03 : Enter first is blank phone
+[2023-02-05 08:40:51,535] TC_07 - Step 04 : Verify error message
+[2023-02-05 08:40:51,603]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:51,769] TC_07 - Step 05 : Verify error message
+[2023-02-05 08:40:51,836]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:52,007] TC_07 - Step 06 : Verify error message
+[2023-02-05 08:40:52,065]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:52,240] TC_07 - Step 07 : Verify error message
+[2023-02-05 08:40:52,296]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:52,297] TC_07 - Step 08 : Enter first is blank phone
+[2023-02-05 08:40:52,475] TC_07 - Step 09 : Verify error message
+[2023-02-05 08:40:52,544]  -------------------------- PASSED -------------------------- 
+[2023-02-05 08:40:52,545] OS name = windows 11
+[2023-02-05 08:40:52,546] Driver instance name = chromedriver: chrome on windows (5277b2a44b81e90a7e55a3573ef19023)

@@ -4,14 +4,14 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import bankguruUI.AddNewCustomerBankGuruUI;
+import bankguruUI.EditCustomerBankGuruUI;
 import common.BasePage;
-import common.GenerateObject;
 
-public class AddNewCustomerBankGuruObject extends BasePage {
+public class EditCustomerBankGuruObject extends BasePage {
 
 	private WebDriver driver;
 
-	public AddNewCustomerBankGuruObject(WebDriver driver) {
+	public EditCustomerBankGuruObject(WebDriver driver) {
 		this.driver = driver;
 	}
 
@@ -24,7 +24,8 @@ public class AddNewCustomerBankGuruObject extends BasePage {
 		} else if (nameField.equals("dob")) {
 			waitForElementClickable(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "dob");
 			clickToElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "dob");
-			getWebElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "dob").clear();;
+			getWebElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "dob").clear();
+			;
 			getWebElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "dob").sendKeys(Keys.TAB);
 		} else if (nameField.equals("rad1")) {
 			waitForElementClickable(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "rad1");
@@ -43,7 +44,8 @@ public class AddNewCustomerBankGuruObject extends BasePage {
 		} else if (nameField.equals("state")) {
 			waitForElementClickable(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "state");
 			clickToElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "state");
-			getWebElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "state").clear();;
+			getWebElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "state").clear();
+			;
 			getWebElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "state").sendKeys(Keys.TAB);
 		} else if (nameField.equals("pin")) {
 			waitForElementClickable(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "pinno");
@@ -134,18 +136,10 @@ public class AddNewCustomerBankGuruObject extends BasePage {
 			waitForElementClickable(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "telephoneno");
 			getWebElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "telephoneno").clear();
 			sendKeyToElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, nameText, "telephoneno");
-		} else if (nameField.equals("password")) {
-			waitForElementClickable(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "password");
-			getWebElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "password").clear();
-			sendKeyToElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, nameText, "password");
 		} else if (nameField.equals("email")) {
 			waitForElementClickable(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "emailid");
 			getWebElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "emailid").clear();
 			sendKeyToElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, nameText, "emailid");
-		} else if (nameField.equals("dob")) {
-			waitForElementClickable(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "dob");
-			getWebElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, "dob").clear();
-			sendKeyToElement(driver, AddNewCustomerBankGuruUI.INPUT_TEXTBOX, nameText, "dob");
 		} else {
 			System.out.println("nameField not valid");
 		}
@@ -182,10 +176,20 @@ public class AddNewCustomerBankGuruObject extends BasePage {
 			return false;
 	}
 
-	public ManagerCustomerBankGuruObject clickToSubmitButton() {
-		waitForElementClickable(driver, AddNewCustomerBankGuruUI.SUBMIT_BUTTON);
-		clickToElement(driver, AddNewCustomerBankGuruUI.SUBMIT_BUTTON);
-		return GenerateObject.getManagerCustomerBankGuruObject(driver);
+	public void enterToCustomerID(String customerId) {
+		waitForElementClickable(driver, EditCustomerBankGuruUI.CUTOMER_ID);
+		sendKeyToElement(driver, EditCustomerBankGuruUI.CUTOMER_ID, customerId);
+
+	}
+
+	public void clickButtonSubmit() {
+		waitForElementClickable(driver, EditCustomerBankGuruUI.SUBMIT_BUTTON);
+		clickToElement(driver, EditCustomerBankGuruUI.SUBMIT_BUTTON);
+
+	}
+
+	public boolean isEnableCustomerName() {
+		return isElementEnable(driver, EditCustomerBankGuruUI.INPUT_TEXTBOX, "name");
 	}
 
 }

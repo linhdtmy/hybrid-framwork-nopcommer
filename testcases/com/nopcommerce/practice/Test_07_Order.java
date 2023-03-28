@@ -57,16 +57,17 @@ public class Test_07_Order extends BaseTest {
 		loginPageObject.inputToEmailTextbox(email);
 		loginPageObject.inputToPasswordTextbox(password);
 		homePageObject = loginPageObject.clickToLoginButton();
-		homePageObject.hoverToComputerLink(driver);
-		log.info("Step 01: Open Notebook link");
-		noteBookPageObject = homePageObject.clickToNoteBookLink(driver);
-		log.info("Step 02: Open a random Product");
 		
 
 	}
 
 	@Test
 	public void TC_01_Add_Product_To_Cart() {
+		homePageObject.hoverToComputerLink(driver);
+		log.info("Step 01: Open Desktop link");
+		noteBookPageObject = homePageObject.clickToNoteBookLink(driver,"Desktops");
+		log.info("Step 02: Open Build Your owner computer");
+		detailProductObject= noteBookPageObject.clickToProduct();
 	}
 
 	@Test

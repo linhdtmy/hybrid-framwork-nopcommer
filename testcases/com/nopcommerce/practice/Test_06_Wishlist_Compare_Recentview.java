@@ -58,7 +58,7 @@ public class Test_06_Wishlist_Compare_Recentview extends BaseTest {
 		loginPageObject.inputToPasswordTextbox(password);
 		homePageObject = loginPageObject.clickToLoginButton();
 		homePageObject.hoverToComputerLink(driver);
-		noteBookPageObject = homePageObject.clickToNoteBookLink(driver);
+		noteBookPageObject = homePageObject.clickToNoteBookLink(driver,"Apple MacBook Pro 13-inch");
 	}
 
 	@Test
@@ -84,7 +84,7 @@ public class Test_06_Wishlist_Compare_Recentview extends BaseTest {
 	@Test
 	public void TC_03_Remove_Product() {
 		cartObject.hoverToComputerLink(driver);
-		noteBookPageObject = cartObject.clickToNoteBookLink(driver);
+		noteBookPageObject = cartObject.clickToNoteBookLink(driver,"Apple MacBook Pro 13-inch");
 		noteBookPageObject.clickToAddWishList();
 		wishListObject = noteBookPageObject.clickToWishListIcon();
 		wishListObject.clickToRemoveProduct();
@@ -97,7 +97,7 @@ public class Test_06_Wishlist_Compare_Recentview extends BaseTest {
 	@Test
 	public void TC_04_Add_Product_To_Compare() {
 		wishListObject.hoverToComputerLink(driver);
-		noteBookPageObject = wishListObject.clickToNoteBookLink(driver);
+		noteBookPageObject = wishListObject.clickToNoteBookLink(driver,"Apple MacBook Pro 13-inch");
 		noteBookPageObject.addProductToCompare();
 		Assert.assertEquals(noteBookPageObject.getMessageAddToCompareListSuccess(), "The product has been added to your " + "product comparison");
 		compareProductObject = noteBookPageObject.clickToCompareLink();
@@ -116,13 +116,13 @@ public class Test_06_Wishlist_Compare_Recentview extends BaseTest {
 	@Test
 	public void TC_05_Recent_View_Product() {
 		compareProductObject.hoverToComputerLink(driver);
-		noteBookPageObject = compareProductObject.clickToNoteBookLink(driver);
+		noteBookPageObject = compareProductObject.clickToNoteBookLink(driver,"Apple MacBook Pro 13-inch");
 		List<WebElement> listProduct;
 		for (int i = 0; i < 5; i++) {
 			listProduct = noteBookPageObject.getListProductElement();
 			listProduct.get(i).click();
 			detailProductObject.hoverToComputerLink(driver);
-			noteBookPageObject = detailProductObject.clickToNoteBookLink(driver);
+			noteBookPageObject = detailProductObject.clickToNoteBookLink(driver,"Apple MacBook Pro 13-inch");
 		}
 
 		recentViewProductObject = noteBookPageObject.clickToRecentViewProduct();

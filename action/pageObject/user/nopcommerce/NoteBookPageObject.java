@@ -80,8 +80,8 @@ public class NoteBookPageObject extends BasePage {
 	}
 
 	public DetailProductObject clickToProduct() {
-		waitForElementClickable(driver, NoteBookUI.PRODUCT_LINK);
-		clickToElement(driver, NoteBookUI.PRODUCT_LINK);
+		waitForElementClickable(driver, NoteBookUI.PRODUCT_LINK,"Build your own computer");
+		clickToElement(driver, NoteBookUI.PRODUCT_LINK,"Build your own computer");
 		return GenerateObject.getDetailPage(driver);
 	}
 

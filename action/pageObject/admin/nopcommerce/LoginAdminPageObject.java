@@ -2,7 +2,7 @@ package pageObject.admin.nopcommerce;
 
 import org.openqa.selenium.WebDriver;
 
-import adminPageUI.LoginAdminUI;
+import adminNopcommerPageUI.LoginAdminUI;
 import common.BasePage;
 import common.GenerateObject;
 import userPageUI.LoginPageUI;

@@ -26,4 +26,27 @@ public class ManagerCustomerBankGuruObject extends BasePage {
 		return GenerateObject.getEditCustomerBankGuruObject(driver);
 	}
 
+	public DeleteCustomerBankGuruObject clickToDeleteCustomer() {
+		waitForElementVisible(driver, ManagerCustomerBankGuruUI.DELETE_LINK);
+		clickToElement(driver, ManagerCustomerBankGuruUI.DELETE_LINK);
+		return GenerateObject.getDeleteCustomerBankGuruObject(driver);
+	}
+
+	public AddNewAccountBankGuruObject clickToNewAccountLink() {
+		waitForElementClickable(driver, ManagerCustomerBankGuruUI.NEW_ACCOUNT_LINK);
+		clickToElement(driver, ManagerCustomerBankGuruUI.NEW_ACCOUNT_LINK);
+		return GenerateObject.getAddNewAccountBankGuruObject(driver);
+	}
+
+	public String getAccountId() {
+		waitForElementVisible(driver, ManagerCustomerBankGuruUI.ACCOUNT_ID);
+		return getElementText(driver, ManagerCustomerBankGuruUI.ACCOUNT_ID);
+	}
+
+	public EditAccountrBankGuruObject clickToEditAccount() {
+		waitForElementClickable(driver, ManagerCustomerBankGuruUI.EDIT_ACCOUNT_LINK);
+		clickToElement(driver, ManagerCustomerBankGuruUI.EDIT_ACCOUNT_LINK);
+		return GenerateObject.getEditAccountrBankGuruObject(driver);
+	}
+
 }

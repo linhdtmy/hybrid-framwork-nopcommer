@@ -18,6 +18,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import adminNopcommerPageUI.AddNewCustomerUI;
 import jqueryUploadFileUI.BaseJqueryUploadUI;
 import jqueryUploadFileUI.HomeJqueryUploadUI;
 import pageObject.user.nopcommerce.AddressUserObject;
@@ -188,6 +189,18 @@ public class BasePage {
 		webElement.sendKeys(textValue);
 	}
 
+	public void ClearValueElement(WebDriver driver, String xpath) {
+		WebElement webElement = getWebElement(driver, xpath);
+
+		webElement.clear();
+	}
+
+	public void ClearValueElement(WebDriver driver, String xpath, String... values) {
+		WebElement webElement = getWebElement(driver, getDynamicXpath(xpath, values));
+
+		webElement.clear();
+	}
+
 	public void sendKeyToElement(WebDriver driver, String locatorType, String textValue, String... values) {
 		WebElement webElement = getWebElement(driver, getDynamicXpath(locatorType, values));
 		webElement.clear();
@@ -201,7 +214,8 @@ public class BasePage {
 	public String getElementValue(WebDriver driver, String xpath) {
 		return getWebElement(driver, xpath).getAttribute("value");
 	}
-	public String getElementValue(WebDriver driver, String locatorType,String... values) {
+
+	public String getElementValue(WebDriver driver, String locatorType, String... values) {
 		return getWebElement(driver, getDynamicXpath(locatorType, values)).getAttribute("value");
 	}
 
@@ -244,6 +258,20 @@ public class BasePage {
 		driver.findElement(By.cssSelector(parentItem)).click();
 		explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(childItem)));
 		List<WebElement> allItems = driver.findElements(By.cssSelector(childItem));
+		for (WebElement webElement : allItems) {
+			String actualValue = webElement.getText();
+			if (actualValue.equals(expectedValue)) {
+				webElement.click();
+				break;
+			}
+		}
+	}
+
+	public void selectedValueDropdownByXpath(WebDriver driver, String parentItem, String childItem, String expectedValue) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, 20);
+		clickToElementByJS(driver, parentItem);
+		explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(childItem)));
+		List<WebElement> allItems = driver.findElements(By.xpath(childItem));
 		for (WebElement webElement : allItems) {
 			String actualValue = webElement.getText();
 			if (actualValue.equals(expectedValue)) {
@@ -317,6 +345,7 @@ public class BasePage {
 	public boolean isElementEnable(WebDriver driver, String xpath) {
 		return getWebElement(driver, xpath).isEnabled();
 	}
+
 	public boolean isElementEnable(WebDriver driver, String locatorType, String... values) {
 		return getWebElement(driver, getDynamicXpath(locatorType, values)).isEnabled();
 	}
@@ -447,6 +476,11 @@ public class BasePage {
 	public void clickToElementByJS(WebDriver driver, String locator) {
 		jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].click();", getWebElement(driver, locator));
+	}
+
+	public void clickToElementByJS(WebDriver driver, String locator, String... values) {
+		jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("arguments[0].click();", getWebElement(driver, getDynamicXpath(locator, values)));
 	}
 
 	public void scrollToElement(WebDriver driver, String locator) {
@@ -639,9 +673,9 @@ public class BasePage {
 
 	}
 
-	public NoteBookPageObject clickToNoteBookLink(WebDriver driver) {
-		waitForElementClickable(driver, CartUI.NOTE_BOOK_LINK);
-		clickToElement(driver, CartUI.NOTE_BOOK_LINK);
+	public NoteBookPageObject clickToNoteBookLink(WebDriver driver, String subName) {
+		waitForElementClickable(driver, CartUI.SUB_COMPUTER_LINK, subName);
+		clickToElement(driver, CartUI.SUB_COMPUTER_LINK, subName);
 		return GenerateObject.getNoteBookPageObject(driver);
 	}
 }

@@ -23,8 +23,8 @@ public class Test_02_Edit_Customer extends BaseTest {
 	private ManagerCustomerBankGuruObject managerCustomerObject;
 	private EditCustomerBankGuruObject editCustomerObject;
 	private WebDriver driver;
-	private String userName = "mngr474048";
-	private String password = "jevUbej";
+	private String userName = "mngr484724";
+	private String password = "UrUzeva";
 	private String customerName = "test";
 	private String customerDOB = "10102000";
 	private String customerAddress = "VietNam";

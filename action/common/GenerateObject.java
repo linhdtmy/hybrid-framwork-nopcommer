@@ -2,9 +2,17 @@ package common;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObject.admin.nopcommerce.AddAddressPageObject;
+import pageObject.admin.nopcommerce.AddCustomerPageObject;
 import pageObject.admin.nopcommerce.DashboardPageObject;
+import pageObject.admin.nopcommerce.EditAddressPageObject;
+import pageObject.admin.nopcommerce.EditCustomerPageObject;
+import pageObject.admin.nopcommerce.ListCustomerPageObject;
 import pageObject.admin.nopcommerce.LoginAdminPageObject;
+import pageObject.bankguru.AddNewAccountBankGuruObject;
 import pageObject.bankguru.AddNewCustomerBankGuruObject;
+import pageObject.bankguru.DeleteCustomerBankGuruObject;
+import pageObject.bankguru.EditAccountrBankGuruObject;
 import pageObject.bankguru.EditCustomerBankGuruObject;
 import pageObject.bankguru.HomePageBankGuruObject;
 import pageObject.bankguru.LoginPageBankGuruObject;
@@ -48,11 +56,17 @@ public class GenerateObject {
 	public static LoginUserPageObject getLoginPage(WebDriver driver) {
 		return new LoginUserPageObject(driver);
 	}
+
 	public static ManagerCustomerBankGuruObject getManagerCustomerBankGuruObject(WebDriver driver) {
 		return new ManagerCustomerBankGuruObject(driver);
 	}
+
 	public static EditCustomerBankGuruObject getEditCustomerBankGuruObject(WebDriver driver) {
 		return new EditCustomerBankGuruObject(driver);
+	}
+
+	public static DeleteCustomerBankGuruObject getDeleteCustomerBankGuruObject(WebDriver driver) {
+		return new DeleteCustomerBankGuruObject(driver);
 	}
 
 	public static RegisterPageUserObject getRegisterPage(WebDriver driver) {
@@ -163,6 +177,10 @@ public class GenerateObject {
 		return new HomePageBankGuruObject(driver);
 	}
 
+	public static AddCustomerPageObject getAddCustomerPageObject(WebDriver driver) {
+		return new AddCustomerPageObject(driver);
+	}
+
 	public static LoginPageBankGuruObject getLoginPageBankGuruObject(WebDriver driver) {
 		return new LoginPageBankGuruObject(driver);
 	}
@@ -189,5 +207,28 @@ public class GenerateObject {
 
 	public static ListPostAdminObject getListPostAdminObject(WebDriver driver) {
 		return new ListPostAdminObject(driver);
+	}
+
+	public static AddNewAccountBankGuruObject getAddNewAccountBankGuruObject(WebDriver driver) {
+		return new AddNewAccountBankGuruObject(driver);
+	}
+
+	public static EditAccountrBankGuruObject getEditAccountrBankGuruObject(WebDriver driver) {
+		return new EditAccountrBankGuruObject(driver);
+	}
+
+	public static EditCustomerPageObject getEditCustomerPageObject(WebDriver driver) {
+		return new EditCustomerPageObject(driver);
+	}
+
+	public static ListCustomerPageObject getListCustomerPageObject(WebDriver driver) {
+		return new ListCustomerPageObject(driver);
+	}
+	
+	public static AddAddressPageObject getAddAddressPageObject(WebDriver driver) {
+		return new AddAddressPageObject(driver);
+	}
+	public static EditAddressPageObject getEditAddressPageObject(WebDriver driver) {
+		return new EditAddressPageObject(driver);
 	}
 }

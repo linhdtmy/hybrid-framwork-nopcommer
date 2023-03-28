@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Wordpress">
+<suite name="Nopcommerce">
 	<listeners>
 		<listener class-name="common.MethodListener" />
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
@@ -7,11 +7,11 @@
 		<listener class-name="reportConfig.ReportNGListener" />
 	</listeners>
 	<parameter name="browser" value="chrome" />
-	<parameter name="url" value="https://demo.guru99.com/v4" />
+	<parameter name="url" value="https://admin-demo.nopcommerce.com/" />
 	<test name="Run on Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.bankguru.Test_05_Edit_Account" />
+			<class name="com.nopcommerce.admin.TC_Admin" />
 		</classes>
 	</test> <!-- Test -->
 

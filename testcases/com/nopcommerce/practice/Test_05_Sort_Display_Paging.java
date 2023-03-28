@@ -37,7 +37,7 @@ public class Test_05_Sort_Display_Paging extends BaseTest {
 		driver.manage().window().maximize();
 		homePageObject = GenerateObject.getHomePage(driver);
 		homePageObject.hoverToComputerLink(driver);
-		noteBookPageObject = homePageObject.clickToNoteBookLink(driver);
+		noteBookPageObject = homePageObject.clickToNoteBookLink(driver,"Apple MacBook Pro 13-inch");
 
 	}
 

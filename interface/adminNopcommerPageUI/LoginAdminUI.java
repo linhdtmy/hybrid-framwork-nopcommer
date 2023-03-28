@@ -1,4 +1,4 @@
-package adminPageUI;
+package adminNopcommerPageUI;
 
 public class LoginAdminUI {
 	public static final String EMAIL_TEXTBOX="//input[@id='Email']";

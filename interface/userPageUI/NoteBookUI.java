@@ -11,7 +11,7 @@ public class NoteBookUI {
 	public static final String PREVIOUS_ICON = "//li[@class='previous-page']";
 	public static final String PAGE = "//a[contains(text(),'%s')]";
 	public static final String PAGE_2 = "//a[contains(text(),'2')]";
-	public static final String PRODUCT_LINK = "//div[@class='details']//a[text()='Apple MacBook Pro 13-inch']";
+	public static final String PRODUCT_LINK = "//div[@class='details']//a[text()='%s']";
 	public static final String PAGGING = "//div[@class='pager']";
 	public static final String WISHLIST_BUTTON = "//a[text()='Asus N551JK-XO076H Laptop']//parent::h2//parent::div//following-sibling::div[@class='add-info']//div[@class='buttons']//button[text()='Add to wishlist']";
 	public static final String WISHLIST_ICON = "//a[@class='ico-wishlist']";

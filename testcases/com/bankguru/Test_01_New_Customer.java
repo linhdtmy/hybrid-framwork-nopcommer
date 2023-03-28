@@ -17,8 +17,8 @@ public class Test_01_New_Customer extends BaseTest {
 	private LoginPageBankGuruObject loginPageObject;
 	private AddNewCustomerBankGuruObject addNewCustomerObject;
 	private WebDriver driver;
-	private String userName = "mngr474048";
-	private String password = "jevUbej";
+	private String userName = "mngr484724";
+	private String password = "UrUzeva";
 
 	@Parameters({ "browser", "url" })
 	@BeforeClass

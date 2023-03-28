@@ -21,4 +21,10 @@ public class HomePageBankGuruObject extends BasePage {
 		return GenerateObject.getAddNewCustomerBankGuruObject(driver);
 	}
 
+	public AddNewAccountBankGuruObject clickToNewAccountLink() {
+		waitForElementClickable(driver, HomePageBankGuruUI.NEW_ACCOUNT_LINK);
+		clickToElement(driver, HomePageBankGuruUI.NEW_ACCOUNT_LINK);
+		return GenerateObject.getAddNewAccountBankGuruObject(driver);
+	}
+
 }

@@ -31,4 +31,6 @@ public class LoginPageBankGuruObject extends BasePage {
 		return GenerateObject.getHomePageBankGuruObject(driver);
 	}
 
+	
+
 }

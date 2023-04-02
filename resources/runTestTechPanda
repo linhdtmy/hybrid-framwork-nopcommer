@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Nopcommerce">
+<listeners>
+		<listener class-name="common.MethodListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="reportConfig.ReportNGListener" />
+	</listeners>
   <parameter name="url" value="http://live.techpanda.org/index.php"/>
   <test name="Run on Chrome">
   <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.techpanda.Test_01_DataGrid"/>
+      <class name="com.techpanda.Test_02_Front_End"/>
     </classes>
   </test> <!-- Test -->
   

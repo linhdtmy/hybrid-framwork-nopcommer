@@ -19,6 +19,15 @@ import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+import factoryBrowser.BraveBrowserDriver;
+import factoryBrowser.Browser;
+import factoryBrowser.ChromeBrowserDriver;
+import factoryBrowser.CocCocBrowserDriver;
+import factoryBrowser.EdgeBrowserDriver;
+import factoryBrowser.FireFoxBrowserDriver;
+import factoryBrowser.HeadlessChromeBrowserDriver;
+import factoryBrowser.HeadlessFireFoxBrowserDriver;
+import factoryBrowser.OperaBrowserDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
@@ -40,6 +49,39 @@ public class BaseTest {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} else if (browserName.equals("h_firefox")) {
+			driver = new HeadlessFireFoxBrowserDriver().getDriverBrowser();
+
+		} else if (browserName.equals("chrome")) {
+
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		} else if (browserName.equals("h_chrome")) {
+			driver = new HeadlessChromeBrowserDriver().getDriverBrowser();
+
+		} else if (browserName.equals("edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		} else if (browserName.equals("opera")) {
+			WebDriverManager.operadriver().setup();
+			driver = new OperaDriver();
+		} else if (browserName.equals("coccoc")) {
+			driver = new CocCocBrowserDriver().getDriverBrowser();
+		} else if (browserName.equals("brave")) {
+			driver = new BraveBrowserDriver().getDriverBrowser();
+		} else {
+			throw new RuntimeException("Browser name invalid");
+		}
+		driver.get(GlobalConstants.PORTAL_PAGE);
+
+		return driver;
+	}
+
+	public WebDriver getBrowser(String browserName, String url) {
+		System.out.println("Run on" + browserName);
+		if (browserName.equals("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		} else if (browserName.equals("h_firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("--headless");
@@ -47,9 +89,13 @@ public class BaseTest {
 			driver = new FirefoxDriver(options);
 
 		} else if (browserName.equals("chrome")) {
+			File file = new File(projectPath + "\\browserExtensions\\extension_Ublock.crx");
 
+			ChromeOptions options = new ChromeOptions();
+			options.addExtensions(file);
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
+
 		} else if (browserName.equals("h_chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
@@ -76,44 +122,30 @@ public class BaseTest {
 		} else {
 			throw new RuntimeException("Browser name invalid");
 		}
-		driver.get(GlobalConstants.PORTAL_PAGE);
+		driver.get(url);
 
 		return driver;
 	}
 
-	public WebDriver getBrowser(String browserName, String url) {
+	public WebDriver getBrowserFactory(String browserName, String url) {
 		System.out.println("Run on" + browserName);
 		if (browserName.equals("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			driver = new FireFoxBrowserDriver().getDriverBrowser();
 		} else if (browserName.equals("h_firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			FirefoxOptions options = new FirefoxOptions();
-			options.addArguments("--headless");
-			options.addArguments("window-size=1920x1080");
-			driver = new FirefoxDriver(options);
+			driver = new HeadlessFireFoxBrowserDriver().getDriverBrowser();
 
 		} else if (browserName.equals("chrome")) {
-			File file = new File(projectPath + "\\browserExtensions\\extension_Ublock.crx");
-
-			ChromeOptions options = new ChromeOptions();
-			options.addExtensions(file);
-			 WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver(options);
+			driver = new ChromeBrowserDriver().getDriverBrowser();
 
 		} else if (browserName.equals("h_chrome")) {
-			WebDriverManager.chromedriver().setup();
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless");
-			options.addArguments("window-size=1920x1080");
-			driver = new ChromeDriver(options);
+			driver = new HeadlessChromeBrowserDriver().getDriverBrowser();
 
 		} else if (browserName.equals("edge")) {
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			return new EdgeBrowserDriver().getDriverBrowser();
 		} else if (browserName.equals("opera")) {
-			WebDriverManager.operadriver().setup();
-			driver = new OperaDriver();
+
+			driver = new OperaBrowserDriver().getDriverBrowser();
+
 		} else if (browserName.equals("coccoc")) {
 			WebDriverManager.chromedriver().driverVersion("105.0.5195.52").setup();
 			ChromeOptions options = new ChromeOptions();

@@ -62,4 +62,27 @@ public class HomePageTechpandaUserObject extends BasePage {
 		clickToElement(driver, HomeTechPandaUserUI.LOGIN_BUTTON);
 	}
 
+	public MyAccountTechpandaUserObject clickToMyAccountOption() {
+		waitForElementClickable(driver, HomeTechPandaUserUI.ACCOUNT_OPTION_LINK, "My Account");
+		clickToElement(driver, HomeTechPandaUserUI.ACCOUNT_OPTION_LINK, "My Account");
+		return GenerateObject.getMyAccountTechpandaUserObject(driver);
+	}
+
+	public void openUrl(WebDriver driver, String url) {
+		openPageUrl(driver, url);
+
+	}
+
+	public MobileTechPandaObject clickToMobileLink() {
+		waitForElementVisible(driver, HomeTechPandaUserUI.MOBILE_LINK);
+		clickToElement(driver, HomeTechPandaUserUI.MOBILE_LINK);
+		return GenerateObject.getMobileTechPandaObject(driver);
+	}
+
+	public void clickLoginLink() {
+		waitForElementVisible(driver, HomeTechPandaUserUI.LOGIN_LINK);
+		clickToElement(driver, HomeTechPandaUserUI.LOGIN_LINK);
+		
+	}
+
 }

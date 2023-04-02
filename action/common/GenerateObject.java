@@ -19,10 +19,14 @@ import pageObject.bankguru.LoginPageBankGuruObject;
 import pageObject.bankguru.ManagerCustomerBankGuruObject;
 import pageObject.jquery.HomePageJqueryObject;
 import pageObject.jqueryUploadFile.HomePageJqueryUploadObject;
+import pageObject.techpanda.DetailProductTechPandaObject;
 import pageObject.techpanda.HomePageTechpandaAdminObject;
 import pageObject.techpanda.HomePageTechpandaUserObject;
 import pageObject.techpanda.LoginTechPandaAdminObject;
+import pageObject.techpanda.MobileTechPandaObject;
+import pageObject.techpanda.MyAccountTechpandaUserObject;
 import pageObject.techpanda.RegisterTechPandaUserObject;
+import pageObject.techpanda.ShoppingCartTechPandaObject;
 import pageObject.user.nopcommerce.AddressUserObject;
 import pageObject.user.nopcommerce.BackUserObject;
 import pageObject.user.nopcommerce.CartObject;
@@ -224,11 +228,28 @@ public class GenerateObject {
 	public static ListCustomerPageObject getListCustomerPageObject(WebDriver driver) {
 		return new ListCustomerPageObject(driver);
 	}
-	
+
 	public static AddAddressPageObject getAddAddressPageObject(WebDriver driver) {
 		return new AddAddressPageObject(driver);
 	}
+
 	public static EditAddressPageObject getEditAddressPageObject(WebDriver driver) {
 		return new EditAddressPageObject(driver);
+	}
+
+	public static MyAccountTechpandaUserObject getMyAccountTechpandaUserObject(WebDriver driver) {
+		return new MyAccountTechpandaUserObject(driver);
+	}
+
+	public static MobileTechPandaObject getMobileTechPandaObject(WebDriver driver) {
+		return new MobileTechPandaObject(driver);
+	}
+
+	public static DetailProductTechPandaObject getDetailProductTechPandaObject(WebDriver driver) {
+		return new DetailProductTechPandaObject(driver);
+	}
+
+	public static ShoppingCartTechPandaObject getShoppingCartTechPandaObject(WebDriver driver) {
+		return new ShoppingCartTechPandaObject(driver);
 	}
 }

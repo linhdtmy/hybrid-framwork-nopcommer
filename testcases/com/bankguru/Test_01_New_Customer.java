@@ -38,7 +38,7 @@ public class Test_01_New_Customer extends BaseTest {
 
 		log.info("Precondition - Step 04 : Click New Customer   ");
 		addNewCustomerObject = homePageObject.clickToNewCustomerLink();
-
+System.out.println("Thread : "+Thread.currentThread().getName() + "Id :"+ Thread.currentThread().getId());
 	}
 
 	@Test

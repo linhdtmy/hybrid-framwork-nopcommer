@@ -1,11 +1,15 @@
 package pageObject.techpanda;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import common.BasePage;
 import common.GenerateObject;
 import techpandaUI.HomeTechPandaAdminUI;
 import techpandaUI.HomeTechPandaUserUI;
+import techpandaUI.TVTechPandaUI;
 
 public class HomePageTechpandaUserObject extends BasePage {
 	private WebDriver driver;
@@ -68,11 +72,6 @@ public class HomePageTechpandaUserObject extends BasePage {
 		return GenerateObject.getMyAccountTechpandaUserObject(driver);
 	}
 
-	public void openUrl(WebDriver driver, String url) {
-		openPageUrl(driver, url);
-
-	}
-
 	public MobileTechPandaObject clickToMobileLink() {
 		waitForElementVisible(driver, HomeTechPandaUserUI.MOBILE_LINK);
 		clickToElement(driver, HomeTechPandaUserUI.MOBILE_LINK);
@@ -82,7 +81,65 @@ public class HomePageTechpandaUserObject extends BasePage {
 	public void clickLoginLink() {
 		waitForElementVisible(driver, HomeTechPandaUserUI.LOGIN_LINK);
 		clickToElement(driver, HomeTechPandaUserUI.LOGIN_LINK);
-		
+
+	}
+
+	public TVTechPandaObject clickToTVLink() {
+		waitForElementClickable(driver, HomeTechPandaUserUI.TV_LINK);
+		clickToElement(driver, HomeTechPandaUserUI.TV_LINK);
+		return GenerateObject.getTVTechPandaObject(driver);
+	}
+
+	public WishListTechPandaObject clickToMyWishlishLink() {
+		waitForElementClickable(driver, HomeTechPandaUserUI.MY_WISHLIST_LINK);
+		clickToElement(driver, HomeTechPandaUserUI.MY_WISHLIST_LINK);
+		return GenerateObject.getWishListTechPandaObject(driver);
+
+	}
+
+	public void clickToAdvanceSearch() {
+		waitForElementClickable(driver, HomeTechPandaUserUI.ADVANCE_SEARCH_LINK);
+		clickToElement(driver, HomeTechPandaUserUI.ADVANCE_SEARCH_LINK);
+
+	}
+
+	public void inputToFromPrice(String price) {
+		waitForElementVisible(driver, HomeTechPandaUserUI.FROM_PRICE_INPUT);
+		sendKeyToElement(driver, HomeTechPandaUserUI.FROM_PRICE_INPUT, price);
+
+	}
+
+	public void inputToToPrice(String price) {
+		waitForElementVisible(driver, HomeTechPandaUserUI.TO_PRICE_INPUT);
+		sendKeyToElement(driver, HomeTechPandaUserUI.TO_PRICE_INPUT, price);
+
+	}
+
+	public void clickToSearchButton() {
+		waitForElementClickable(driver, HomeTechPandaUserUI.SEARCH_BUTTON);
+		clickToElement(driver, HomeTechPandaUserUI.SEARCH_BUTTON);
+
+	}
+
+	public void noteTheProductInfor() {
+		waitForElementVisible(driver, HomeTechPandaUserUI.LIST_PRODUCT_NAME);
+		List<WebElement> listProductName = getListWebElement(driver, HomeTechPandaUserUI.LIST_PRODUCT_NAME);
+		waitForElementVisible(driver, HomeTechPandaUserUI.LIST_COST_PRODUCT);
+		List<WebElement> listProductCost = getListWebElement(driver, HomeTechPandaUserUI.LIST_COST_PRODUCT);
+		for (WebElement webElement : listProductName) {
+			System.out.println(webElement.getText());
+
+		}
+		for (WebElement webElement : listProductCost) {
+			System.out.println(webElement.getText());
+
+		}
+	}
+
+	public void clickModifySearch() {
+		waitForElementClickable(driver, HomeTechPandaUserUI.MODIFY_SEARCH);
+		clickToElement(driver, HomeTechPandaUserUI.MODIFY_SEARCH);
+
 	}
 
 }

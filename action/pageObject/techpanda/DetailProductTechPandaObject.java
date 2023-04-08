@@ -4,9 +4,10 @@ import org.openqa.selenium.WebDriver;
 
 import common.BasePage;
 import common.GenerateObject;
-import techpandaUI.DetailTechPandaUI;
+import techpandaUI.DetailProductTechPandaUI;
 import techpandaUI.HomeTechPandaUserUI;
 import techpandaUI.MyAccountTechPandaUserUI;
+import techpandaUI.ReviewProductTechPandaUI;
 
 public class DetailProductTechPandaObject extends BasePage {
 	private WebDriver driver;
@@ -16,8 +17,14 @@ public class DetailProductTechPandaObject extends BasePage {
 	}
 
 	public String getCostProduct() {
-		waitForElementVisible(driver, DetailTechPandaUI.PRICE);
-		return getElementText(driver, DetailTechPandaUI.PRICE);
+		waitForElementVisible(driver, DetailProductTechPandaUI.PRICE);
+		return getElementText(driver, DetailProductTechPandaUI.PRICE);
+	}
+
+	public ReviewProductTechPandaObject clickToAddToReviewLink() {
+		waitForElementClickable(driver, DetailProductTechPandaUI.ADD_TO_REVIEW);
+		clickToElement(driver, DetailProductTechPandaUI.ADD_TO_REVIEW);
+		return GenerateObject.getReviewProductTechPandaObject(driver);
 	}
 
 }

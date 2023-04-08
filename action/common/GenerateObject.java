@@ -26,7 +26,10 @@ import pageObject.techpanda.LoginTechPandaAdminObject;
 import pageObject.techpanda.MobileTechPandaObject;
 import pageObject.techpanda.MyAccountTechpandaUserObject;
 import pageObject.techpanda.RegisterTechPandaUserObject;
+import pageObject.techpanda.ReviewProductTechPandaObject;
 import pageObject.techpanda.ShoppingCartTechPandaObject;
+import pageObject.techpanda.TVTechPandaObject;
+import pageObject.techpanda.WishListTechPandaObject;
 import pageObject.user.nopcommerce.AddressUserObject;
 import pageObject.user.nopcommerce.BackUserObject;
 import pageObject.user.nopcommerce.CartObject;
@@ -251,5 +254,17 @@ public class GenerateObject {
 
 	public static ShoppingCartTechPandaObject getShoppingCartTechPandaObject(WebDriver driver) {
 		return new ShoppingCartTechPandaObject(driver);
+	}
+
+	public static TVTechPandaObject getTVTechPandaObject(WebDriver driver) {
+		return new TVTechPandaObject(driver);
+	}
+
+	public static WishListTechPandaObject getWishListTechPandaObject(WebDriver driver) {
+		return new WishListTechPandaObject(driver);
+	}
+
+	public static ReviewProductTechPandaObject getReviewProductTechPandaObject(WebDriver driver) {
+		return new ReviewProductTechPandaObject(driver);
 	}
 }

@@ -1,7 +1,6 @@
 package common;
 
 import java.util.List;
-import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -18,9 +17,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import adminNopcommerPageUI.AddNewCustomerUI;
 import jqueryUploadFileUI.BaseJqueryUploadUI;
-import jqueryUploadFileUI.HomeJqueryUploadUI;
 import pageObject.user.nopcommerce.AddressUserObject;
 import pageObject.user.nopcommerce.BackUserObject;
 import pageObject.user.nopcommerce.ChangePasswordUserObject;
@@ -283,6 +280,11 @@ public class BasePage {
 
 	public String getElementAttribute(WebDriver driver, String xpath, String attribute) {
 		return driver.findElement(By.xpath(xpath)).getAttribute(attribute);
+
+	}
+
+	public String getElementAttribute(WebDriver driver, String xpath, String attribute, String... values) {
+		return driver.findElement(By.xpath(getDynamicXpath(xpath, values))).getAttribute(attribute);
 
 	}
 
@@ -678,4 +680,10 @@ public class BasePage {
 		clickToElement(driver, CartUI.SUB_COMPUTER_LINK, subName);
 		return GenerateObject.getNoteBookPageObject(driver);
 	}
+
+	public void openUrl(WebDriver driver, String url) {
+		openPageUrl(driver, url);
+
+	}
+
 }

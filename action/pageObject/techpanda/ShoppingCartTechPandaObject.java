@@ -42,4 +42,44 @@ public class ShoppingCartTechPandaObject extends BasePage {
 		return grandTotal.equals(getElementText(driver, ShoppingCartTechPandaUI.GRAND_TOTAL));
 	}
 
+	public void inputToQty(String numberProduct) {
+		waitForElementVisible(driver, ShoppingCartTechPandaUI.QTY);
+		sendKeyToElement(driver, ShoppingCartTechPandaUI.QTY, numberProduct);
+
+	}
+
+	public void clickToUpdateButton() {
+		waitForElementClickable(driver, ShoppingCartTechPandaUI.UPDATE_BUTTON);
+		clickToElement(driver, ShoppingCartTechPandaUI.UPDATE_BUTTON);
+
+	}
+
+	public boolean isDisplayErrorQtyMSG(String errorMessage) {
+		waitForElementVisible(driver, ShoppingCartTechPandaUI.ERROR_QTY_MSG);
+		return errorMessage.equals(getElementText(driver, ShoppingCartTechPandaUI.ERROR_QTY_MSG));
+	}
+
+	public boolean isDisplayMaxMessage(String maxLengthMSG) {
+		waitForElementVisible(driver, ShoppingCartTechPandaUI.ERROR_MAXLENGTH_MSG);
+		return maxLengthMSG.equals(getElementText(driver, ShoppingCartTechPandaUI.ERROR_MAXLENGTH_MSG).trim());
+	}
+
+	public void selectCountry() {
+		waitForElementClickable(driver, ShoppingCartTechPandaUI.COUNTRY);
+		selectItemInDefaultDropdownByText(driver, ShoppingCartTechPandaUI.COUNTRY, "Vietnam");
+
+	}
+
+	public void inputToZipCode(String zipCode) {
+		waitForElementVisible(driver, ShoppingCartTechPandaUI.ZIP_CODE);
+		sendKeyToElement(driver, ShoppingCartTechPandaUI.ZIP_CODE, zipCode);
+
+	}
+
+	public void clickToEstimateButton() {
+		waitForElementVisible(driver, ShoppingCartTechPandaUI.ESTIMATE_BUTTON);
+		clickToElement(driver, ShoppingCartTechPandaUI.ESTIMATE_BUTTON);
+
+	}
+
 }

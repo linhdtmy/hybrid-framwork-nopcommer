@@ -3,7 +3,6 @@ package common;
 import java.io.File;
 import java.io.IOException;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -16,11 +15,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 
 import factoryBrowser.BraveBrowserDriver;
-import factoryBrowser.Browser;
 import factoryBrowser.ChromeBrowserDriver;
 import factoryBrowser.CocCocBrowserDriver;
 import factoryBrowser.EdgeBrowserDriver;
@@ -286,4 +282,5 @@ public class BaseTest {
 		}
 	}
 
+	
 }

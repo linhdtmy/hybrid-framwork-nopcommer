@@ -33,4 +33,23 @@ public class MobileTechPandaObject extends BasePage {
 
 	}
 
+	public void clickAddToCompareByName(String productName) {
+		waitForElementClickable(driver, MobileTechPandaUI.ADD_TO_COMPARE, productName);
+		clickToElement(driver, MobileTechPandaUI.ADD_TO_COMPARE, productName);
+
+	}
+
+	public String getAddToCompareSuccessMsg(String productName1) {
+		waitForElementVisible(driver, MobileTechPandaUI.SUCCESS_MSG);
+		return getElementText(driver, MobileTechPandaUI.SUCCESS_MSG);
+	}
+
+	public void clickToCompareBtn() {
+		waitForElementClickable(driver, MobileTechPandaUI.COMPARE_BUTTON);
+		clickToElement(driver, MobileTechPandaUI.COMPARE_BUTTON);
+
+	}
+
+	
+
 }
